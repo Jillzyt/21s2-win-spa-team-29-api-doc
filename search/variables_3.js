@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['declarations_0',['declarations',['../struct_pql_1_1_query.html#a1f0fbfce9eec323db9cfa120f82fa2cb',1,'Pql::Query']]],
-  ['declarations_1',['DECLARATIONS',['../_query_terms_checker_8cpp.html#a281140c5f4f696c27cc61bd5cf7cf9ad',1,'QueryTermsChecker.cpp']]],
-  ['designentity_2',['designEntity',['../struct_pql_1_1_declaration.html#a6ec1763dadafb86e21f08bfc10ecd52e',1,'Pql::Declaration']]]
+  ['end_5fof_5fstmt_0',['END_OF_STMT',['../_constants_8h.html#ab619a57e403fe555b2b6dbe42255cfac',1,'Constants.h']]],
+  ['expr_5fminus_1',['EXPR_MINUS',['../_constants_8h.html#a494e8a5038c537e2e1e40ecd40d0e031',1,'Constants.h']]],
+  ['expr_5fplus_2',['EXPR_PLUS',['../_constants_8h.html#a13d58818b84103f75d30349db7c230d8',1,'Constants.h']]]
 ];

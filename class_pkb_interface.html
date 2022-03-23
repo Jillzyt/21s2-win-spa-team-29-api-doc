@@ -66,37 +66,40 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_pkb_interface-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">PkbInterface Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+  <div class="headertitle"><div class="title">PkbInterface Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="group___pkb.html">Pkb</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="_p_k_b_interface_8h_source.html">PKBInterface.h</a>&gt;</code></p>
+<p><a class="el" href="class_pkb.html" title="Program Knowledge Base (Pkb) class stores information about the SIMPLE source code.">Pkb</a> interface helps to declare the methods that will be used by <a class="el" href="class_pkb.html" title="Program Knowledge Base (Pkb) class stores information about the SIMPLE source code.">Pkb</a>.  
+ <a href="class_pkb_interface.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_pkb_interface_8h_source.html">PkbInterface.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for PkbInterface:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="class_pkb_interface.png" usemap="#PkbInterface_map" alt=""/>
   <map id="PkbInterface_map" name="PkbInterface_map">
-<area href="class_p_k_b.html" title="Program Knowledge Base (PKB) class helps to store information with regards to SIMPLE source code." alt="PKB" shape="rect" coords="0,56,83,80"/>
+<area href="class_pkb.html" title="Program Knowledge Base (Pkb) class stores information about the SIMPLE source code." alt="Pkb" shape="rect" coords="0,56,83,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a16570de185e82076cf3b1ca2657eb446"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="class_t_node.html">TNode</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pkb_interface.html#a16570de185e82076cf3b1ca2657eb446">getAllAssignsStmts</a> ()=0</td></tr>
-<tr class="memdesc:a16570de185e82076cf3b1ca2657eb446"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all assign statements.  <a href="class_pkb_interface.html#a16570de185e82076cf3b1ca2657eb446">More...</a><br /></td></tr>
-<tr class="separator:a16570de185e82076cf3b1ca2657eb446"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae884c6f568da24013d67176fb255afe1"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="class_t_node.html">TNode</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pkb_interface.html#ae884c6f568da24013d67176fb255afe1">getAllNodesOfType</a> (<a class="el" href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022">DesignEntity</a> type)=0</td></tr>
+<tr class="memdesc:ae884c6f568da24013d67176fb255afe1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all AST nodes of a design entity type.  <a href="class_pkb_interface.html#ae884c6f568da24013d67176fb255afe1">More...</a><br /></td></tr>
+<tr class="separator:ae884c6f568da24013d67176fb255afe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47a42e7d22ee9513b6aff7503145999f"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pkb_interface.html#a47a42e7d22ee9513b6aff7503145999f">getAllOfType</a> (<a class="el" href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022">DesignEntity</a> type)=0</td></tr>
 <tr class="memdesc:a47a42e7d22ee9513b6aff7503145999f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all statements by design entity type.  <a href="class_pkb_interface.html#a47a42e7d22ee9513b6aff7503145999f">More...</a><br /></td></tr>
 <tr class="separator:a47a42e7d22ee9513b6aff7503145999f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3e609b67b04b97766ce2c6e0c7ec8f7"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pkb_interface.html#ad3e609b67b04b97766ce2c6e0c7ec8f7">isRelated</a> (<a class="el" href="_rel_ref_8h.html#a716e89e479362975d58357aa4f4e00ba">RelRef</a> relationship, std::string former, std::string latter)=0</td></tr>
-<tr class="memdesc:ad3e609b67b04b97766ce2c6e0c7ec8f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all relations.  <a href="class_pkb_interface.html#ad3e609b67b04b97766ce2c6e0c7ec8f7">More...</a><br /></td></tr>
+<tr class="memdesc:ad3e609b67b04b97766ce2c6e0c7ec8f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a relationship is true.  <a href="class_pkb_interface.html#ad3e609b67b04b97766ce2c6e0c7ec8f7">More...</a><br /></td></tr>
 <tr class="separator:ad3e609b67b04b97766ce2c6e0c7ec8f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab506109c849312e3077fb141e4ee046d"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pkb_interface.html#ab506109c849312e3077fb141e4ee046d">getLatterFromFormer</a> (<a class="el" href="_rel_ref_8h.html#a716e89e479362975d58357aa4f4e00ba">RelRef</a> relationship, std::string former)=0</td></tr>
-<tr class="memdesc:ab506109c849312e3077fb141e4ee046d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all relations.  <a href="class_pkb_interface.html#ab506109c849312e3077fb141e4ee046d">More...</a><br /></td></tr>
+<tr class="memdesc:ab506109c849312e3077fb141e4ee046d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all latter entities.  <a href="class_pkb_interface.html#ab506109c849312e3077fb141e4ee046d">More...</a><br /></td></tr>
 <tr class="separator:ab506109c849312e3077fb141e4ee046d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aead0ff77563e9dc08184aedc930f7726"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pkb_interface.html#aead0ff77563e9dc08184aedc930f7726">getFormerFromLatter</a> (<a class="el" href="_rel_ref_8h.html#a716e89e479362975d58357aa4f4e00ba">RelRef</a> relationship, std::string latter)=0</td></tr>
-<tr class="memdesc:aead0ff77563e9dc08184aedc930f7726"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all relations.  <a href="class_pkb_interface.html#aead0ff77563e9dc08184aedc930f7726">More...</a><br /></td></tr>
+<tr class="memdesc:aead0ff77563e9dc08184aedc930f7726"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all former entties.  <a href="class_pkb_interface.html#aead0ff77563e9dc08184aedc930f7726">More...</a><br /></td></tr>
 <tr class="separator:aead0ff77563e9dc08184aedc930f7726"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b23e0938fbc2d13b79dd92955bd4566"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pkb_interface.html#a9b23e0938fbc2d13b79dd92955bd4566">getAllFormer</a> (<a class="el" href="_rel_ref_8h.html#a716e89e479362975d58357aa4f4e00ba">RelRef</a> relationship)=0</td></tr>
 <tr class="memdesc:a9b23e0938fbc2d13b79dd92955bd4566"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all former entities which are related with the relationship queried.  <a href="class_pkb_interface.html#a9b23e0938fbc2d13b79dd92955bd4566">More...</a><br /></td></tr>
@@ -105,37 +108,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aa512a94419621513b9018474b070be25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all latter entities which are related with the relationship queried.  <a href="class_pkb_interface.html#aa512a94419621513b9018474b070be25">More...</a><br /></td></tr>
 <tr class="separator:aa512a94419621513b9018474b070be25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a16570de185e82076cf3b1ca2657eb446" name="a16570de185e82076cf3b1ca2657eb446"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16570de185e82076cf3b1ca2657eb446">&#9670;&nbsp;</a></span>getAllAssignsStmts()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual std::vector&lt; <a class="el" href="class_t_node.html">TNode</a> * &gt; PkbInterface::getAllAssignsStmts </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get all assign statements. </p>
-<dl class="section return"><dt>Returns</dt><dd>a vector of TNodes that has assign relationship </dd></dl>
-
-<p>Implemented in <a class="el" href="class_p_k_b.html#a2feddf801d9a9e9b5e54bbf2e2635af7">PKB</a>.</p>
-
-</div>
-</div>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p ><a class="el" href="class_pkb.html" title="Program Knowledge Base (Pkb) class stores information about the SIMPLE source code.">Pkb</a> interface helps to declare the methods that will be used by <a class="el" href="class_pkb.html" title="Program Knowledge Base (Pkb) class stores information about the SIMPLE source code.">Pkb</a>. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a9b23e0938fbc2d13b79dd92955bd4566" name="a9b23e0938fbc2d13b79dd92955bd4566"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9b23e0938fbc2d13b79dd92955bd4566">&#9670;&nbsp;</a></span>getAllFormer()</h2>
 
@@ -169,7 +144,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns all former entities which are related to the relationship queried </dd></dl>
 
-<p>Implemented in <a class="el" href="class_p_k_b.html#abcd2ee4be5f2d44761365cec13fd50bc">PKB</a>.</p>
+<p>Implemented in <a class="el" href="class_pkb.html#a13a8db1f9235fc18dd7d1ea7485f4555">Pkb</a>.</p>
 
 </div>
 </div>
@@ -206,7 +181,44 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns all latter entities which are related to the relationship queried </dd></dl>
 
-<p>Implemented in <a class="el" href="class_p_k_b.html#a1eca7c620d496c33479b5ced684b5809">PKB</a>.</p>
+<p>Implemented in <a class="el" href="class_pkb.html#ac398b1e2c2469d2c532e76341f76636d">Pkb</a>.</p>
+
+</div>
+</div>
+<a id="ae884c6f568da24013d67176fb255afe1" name="ae884c6f568da24013d67176fb255afe1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae884c6f568da24013d67176fb255afe1">&#9670;&nbsp;</a></span>getAllNodesOfType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::vector&lt; <a class="el" href="class_t_node.html">TNode</a> * &gt; PkbInterface::getAllNodesOfType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022">DesignEntity</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get all AST nodes of a design entity type. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>The design entity type to be queried </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A vector of TNodes that have that design entity type </dd></dl>
+
+<p>Implemented in <a class="el" href="class_pkb.html#a52644ebd364b00ef393442fa6238249b">Pkb</a>.</p>
 
 </div>
 </div>
@@ -243,7 +255,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a vector of statements that have related design entity type </dd></dl>
 
-<p>Implemented in <a class="el" href="class_p_k_b.html#a71810b9b1a59679eacdeddb21b84b5e3">PKB</a>.</p>
+<p>Implemented in <a class="el" href="class_pkb.html#a3eafd2f677bee063da20d11160bd5c28">Pkb</a>.</p>
 
 </div>
 </div>
@@ -281,7 +293,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get all relations. </p>
+<p>Get all former entties. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">relationship</td><td>The relationship of the two strings to query </td></tr>
@@ -292,7 +304,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns former entites if the former and latter has a relationship, false if otherwise </dd></dl>
 
-<p>Implemented in <a class="el" href="class_p_k_b.html#a3b93f5013e5f52c64c9be7ab2696cba4">PKB</a>.</p>
+<p>Implemented in <a class="el" href="class_pkb.html#ade55d4534d3cde9dc89c3320dec70b93">Pkb</a>.</p>
 
 </div>
 </div>
@@ -330,7 +342,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get all relations. </p>
+<p>Get all latter entities. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">relationship</td><td>The relationship of the two strings to query </td></tr>
@@ -340,7 +352,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns latter entities if the former and latter has a relationship, false if otherwise </dd></dl>
 
-<p>Implemented in <a class="el" href="class_p_k_b.html#a2deb34b76e5c862b5868340d411046c1">PKB</a>.</p>
+<p>Implemented in <a class="el" href="class_pkb.html#a12d91040eecfebd7488bc189d1878532">Pkb</a>.</p>
 
 </div>
 </div>
@@ -384,7 +396,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get all relations. </p>
+<p>Check if a relationship is true. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">relationship</td><td>The relationship of the two strings to query </td></tr>
@@ -395,12 +407,12 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns true if the former and latter has a relationship, false if otherwise </dd></dl>
 
-<p>Implemented in <a class="el" href="class_p_k_b.html#ade26f507ad8d190b0b038912af1bbbd3">PKB</a>.</p>
+<p>Implemented in <a class="el" href="class_pkb.html#a8c60210175c8e9792608789878233624">Pkb</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Users/Jody Tang/Desktop/NUS/Y3S2/CS3203/Proj/Team29/Code29/source/PKB/<a class="el" href="_p_k_b_interface_8h_source.html">PKBInterface.h</a></li>
+<li>Pkb/<a class="el" href="_pkb_interface_8h_source.html">PkbInterface.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

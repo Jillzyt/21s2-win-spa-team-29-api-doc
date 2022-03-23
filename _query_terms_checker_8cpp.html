@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>CS3203 Team 29: C:/Users/Jody Tang/Desktop/NUS/Y3S2/CS3203/Proj/Team29/Code29/source/QPP/QueryTermsChecker.cpp File Reference</title>
+<title>CS3203 Team 29: QPP/QueryTermsChecker.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_e04ae2849dfa520b4ee2c9f7e9ff15de.html">Desktop</a></li><li class="navelem"><a class="el" href="dir_fc535f21949c11c9ba400d65784ec52f.html">NUS</a></li><li class="navelem"><a class="el" href="dir_03b17459166973645e5999254af2c876.html">Y3S2</a></li><li class="navelem"><a class="el" href="dir_b53863b2dd4e7567b209cc69d498bd8d.html">CS3203</a></li><li class="navelem"><a class="el" href="dir_a685a0b18ca61e77064c945be78f3477.html">Proj</a></li><li class="navelem"><a class="el" href="dir_836c232a576c31fa72627368ec927480.html">Team29</a></li><li class="navelem"><a class="el" href="dir_46d9012ec6ef0c453dd63a39b5923908.html">Code29</a></li><li class="navelem"><a class="el" href="dir_c278d9d90c9f4d2e85ae516d96d8817b.html">source</a></li><li class="navelem"><a class="el" href="dir_1c793c10dd6ad0bc1cf5cb5771769fd3.html">QPP</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_6547928fef5eab07c3cb95c8d28c90b4.html">QPP</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -75,7 +75,7 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="_query_terms_checker_8h_source.html">QueryTermsChecker.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_rel_ref_checker_8h_source.html">RelRefChecker.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_expr_checker_8h_source.html">ExprChecker.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_expr_checker_8h_source.html">../Utils/ExprChecker.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_lexical_token_checker_8h_source.html">../Utils/LexicalTokenChecker.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_string_addon_8h_source.html">../Utils/StringAddon.h</a>&quot;</code><br />
 <code>#include &lt;cstring&gt;</code><br />
@@ -83,19 +83,161 @@ $(function() {
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:aa15c1a6783f1f31a95dca78226397fab"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_terms_checker_8cpp.html#aa15c1a6783f1f31a95dca78226397fab">getDotResultClause</a> (list&lt; string &gt; *ls, string firstItem)</td></tr>
+<tr class="separator:aa15c1a6783f1f31a95dca78226397fab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e4ee2ff36933b4766a6133da0e7b90b"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_terms_checker_8cpp.html#a3e4ee2ff36933b4766a6133da0e7b90b">getCarrotResultClause</a> (list&lt; string &gt; *ls, string firstItem)</td></tr>
+<tr class="separator:a3e4ee2ff36933b4766a6133da0e7b90b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa09f61c1c47bccd36f2e17afe002460b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_terms_checker_8cpp.html#aa09f61c1c47bccd36f2e17afe002460b">isValidRelRef</a> (string str)</td></tr>
 <tr class="separator:aa09f61c1c47bccd36f2e17afe002460b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac63f3e33f5f0d8431819d2c10eae1dd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_terms_checker_8cpp.html#aac63f3e33f5f0d8431819d2c10eae1dd">isValidRemainingPatternClause</a> (string str)</td></tr>
-<tr class="separator:aac63f3e33f5f0d8431819d2c10eae1dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d715f8900367df0ce4a130cd298e0a2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_terms_checker_8cpp.html#a0d715f8900367df0ce4a130cd298e0a2">isValidAssignPatternClause</a> (string str)</td></tr>
+<tr class="separator:a0d715f8900367df0ce4a130cd298e0a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bbaf52912c9801137e6190cf4ec2d03"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_terms_checker_8cpp.html#a1bbaf52912c9801137e6190cf4ec2d03">isValidWhilePatternClause</a> (string str)</td></tr>
+<tr class="separator:a1bbaf52912c9801137e6190cf4ec2d03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af44d192ff270478cd8cbebf4c0aab702"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_terms_checker_8cpp.html#af44d192ff270478cd8cbebf4c0aab702">isValidIfPatternClause</a> (string str)</td></tr>
+<tr class="separator:af44d192ff270478cd8cbebf4c0aab702"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59292b0138567ced3994213be3630c99"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_terms_checker_8cpp.html#a59292b0138567ced3994213be3630c99">isValidPatternClause</a> (string str)</td></tr>
+<tr class="separator:a59292b0138567ced3994213be3630c99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05c53e9a7c52f8362950f181692515a5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_terms_checker_8cpp.html#a05c53e9a7c52f8362950f181692515a5">isValidAttrCompare</a> (string str)</td></tr>
+<tr class="separator:a05c53e9a7c52f8362950f181692515a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:abef8aa53b5f1d1afe773a807881137da"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_terms_checker_8cpp.html#abef8aa53b5f1d1afe773a807881137da">NUM_OF_DECLARATIONS</a> = 9</td></tr>
+<tr class="memitem:abef8aa53b5f1d1afe773a807881137da"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_terms_checker_8cpp.html#abef8aa53b5f1d1afe773a807881137da">NUM_OF_DECLARATIONS</a> = 10</td></tr>
 <tr class="separator:abef8aa53b5f1d1afe773a807881137da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a281140c5f4f696c27cc61bd5cf7cf9ad"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_terms_checker_8cpp.html#a281140c5f4f696c27cc61bd5cf7cf9ad">DECLARATIONS</a> [<a class="el" href="_query_terms_checker_8cpp.html#abef8aa53b5f1d1afe773a807881137da">NUM_OF_DECLARATIONS</a>] = {&quot;stmt&quot;, &quot;variable&quot;, &quot;assign&quot;, &quot;procedure&quot;, &quot;read&quot;, &quot;print&quot;, &quot;while&quot;, &quot;if&quot;, &quot;constant&quot;}</td></tr>
+<tr class="memitem:a281140c5f4f696c27cc61bd5cf7cf9ad"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_terms_checker_8cpp.html#a281140c5f4f696c27cc61bd5cf7cf9ad">DECLARATIONS</a> [<a class="el" href="_query_terms_checker_8cpp.html#abef8aa53b5f1d1afe773a807881137da">NUM_OF_DECLARATIONS</a>] = {&quot;stmt&quot;, &quot;variable&quot;, &quot;assign&quot;, &quot;procedure&quot;, &quot;read&quot;, &quot;print&quot;, &quot;while&quot;, &quot;if&quot;, &quot;constant&quot;, &quot;call&quot;}</td></tr>
 <tr class="separator:a281140c5f4f696c27cc61bd5cf7cf9ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f60a5a6c4fe94a30449f53b9530e80b"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_terms_checker_8cpp.html#a3f60a5a6c4fe94a30449f53b9530e80b">FIRST_IDX</a> = 0</td></tr>
+<tr class="separator:a3f60a5a6c4fe94a30449f53b9530e80b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a3e4ee2ff36933b4766a6133da0e7b90b" name="a3e4ee2ff36933b4766a6133da0e7b90b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e4ee2ff36933b4766a6133da0e7b90b">&#9670;&nbsp;</a></span>getCarrotResultClause()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string getCarrotResultClause </td>
+          <td>(</td>
+          <td class="paramtype">list&lt; string &gt; *&#160;</td>
+          <td class="paramname"><em>ls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>firstItem</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa15c1a6783f1f31a95dca78226397fab" name="aa15c1a6783f1f31a95dca78226397fab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa15c1a6783f1f31a95dca78226397fab">&#9670;&nbsp;</a></span>getDotResultClause()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string getDotResultClause </td>
+          <td>(</td>
+          <td class="paramtype">list&lt; string &gt; *&#160;</td>
+          <td class="paramname"><em>ls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>firstItem</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0d715f8900367df0ce4a130cd298e0a2" name="a0d715f8900367df0ce4a130cd298e0a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d715f8900367df0ce4a130cd298e0a2">&#9670;&nbsp;</a></span>isValidAssignPatternClause()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isValidAssignPatternClause </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a05c53e9a7c52f8362950f181692515a5" name="a05c53e9a7c52f8362950f181692515a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05c53e9a7c52f8362950f181692515a5">&#9670;&nbsp;</a></span>isValidAttrCompare()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isValidAttrCompare </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af44d192ff270478cd8cbebf4c0aab702" name="af44d192ff270478cd8cbebf4c0aab702"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af44d192ff270478cd8cbebf4c0aab702">&#9670;&nbsp;</a></span>isValidIfPatternClause()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isValidIfPatternClause </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a59292b0138567ced3994213be3630c99" name="a59292b0138567ced3994213be3630c99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59292b0138567ced3994213be3630c99">&#9670;&nbsp;</a></span>isValidPatternClause()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isValidPatternClause </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aa09f61c1c47bccd36f2e17afe002460b" name="aa09f61c1c47bccd36f2e17afe002460b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa09f61c1c47bccd36f2e17afe002460b">&#9670;&nbsp;</a></span>isValidRelRef()</h2>
 
@@ -114,14 +256,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="aac63f3e33f5f0d8431819d2c10eae1dd" name="aac63f3e33f5f0d8431819d2c10eae1dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac63f3e33f5f0d8431819d2c10eae1dd">&#9670;&nbsp;</a></span>isValidRemainingPatternClause()</h2>
+<a id="a1bbaf52912c9801137e6190cf4ec2d03" name="a1bbaf52912c9801137e6190cf4ec2d03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bbaf52912c9801137e6190cf4ec2d03">&#9670;&nbsp;</a></span>isValidWhilePatternClause()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool isValidRemainingPatternClause </td>
+          <td class="memname">bool isValidWhilePatternClause </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>str</em></td><td>)</td>
@@ -140,7 +282,21 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const string DECLARATIONS[<a class="el" href="_query_terms_checker_8cpp.html#abef8aa53b5f1d1afe773a807881137da">NUM_OF_DECLARATIONS</a>] = {&quot;stmt&quot;, &quot;variable&quot;, &quot;assign&quot;, &quot;procedure&quot;, &quot;read&quot;, &quot;print&quot;, &quot;while&quot;, &quot;if&quot;, &quot;constant&quot;}</td>
+          <td class="memname">const string DECLARATIONS[<a class="el" href="_query_terms_checker_8cpp.html#abef8aa53b5f1d1afe773a807881137da">NUM_OF_DECLARATIONS</a>] = {&quot;stmt&quot;, &quot;variable&quot;, &quot;assign&quot;, &quot;procedure&quot;, &quot;read&quot;, &quot;print&quot;, &quot;while&quot;, &quot;if&quot;, &quot;constant&quot;, &quot;call&quot;}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3f60a5a6c4fe94a30449f53b9530e80b" name="a3f60a5a6c4fe94a30449f53b9530e80b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f60a5a6c4fe94a30449f53b9530e80b">&#9670;&nbsp;</a></span>FIRST_IDX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int FIRST_IDX = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -154,7 +310,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const int NUM_OF_DECLARATIONS = 9</td>
+          <td class="memname">const int NUM_OF_DECLARATIONS = 10</td>
         </tr>
       </table>
 </div><div class="memdoc">

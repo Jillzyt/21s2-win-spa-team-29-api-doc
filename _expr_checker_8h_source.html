@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>CS3203 Team 29: C:/Users/Jody Tang/Desktop/NUS/Y3S2/CS3203/Proj/Team29/Code29/source/QPP/ExprChecker.h Source File</title>
+<title>CS3203 Team 29: Utils/ExprChecker.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_e04ae2849dfa520b4ee2c9f7e9ff15de.html">Desktop</a></li><li class="navelem"><a class="el" href="dir_fc535f21949c11c9ba400d65784ec52f.html">NUS</a></li><li class="navelem"><a class="el" href="dir_03b17459166973645e5999254af2c876.html">Y3S2</a></li><li class="navelem"><a class="el" href="dir_b53863b2dd4e7567b209cc69d498bd8d.html">CS3203</a></li><li class="navelem"><a class="el" href="dir_a685a0b18ca61e77064c945be78f3477.html">Proj</a></li><li class="navelem"><a class="el" href="dir_836c232a576c31fa72627368ec927480.html">Team29</a></li><li class="navelem"><a class="el" href="dir_46d9012ec6ef0c453dd63a39b5923908.html">Code29</a></li><li class="navelem"><a class="el" href="dir_c278d9d90c9f4d2e85ae516d96d8817b.html">source</a></li><li class="navelem"><a class="el" href="dir_1c793c10dd6ad0bc1cf5cb5771769fd3.html">QPP</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_0a824aa1f70ce3b829ef378253b085da.html">Utils</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -76,19 +76,28 @@ $(function() {
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_expr_checker.html">ExprChecker</a> {</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="namespace_expr_checker.html#a16022a4e8a717a341d9eb89c52a117a2">isValidExprSpec</a>(std::string exprSpec);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="namespace_expr_checker.html#a16022a4e8a717a341d9eb89c52a117a2">   21</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="namespace_expr_checker.html#a16022a4e8a717a341d9eb89c52a117a2">isValidExprSpec</a>(std::string exprSpec);</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="namespace_expr_checker.html#a0c2aeceaadc04cb330b3117d1919cdd5">isValidFactor</a>(std::string factor);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="namespace_expr_checker.html#a0c2aeceaadc04cb330b3117d1919cdd5">   29</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="namespace_expr_checker.html#a0c2aeceaadc04cb330b3117d1919cdd5">isValidFactor</a>(std::string factor);</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="namespace_expr_checker.html#a8720cbd19e30e3d8b977320232ab9302">isValidTerm</a>(std::string term);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="namespace_expr_checker.html#a8720cbd19e30e3d8b977320232ab9302">   37</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="namespace_expr_checker.html#a8720cbd19e30e3d8b977320232ab9302">isValidTerm</a>(std::string term);</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="namespace_expr_checker.html#aff227186cde35c17de488f676669487d">isValidExpr</a>(std::string expr);</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>}</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="namespace_expr_checker.html#aff227186cde35c17de488f676669487d">   45</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="namespace_expr_checker.html#aff227186cde35c17de488f676669487d">isValidExpr</a>(std::string expr);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="namespace_expr_checker.html#a3945f528bd3e23052041283847a5eda5">   53</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="namespace_expr_checker.html#a3945f528bd3e23052041283847a5eda5">isValidAttrRef</a>(std::string attrRef);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="namespace_expr_checker.html#a4d45908d01018a7d3ff1e2c3492aa97a">   61</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="namespace_expr_checker.html#a4d45908d01018a7d3ff1e2c3492aa97a">isValidTuple</a>(std::string tuple);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="namespace_expr_checker.html#aff35812efd957ae68730003b7c91504d">   69</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="namespace_expr_checker.html#aff35812efd957ae68730003b7c91504d">isValidRef</a>(std::string ref);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>}</div>
 <div class="ttc" id="anamespace_expr_checker_html"><div class="ttname"><a href="namespace_expr_checker.html">ExprChecker</a></div><div class="ttdoc">This namespace checks if a given Expresion is valid syntax.</div></div>
-<div class="ttc" id="anamespace_expr_checker_html_a0c2aeceaadc04cb330b3117d1919cdd5"><div class="ttname"><a href="namespace_expr_checker.html#a0c2aeceaadc04cb330b3117d1919cdd5">ExprChecker::isValidFactor</a></div><div class="ttdeci">bool isValidFactor(std::string factor)</div><div class="ttdoc">Decides if a string forms a valid factor.</div><div class="ttdef"><b>Definition:</b> ExprChecker.cpp:91</div></div>
-<div class="ttc" id="anamespace_expr_checker_html_a16022a4e8a717a341d9eb89c52a117a2"><div class="ttname"><a href="namespace_expr_checker.html#a16022a4e8a717a341d9eb89c52a117a2">ExprChecker::isValidExprSpec</a></div><div class="ttdeci">bool isValidExprSpec(std::string exprSpec)</div><div class="ttdoc">Decides if a string forms a valid expression spec.</div><div class="ttdef"><b>Definition:</b> ExprChecker.cpp:14</div></div>
-<div class="ttc" id="anamespace_expr_checker_html_a8720cbd19e30e3d8b977320232ab9302"><div class="ttname"><a href="namespace_expr_checker.html#a8720cbd19e30e3d8b977320232ab9302">ExprChecker::isValidTerm</a></div><div class="ttdeci">bool isValidTerm(std::string term)</div><div class="ttdoc">Decides if a string forms a valid term.</div><div class="ttdef"><b>Definition:</b> ExprChecker.cpp:96</div></div>
-<div class="ttc" id="anamespace_expr_checker_html_aff227186cde35c17de488f676669487d"><div class="ttname"><a href="namespace_expr_checker.html#aff227186cde35c17de488f676669487d">ExprChecker::isValidExpr</a></div><div class="ttdeci">bool isValidExpr(std::string expr)</div><div class="ttdoc">Decides if a string forms a valid expression.</div><div class="ttdef"><b>Definition:</b> ExprChecker.cpp:101</div></div>
+<div class="ttc" id="anamespace_expr_checker_html_a0c2aeceaadc04cb330b3117d1919cdd5"><div class="ttname"><a href="namespace_expr_checker.html#a0c2aeceaadc04cb330b3117d1919cdd5">ExprChecker::isValidFactor</a></div><div class="ttdeci">bool isValidFactor(std::string factor)</div><div class="ttdoc">Decides if a string forms a valid factor.</div></div>
+<div class="ttc" id="anamespace_expr_checker_html_a16022a4e8a717a341d9eb89c52a117a2"><div class="ttname"><a href="namespace_expr_checker.html#a16022a4e8a717a341d9eb89c52a117a2">ExprChecker::isValidExprSpec</a></div><div class="ttdeci">bool isValidExprSpec(std::string exprSpec)</div><div class="ttdoc">Decides if a string forms a valid expression spec.</div></div>
+<div class="ttc" id="anamespace_expr_checker_html_a3945f528bd3e23052041283847a5eda5"><div class="ttname"><a href="namespace_expr_checker.html#a3945f528bd3e23052041283847a5eda5">ExprChecker::isValidAttrRef</a></div><div class="ttdeci">bool isValidAttrRef(std::string attrRef)</div><div class="ttdoc">Decides if a string forms a valid attribute reference.</div></div>
+<div class="ttc" id="anamespace_expr_checker_html_a4d45908d01018a7d3ff1e2c3492aa97a"><div class="ttname"><a href="namespace_expr_checker.html#a4d45908d01018a7d3ff1e2c3492aa97a">ExprChecker::isValidTuple</a></div><div class="ttdeci">bool isValidTuple(std::string tuple)</div><div class="ttdoc">Decides if a string forms a valid tuple.</div></div>
+<div class="ttc" id="anamespace_expr_checker_html_a8720cbd19e30e3d8b977320232ab9302"><div class="ttname"><a href="namespace_expr_checker.html#a8720cbd19e30e3d8b977320232ab9302">ExprChecker::isValidTerm</a></div><div class="ttdeci">bool isValidTerm(std::string term)</div><div class="ttdoc">Decides if a string forms a valid term.</div></div>
+<div class="ttc" id="anamespace_expr_checker_html_aff227186cde35c17de488f676669487d"><div class="ttname"><a href="namespace_expr_checker.html#aff227186cde35c17de488f676669487d">ExprChecker::isValidExpr</a></div><div class="ttdeci">bool isValidExpr(std::string expr)</div><div class="ttdoc">Decides if a string forms a valid expression.</div></div>
+<div class="ttc" id="anamespace_expr_checker_html_aff35812efd957ae68730003b7c91504d"><div class="ttname"><a href="namespace_expr_checker.html#aff35812efd957ae68730003b7c91504d">ExprChecker::isValidRef</a></div><div class="ttdeci">bool isValidRef(std::string ref)</div><div class="ttdoc">Decides if a string forms a valid ref.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

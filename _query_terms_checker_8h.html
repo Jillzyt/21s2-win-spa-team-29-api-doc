@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>CS3203 Team 29: C:/Users/Jody Tang/Desktop/NUS/Y3S2/CS3203/Proj/Team29/Code29/source/QPP/QueryTermsChecker.h File Reference</title>
+<title>CS3203 Team 29: QPP/QueryTermsChecker.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_e04ae2849dfa520b4ee2c9f7e9ff15de.html">Desktop</a></li><li class="navelem"><a class="el" href="dir_fc535f21949c11c9ba400d65784ec52f.html">NUS</a></li><li class="navelem"><a class="el" href="dir_03b17459166973645e5999254af2c876.html">Y3S2</a></li><li class="navelem"><a class="el" href="dir_b53863b2dd4e7567b209cc69d498bd8d.html">CS3203</a></li><li class="navelem"><a class="el" href="dir_a685a0b18ca61e77064c945be78f3477.html">Proj</a></li><li class="navelem"><a class="el" href="dir_836c232a576c31fa72627368ec927480.html">Team29</a></li><li class="navelem"><a class="el" href="dir_46d9012ec6ef0c453dd63a39b5923908.html">Code29</a></li><li class="navelem"><a class="el" href="dir_c278d9d90c9f4d2e85ae516d96d8817b.html">source</a></li><li class="navelem"><a class="el" href="dir_1c793c10dd6ad0bc1cf5cb5771769fd3.html">QPP</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_6547928fef5eab07c3cb95c8d28c90b4.html">QPP</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -74,6 +74,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;string&gt;</code><br />
+<code>#include &lt;list&gt;</code><br />
 </div>
 <p><a href="_query_terms_checker_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -94,9 +95,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ad786bbeede10a468f1c2973301067194"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_query_terms_checker.html#ad786bbeede10a468f1c2973301067194">QueryTermsChecker::getDeclarationName</a> (std::string inputString)</td></tr>
 <tr class="memdesc:ad786bbeede10a468f1c2973301067194"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to retrieve the declaration name from an input string.  <a href="namespace_query_terms_checker.html#ad786bbeede10a468f1c2973301067194">More...</a><br /></td></tr>
 <tr class="separator:ad786bbeede10a468f1c2973301067194"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0584ea6b0addb8b3780adcec73a59bcc"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_query_terms_checker.html#a0584ea6b0addb8b3780adcec73a59bcc">QueryTermsChecker::getSynonymInSelectClause</a> (std::string selectClause)</td></tr>
-<tr class="memdesc:a0584ea6b0addb8b3780adcec73a59bcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to retrieve the synonym in the select clause.  <a href="namespace_query_terms_checker.html#a0584ea6b0addb8b3780adcec73a59bcc">More...</a><br /></td></tr>
-<tr class="separator:a0584ea6b0addb8b3780adcec73a59bcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a494c6f983127dd6fc78292740d01270f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_query_terms_checker.html#a494c6f983127dd6fc78292740d01270f">QueryTermsChecker::getResultClause</a> (std::list&lt; std::string &gt; *selectClause)</td></tr>
+<tr class="memdesc:a494c6f983127dd6fc78292740d01270f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to retrieve the synonym in the select clause.  <a href="namespace_query_terms_checker.html#a494c6f983127dd6fc78292740d01270f">More...</a><br /></td></tr>
+<tr class="separator:a494c6f983127dd6fc78292740d01270f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a260b378a64cd7ff0d1ee6694c8bd4179"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_query_terms_checker.html#a260b378a64cd7ff0d1ee6694c8bd4179">QueryTermsChecker::removeSynonymInSelectClause</a> (std::string selectClause, std::string nameOfSynonym)</td></tr>
 <tr class="memdesc:a260b378a64cd7ff0d1ee6694c8bd4179"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to remove the synonym in the select clause.  <a href="namespace_query_terms_checker.html#a260b378a64cd7ff0d1ee6694c8bd4179">More...</a><br /></td></tr>
 <tr class="separator:a260b378a64cd7ff0d1ee6694c8bd4179"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -106,12 +107,18 @@ Functions</h2></td></tr>
 <tr class="memitem:ae87272822f7b95e94b351bf1524efd85"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_query_terms_checker.html#ae87272822f7b95e94b351bf1524efd85">QueryTermsChecker::getPatternClause</a> (std::string inputString)</td></tr>
 <tr class="memdesc:ae87272822f7b95e94b351bf1524efd85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to retrieve the pattern clause in a given string.  <a href="namespace_query_terms_checker.html#ae87272822f7b95e94b351bf1524efd85">More...</a><br /></td></tr>
 <tr class="separator:ae87272822f7b95e94b351bf1524efd85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3207d4a3e86c2dd2cb597d98b1d71cef"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_query_terms_checker.html#a3207d4a3e86c2dd2cb597d98b1d71cef">QueryTermsChecker::isValidSuchThatClause</a> (std::string inputString)</td></tr>
-<tr class="memdesc:a3207d4a3e86c2dd2cb597d98b1d71cef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to check if a given string has a valid such that clause syntax.  <a href="namespace_query_terms_checker.html#a3207d4a3e86c2dd2cb597d98b1d71cef">More...</a><br /></td></tr>
-<tr class="separator:a3207d4a3e86c2dd2cb597d98b1d71cef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a0f159fcf330ec96424ca348d72a63b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_query_terms_checker.html#a3a0f159fcf330ec96424ca348d72a63b">QueryTermsChecker::isValidPatternClause</a> (std::string inputString)</td></tr>
-<tr class="memdesc:a3a0f159fcf330ec96424ca348d72a63b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to check if a given string has a valid pattern clause syntax.  <a href="namespace_query_terms_checker.html#a3a0f159fcf330ec96424ca348d72a63b">More...</a><br /></td></tr>
-<tr class="separator:a3a0f159fcf330ec96424ca348d72a63b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dc8f6c4863212cf302a868884d9b719"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_query_terms_checker.html#a5dc8f6c4863212cf302a868884d9b719">QueryTermsChecker::isValidResultClause</a> (std::string inputString)</td></tr>
+<tr class="memdesc:a5dc8f6c4863212cf302a868884d9b719"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to check if a given string is a syntactically valid result clause.  <a href="namespace_query_terms_checker.html#a5dc8f6c4863212cf302a868884d9b719">More...</a><br /></td></tr>
+<tr class="separator:a5dc8f6c4863212cf302a868884d9b719"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a397f68f00b9412665314b79a0aaf63bb"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_query_terms_checker.html#a397f68f00b9412665314b79a0aaf63bb">QueryTermsChecker::formatSuchThatClause</a> (std::string inputString)</td></tr>
+<tr class="memdesc:a397f68f00b9412665314b79a0aaf63bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to check syntactical validity of a given such that clause and returns the formatted such that clause.  <a href="namespace_query_terms_checker.html#a397f68f00b9412665314b79a0aaf63bb">More...</a><br /></td></tr>
+<tr class="separator:a397f68f00b9412665314b79a0aaf63bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a041a68cef4a0eb0c1684a7bcbfcf3598"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_query_terms_checker.html#a041a68cef4a0eb0c1684a7bcbfcf3598">QueryTermsChecker::formatPatternClause</a> (std::string inputString)</td></tr>
+<tr class="memdesc:a041a68cef4a0eb0c1684a7bcbfcf3598"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to check syntactical validity of a given pattern clause and returns the formatted pattern clause.  <a href="namespace_query_terms_checker.html#a041a68cef4a0eb0c1684a7bcbfcf3598">More...</a><br /></td></tr>
+<tr class="separator:a041a68cef4a0eb0c1684a7bcbfcf3598"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63d31cdd5f1e57ccff5d6f5b3b853c88"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_query_terms_checker.html#a63d31cdd5f1e57ccff5d6f5b3b853c88">QueryTermsChecker::formatWithClause</a> (std::string inputString)</td></tr>
+<tr class="memdesc:a63d31cdd5f1e57ccff5d6f5b3b853c88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to check syntactical validity of a given with clause and returns the formatted with clause.  <a href="namespace_query_terms_checker.html#a63d31cdd5f1e57ccff5d6f5b3b853c88">More...</a><br /></td></tr>
+<tr class="separator:a63d31cdd5f1e57ccff5d6f5b3b853c88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>CS3203 Team 29: C:/Users/Jody Tang/Desktop/NUS/Y3S2/CS3203/Proj/Team29/Code29/source/QPP/ExprChecker.cpp File Reference</title>
+<title>CS3203 Team 29: Utils/ExprChecker.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,10 +63,12 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_e04ae2849dfa520b4ee2c9f7e9ff15de.html">Desktop</a></li><li class="navelem"><a class="el" href="dir_fc535f21949c11c9ba400d65784ec52f.html">NUS</a></li><li class="navelem"><a class="el" href="dir_03b17459166973645e5999254af2c876.html">Y3S2</a></li><li class="navelem"><a class="el" href="dir_b53863b2dd4e7567b209cc69d498bd8d.html">CS3203</a></li><li class="navelem"><a class="el" href="dir_a685a0b18ca61e77064c945be78f3477.html">Proj</a></li><li class="navelem"><a class="el" href="dir_836c232a576c31fa72627368ec927480.html">Team29</a></li><li class="navelem"><a class="el" href="dir_46d9012ec6ef0c453dd63a39b5923908.html">Code29</a></li><li class="navelem"><a class="el" href="dir_c278d9d90c9f4d2e85ae516d96d8817b.html">source</a></li><li class="navelem"><a class="el" href="dir_1c793c10dd6ad0bc1cf5cb5771769fd3.html">QPP</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_0a824aa1f70ce3b829ef378253b085da.html">Utils</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">ExprChecker.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -79,7 +81,162 @@ $(function() {
 <code>#include &quot;<a class="el" href="_string_addon_8h_source.html">../Utils/StringAddon.h</a>&quot;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
-</div></div><!-- contents -->
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:aca08e0e0dfe979993125def8a669f9ef"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_expr_checker_8cpp.html#aca08e0e0dfe979993125def8a669f9ef">isValidExprSpecCase1</a> (string exprSpec, int idxOfFirstInvertedComma)</td></tr>
+<tr class="separator:aca08e0e0dfe979993125def8a669f9ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a273ec517a6fc567e2781333d1a5a2c9e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_expr_checker_8cpp.html#a273ec517a6fc567e2781333d1a5a2c9e">isValidExprSpecCase2</a> (string exprSpec, int idxOfFirstInvertedComma)</td></tr>
+<tr class="separator:a273ec517a6fc567e2781333d1a5a2c9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35ea524e1fb8fbba66b51793c1591882"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_expr_checker_8cpp.html#a35ea524e1fb8fbba66b51793c1591882">isValidTupleContents</a> (string elemsOnly)</td></tr>
+<tr class="separator:a35ea524e1fb8fbba66b51793c1591882"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcd055d49a37f9f83a7569daa9f53127"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_expr_checker_8cpp.html#afcd055d49a37f9f83a7569daa9f53127">isValidRefCase1</a> (string ref, int idxOfOpenInvertedComma)</td></tr>
+<tr class="separator:afcd055d49a37f9f83a7569daa9f53127"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acac10b99b3c63900f6084c9b0d14bd70"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_expr_checker_8cpp.html#acac10b99b3c63900f6084c9b0d14bd70">isValidRefCase2</a> (string ref)</td></tr>
+<tr class="separator:acac10b99b3c63900f6084c9b0d14bd70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a796f098f428c9bb718580d398c7bd240"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_expr_checker_8cpp.html#a796f098f428c9bb718580d398c7bd240">isValidRefCase2And3</a> (string ref)</td></tr>
+<tr class="separator:a796f098f428c9bb718580d398c7bd240"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="aca08e0e0dfe979993125def8a669f9ef" name="aca08e0e0dfe979993125def8a669f9ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca08e0e0dfe979993125def8a669f9ef">&#9670;&nbsp;</a></span>isValidExprSpecCase1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isValidExprSpecCase1 </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>exprSpec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>idxOfFirstInvertedComma</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a273ec517a6fc567e2781333d1a5a2c9e" name="a273ec517a6fc567e2781333d1a5a2c9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a273ec517a6fc567e2781333d1a5a2c9e">&#9670;&nbsp;</a></span>isValidExprSpecCase2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isValidExprSpecCase2 </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>exprSpec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>idxOfFirstInvertedComma</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afcd055d49a37f9f83a7569daa9f53127" name="afcd055d49a37f9f83a7569daa9f53127"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcd055d49a37f9f83a7569daa9f53127">&#9670;&nbsp;</a></span>isValidRefCase1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isValidRefCase1 </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>ref</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>idxOfOpenInvertedComma</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acac10b99b3c63900f6084c9b0d14bd70" name="acac10b99b3c63900f6084c9b0d14bd70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acac10b99b3c63900f6084c9b0d14bd70">&#9670;&nbsp;</a></span>isValidRefCase2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isValidRefCase2 </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>ref</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a796f098f428c9bb718580d398c7bd240" name="a796f098f428c9bb718580d398c7bd240"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a796f098f428c9bb718580d398c7bd240">&#9670;&nbsp;</a></span>isValidRefCase2And3()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isValidRefCase2And3 </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>ref</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a35ea524e1fb8fbba66b51793c1591882" name="a35ea524e1fb8fbba66b51793c1591882"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35ea524e1fb8fbba66b51793c1591882">&#9670;&nbsp;</a></span>isValidTupleContents()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isValidTupleContents </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>elemsOnly</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3

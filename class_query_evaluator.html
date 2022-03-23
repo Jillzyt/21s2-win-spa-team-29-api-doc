@@ -64,46 +64,46 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_query_evaluator-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">QueryEvaluator Class Reference<div class="ingroups"><a class="el" href="group___q_e.html">QE</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>This class evaluates a given query.  
+<p>This class evaluates a given query and is responsible for optimizing evaluation.  
  <a href="class_query_evaluator.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_query_evaluator_8h_source.html">QueryEvaluator.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ae6fe557c5591418cb7d94bd3b66ef706"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_query_evaluator.html#ae6fe557c5591418cb7d94bd3b66ef706">evaluateQuery</a> (<a class="el" href="struct_pql_1_1_query.html">Pql::Query</a>, <a class="el" href="class_pkb_interface.html">PkbInterface</a> &amp;)</td></tr>
-<tr class="memdesc:ae6fe557c5591418cb7d94bd3b66ef706"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function evaluates the semantic validity and result of the given query.  <a href="class_query_evaluator.html#ae6fe557c5591418cb7d94bd3b66ef706">More...</a><br /></td></tr>
-<tr class="separator:ae6fe557c5591418cb7d94bd3b66ef706"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:af4a1380e4a49ffa16fb10dd875a2f241"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_query_evaluator.html#af4a1380e4a49ffa16fb10dd875a2f241">QueryEvaluator</a> (<a class="el" href="class_pkb_interface.html">PkbInterface</a> *pkb, <a class="el" href="class_pattern_parser.html">PatternParser</a> *patternParser)</td></tr>
+<tr class="memdesc:af4a1380e4a49ffa16fb10dd875a2f241"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new Query Evaluator object.  <a href="class_query_evaluator.html#af4a1380e4a49ffa16fb10dd875a2f241">More...</a><br /></td></tr>
+<tr class="separator:af4a1380e4a49ffa16fb10dd875a2f241"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73c758a86a2730544159fd054280f75c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_query_evaluator.html#a73c758a86a2730544159fd054280f75c">evaluateQuery</a> (<a class="el" href="struct_pql_1_1_query.html">Pql::Query</a> query)</td></tr>
+<tr class="memdesc:a73c758a86a2730544159fd054280f75c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function evaluates the semantic validity and result of the given query.  <a href="class_query_evaluator.html#a73c758a86a2730544159fd054280f75c">More...</a><br /></td></tr>
+<tr class="separator:a73c758a86a2730544159fd054280f75c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >This class evaluates a given query. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae6fe557c5591418cb7d94bd3b66ef706" name="ae6fe557c5591418cb7d94bd3b66ef706"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6fe557c5591418cb7d94bd3b66ef706">&#9670;&nbsp;</a></span>evaluateQuery()</h2>
+<div class="textblock"><p >This class evaluates a given query and is responsible for optimizing evaluation. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="af4a1380e4a49ffa16fb10dd875a2f241" name="af4a1380e4a49ffa16fb10dd875a2f241"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4a1380e4a49ffa16fb10dd875a2f241">&#9670;&nbsp;</a></span>QueryEvaluator()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">vector&lt; string &gt; QueryEvaluator::evaluateQuery </td>
+          <td class="memname">QueryEvaluator::QueryEvaluator </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_pql_1_1_query.html">Pql::Query</a>&#160;</td>
-          <td class="paramname"><em>query</em>, </td>
+          <td class="paramtype"><a class="el" href="class_pkb_interface.html">PkbInterface</a> *&#160;</td>
+          <td class="paramname"><em>pkb</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_pkb_interface.html">PkbInterface</a> &amp;&#160;</td>
-          <td class="paramname"><em>pkb</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="class_pattern_parser.html">PatternParser</a> *&#160;</td>
+          <td class="paramname"><em>patternParser</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -111,28 +111,56 @@ Static Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
+</div><div class="memdoc">
+
+<p>Construct a new Query Evaluator object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pkb</td><td><a class="el" href="class_pkb_interface.html" title="Pkb interface helps to declare the methods that will be used by Pkb.">PkbInterface</a> pointer to query program data on </td></tr>
+    <tr><td class="paramname">patternParser</td><td><a class="el" href="class_pattern_parser.html" title="PatternParser helps to parse the patterns that are passed from QueryEvaluator(QE) and calls PatternEv...">PatternParser</a> pointer to query program data on </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a73c758a86a2730544159fd054280f75c" name="a73c758a86a2730544159fd054280f75c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73c758a86a2730544159fd054280f75c">&#9670;&nbsp;</a></span>evaluateQuery()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt; string &gt; QueryEvaluator::evaluateQuery </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_pql_1_1_query.html">Pql::Query</a>&#160;</td>
+          <td class="paramname"><em>query</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 <p>Function evaluates the semantic validity and result of the given query. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">query</td><td>Query to be evaluated </td></tr>
-    <tr><td class="paramname">pkb</td><td><a class="el" href="class_p_k_b.html" title="Program Knowledge Base (PKB) class helps to store information with regards to SIMPLE source code.">PKB</a> instance to be queried </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns a vector of the query result. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">runtime_error</td><td>Throws if there is unexpected behaviour from <a class="el" href="class_pkb_interface.html" title="Pkb interface helps to declare the methods that will be used by Pkb.">PkbInterface</a>, PatterParser or Query struct </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Users/Jody Tang/Desktop/NUS/Y3S2/CS3203/Proj/Team29/Code29/source/QE/<a class="el" href="_query_evaluator_8h_source.html">QueryEvaluator.h</a></li>
-<li>C:/Users/Jody Tang/Desktop/NUS/Y3S2/CS3203/Proj/Team29/Code29/source/QE/<a class="el" href="_query_evaluator_8cpp.html">QueryEvaluator.cpp</a></li>
+<li>QE/<a class="el" href="_query_evaluator_8h_source.html">QueryEvaluator.h</a></li>
+<li>QE/<a class="el" href="_query_evaluator_8cpp.html">QueryEvaluator.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -1,9 +1,8 @@
 var searchData=
 [
   ['name_0',['name',['../struct_pql_1_1_param.html#a05d3121c3a99bb1bbec185536c0ba26c',1,'Pql::Param']]],
-  ['navigation_20guide_1',['Navigation Guide',['../index.html',1,'']]],
-  ['no_5fdeclaration_5fmade_2',['NO_DECLARATION_MADE',['../_query_syntax_validator_8cpp.html#ac268943f22ac450c3fb96d07fa1fe168',1,'QuerySyntaxValidator.cpp']]],
-  ['no_5fdeclaration_5fsynonym_3',['NO_DECLARATION_SYNONYM',['../_query_syntax_validator_8cpp.html#ac0d7197fb98bc6532e90a877c31f1688',1,'QuerySyntaxValidator.cpp']]],
-  ['no_5fselect_5fclause_4',['NO_SELECT_CLAUSE',['../_query_syntax_validator_8cpp.html#ac92226d6169f604079a1d21579249eaf',1,'QuerySyntaxValidator.cpp']]],
-  ['num_5fof_5fdeclarations_5',['NUM_OF_DECLARATIONS',['../_query_terms_checker_8cpp.html#abef8aa53b5f1d1afe773a807881137da',1,'QueryTermsChecker.cpp']]]
+  ['next_1',['NEXT',['../_rel_ref_8h.html#a716e89e479362975d58357aa4f4e00baa47559fb833ff58321570e5e877b467f6',1,'RelRef.h']]],
+  ['nextt_2',['NEXTT',['../_rel_ref_8h.html#a716e89e479362975d58357aa4f4e00baab91de2f980bd29a7b9ff48f0ce25ec3f',1,'RelRef.h']]],
+  ['num_5fof_5fdeclarations_3',['NUM_OF_DECLARATIONS',['../_query_terms_checker_8cpp.html#abef8aa53b5f1d1afe773a807881137da',1,'QueryTermsChecker.cpp']]],
+  ['numofoccurrences_4',['numOfOccurrences',['../namespace_string_addon.html#ad24039e80199d59cf7113a11f67ea84b',1,'StringAddon']]]
 ];

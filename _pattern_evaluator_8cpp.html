@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>CS3203 Team 29: C:/Users/Jody Tang/Desktop/NUS/Y3S2/CS3203/Proj/Team29/Code29/source/PKB/PatternEvaluator.cpp File Reference</title>
+<title>CS3203 Team 29: PatternPkg/PatternEvaluator.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,20 +63,20 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_e04ae2849dfa520b4ee2c9f7e9ff15de.html">Desktop</a></li><li class="navelem"><a class="el" href="dir_fc535f21949c11c9ba400d65784ec52f.html">NUS</a></li><li class="navelem"><a class="el" href="dir_03b17459166973645e5999254af2c876.html">Y3S2</a></li><li class="navelem"><a class="el" href="dir_b53863b2dd4e7567b209cc69d498bd8d.html">CS3203</a></li><li class="navelem"><a class="el" href="dir_a685a0b18ca61e77064c945be78f3477.html">Proj</a></li><li class="navelem"><a class="el" href="dir_836c232a576c31fa72627368ec927480.html">Team29</a></li><li class="navelem"><a class="el" href="dir_46d9012ec6ef0c453dd63a39b5923908.html">Code29</a></li><li class="navelem"><a class="el" href="dir_c278d9d90c9f4d2e85ae516d96d8817b.html">source</a></li><li class="navelem"><a class="el" href="dir_10c7ac1531d3cd14e633c05d8002d102.html">PKB</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_9b2cc84f67f0d06c87465b1e1cb8475a.html">PatternPkg</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">PatternEvaluator.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="_pattern_evaluator_8h_source.html">PatternEvaluator.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_p_k_b_8h_source.html">PKB.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_pkb_8h_source.html">../Pkb/Pkb.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_design_entity_8h_source.html">../Enums/DesignEntity.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_program_parser_8h_source.html">../Parser/ProgramParser.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_string_addon_8h_source.html">../Utils/StringAddon.h</a>&quot;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;algorithm&gt;</code><br />
@@ -84,64 +84,52 @@ $(function() {
 <code>#include &lt;iterator&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:aaa2ed1b8a296c302738b7b1f5c3cf75c"><td class="memItemLeft" align="right" valign="top">vector&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_pattern_evaluator_8cpp.html#aaa2ed1b8a296c302738b7b1f5c3cf75c">create_copy</a> (vector&lt; string &gt; const &amp;vec)</td></tr>
-<tr class="separator:aaa2ed1b8a296c302738b7b1f5c3cf75c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57db3b1012f8423d998137eb7d2e3852"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_pattern_evaluator_8cpp.html#a57db3b1012f8423d998137eb7d2e3852">convertVectorToString</a> (vector&lt; string &gt; vectorList)</td></tr>
-<tr class="separator:a57db3b1012f8423d998137eb7d2e3852"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a889ba7577ab8fa13d611ba0f10b07faa"><td class="memItemLeft" align="right" valign="top">vector&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_pattern_evaluator_8cpp.html#a889ba7577ab8fa13d611ba0f10b07faa">tokens</a></td></tr>
-<tr class="separator:a889ba7577ab8fa13d611ba0f10b07faa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5a7d1494cdd88b071673dab9a572f0b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_t_node.html">TNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_pattern_evaluator_8cpp.html#ab5a7d1494cdd88b071673dab9a572f0b">patternSubtree</a></td></tr>
+<tr class="separator:ab5a7d1494cdd88b071673dab9a572f0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16953f9573ea9cd96c2ac8eb0014f99b"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="class_t_node.html">TNode</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_pattern_evaluator_8cpp.html#a16953f9573ea9cd96c2ac8eb0014f99b">stmtsToEvaluate</a></td></tr>
+<tr class="separator:a16953f9573ea9cd96c2ac8eb0014f99b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a046efacb8e56a33aca1e3e71856f6953"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022">DesignEntity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_pattern_evaluator_8cpp.html#a046efacb8e56a33aca1e3e71856f6953">designEntityToEvaluate</a></td></tr>
+<tr class="separator:a046efacb8e56a33aca1e3e71856f6953"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a57db3b1012f8423d998137eb7d2e3852" name="a57db3b1012f8423d998137eb7d2e3852"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a57db3b1012f8423d998137eb7d2e3852">&#9670;&nbsp;</a></span>convertVectorToString()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">string convertVectorToString </td>
-          <td>(</td>
-          <td class="paramtype">vector&lt; string &gt;&#160;</td>
-          <td class="paramname"><em>vectorList</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aaa2ed1b8a296c302738b7b1f5c3cf75c" name="aaa2ed1b8a296c302738b7b1f5c3cf75c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa2ed1b8a296c302738b7b1f5c3cf75c">&#9670;&nbsp;</a></span>create_copy()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">vector&lt; string &gt; create_copy </td>
-          <td>(</td>
-          <td class="paramtype">vector&lt; string &gt; const &amp;&#160;</td>
-          <td class="paramname"><em>vec</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="a889ba7577ab8fa13d611ba0f10b07faa" name="a889ba7577ab8fa13d611ba0f10b07faa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a889ba7577ab8fa13d611ba0f10b07faa">&#9670;&nbsp;</a></span>tokens</h2>
+<a id="a046efacb8e56a33aca1e3e71856f6953" name="a046efacb8e56a33aca1e3e71856f6953"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a046efacb8e56a33aca1e3e71856f6953">&#9670;&nbsp;</a></span>designEntityToEvaluate</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">vector&lt;string&gt; tokens</td>
+          <td class="memname"><a class="el" href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022">DesignEntity</a> designEntityToEvaluate</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab5a7d1494cdd88b071673dab9a572f0b" name="ab5a7d1494cdd88b071673dab9a572f0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5a7d1494cdd88b071673dab9a572f0b">&#9670;&nbsp;</a></span>patternSubtree</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_t_node.html">TNode</a>* patternSubtree</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a16953f9573ea9cd96c2ac8eb0014f99b" name="a16953f9573ea9cd96c2ac8eb0014f99b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16953f9573ea9cd96c2ac8eb0014f99b">&#9670;&nbsp;</a></span>stmtsToEvaluate</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;<a class="el" href="class_t_node.html">TNode</a>*&gt; stmtsToEvaluate</td>
         </tr>
       </table>
 </div><div class="memdoc">

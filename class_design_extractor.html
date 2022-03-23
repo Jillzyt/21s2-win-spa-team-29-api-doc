@@ -70,22 +70,28 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>This class takes in and processes the AST to populate the <a class="el" href="class_p_k_b.html" title="Program Knowledge Base (PKB) class helps to store information with regards to SIMPLE source code.">PKB</a>.  
+<p>This class takes in and processes the Ast to populate the <a class="el" href="class_pkb.html" title="Program Knowledge Base (Pkb) class stores information about the SIMPLE source code.">Pkb</a>.  
  <a href="class_design_extractor.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_design_extractor_8h_source.html">DesignExtractor.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a1fcf1f5ac7fb2372afa08f3e3f01e73a"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_design_extractor.html#a1fcf1f5ac7fb2372afa08f3e3f01e73a">processAST</a> (<a class="el" href="class_t_node.html">TNode</a> *node, <a class="el" href="class_p_k_b.html">PKB</a> &amp;pkb)</td></tr>
-<tr class="memdesc:a1fcf1f5ac7fb2372afa08f3e3f01e73a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes the AST and populates the <a class="el" href="class_p_k_b.html" title="Program Knowledge Base (PKB) class helps to store information with regards to SIMPLE source code.">PKB</a>.  <a href="class_design_extractor.html#a1fcf1f5ac7fb2372afa08f3e3f01e73a">More...</a><br /></td></tr>
-<tr class="separator:a1fcf1f5ac7fb2372afa08f3e3f01e73a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76437d7d6e2d5f4557ac8c42881743fa"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_design_extractor.html#a76437d7d6e2d5f4557ac8c42881743fa">processProcedureMap</a> (std::unordered_map&lt; std::string, std::vector&lt; std::string &gt; &gt; procedureMap, <a class="el" href="class_pkb.html">Pkb</a> &amp;pkb)</td></tr>
+<tr class="memdesc:a76437d7d6e2d5f4557ac8c42881743fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes the procedure map and populates the PKB.  <a href="class_design_extractor.html#a76437d7d6e2d5f4557ac8c42881743fa">More...</a><br /></td></tr>
+<tr class="separator:a76437d7d6e2d5f4557ac8c42881743fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a987700a1fd0424b6d0a293050accda"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_design_extractor.html#a0a987700a1fd0424b6d0a293050accda">processAst</a> (<a class="el" href="class_t_node.html">TNode</a> *node, <a class="el" href="class_pkb.html">Pkb</a> &amp;pkb)</td></tr>
+<tr class="memdesc:a0a987700a1fd0424b6d0a293050accda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes the AST and populates the PKB.  <a href="class_design_extractor.html#a0a987700a1fd0424b6d0a293050accda">More...</a><br /></td></tr>
+<tr class="separator:a0a987700a1fd0424b6d0a293050accda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae120348dd7b95e82e5c85856dfed63a1"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_design_extractor.html#ae120348dd7b95e82e5c85856dfed63a1">processCfg</a> (std::unordered_map&lt; int, std::vector&lt; int &gt; &gt; cfg, <a class="el" href="class_pkb.html">Pkb</a> &amp;pkb)</td></tr>
+<tr class="memdesc:ae120348dd7b95e82e5c85856dfed63a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes a CFG and populates the PKB.  <a href="class_design_extractor.html#ae120348dd7b95e82e5c85856dfed63a1">More...</a><br /></td></tr>
+<tr class="separator:ae120348dd7b95e82e5c85856dfed63a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >This class takes in and processes the AST to populate the <a class="el" href="class_p_k_b.html" title="Program Knowledge Base (PKB) class helps to store information with regards to SIMPLE source code.">PKB</a>. </p>
+<div class="textblock"><p >This class takes in and processes the Ast to populate the <a class="el" href="class_pkb.html" title="Program Knowledge Base (Pkb) class stores information about the SIMPLE source code.">Pkb</a>. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a1fcf1f5ac7fb2372afa08f3e3f01e73a" name="a1fcf1f5ac7fb2372afa08f3e3f01e73a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1fcf1f5ac7fb2372afa08f3e3f01e73a">&#9670;&nbsp;</a></span>processAST()</h2>
+<a id="a0a987700a1fd0424b6d0a293050accda" name="a0a987700a1fd0424b6d0a293050accda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a987700a1fd0424b6d0a293050accda">&#9670;&nbsp;</a></span>processAst()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -94,7 +100,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool DesignExtractor::processAST </td>
+          <td class="memname">bool DesignExtractor::processAst </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_t_node.html">TNode</a> *&#160;</td>
           <td class="paramname"><em>node</em>, </td>
@@ -102,7 +108,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_p_k_b.html">PKB</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="class_pkb.html">Pkb</a> &amp;&#160;</td>
           <td class="paramname"><em>pkb</em>&#160;</td>
         </tr>
         <tr>
@@ -118,11 +124,103 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Processes the AST and populates the <a class="el" href="class_p_k_b.html" title="Program Knowledge Base (PKB) class helps to store information with regards to SIMPLE source code.">PKB</a>. </p>
+<p>Processes the AST and populates the PKB. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">node</td><td>Root node of the AST </td></tr>
-    <tr><td class="paramname">pkb</td><td><a class="el" href="class_p_k_b.html" title="Program Knowledge Base (PKB) class helps to store information with regards to SIMPLE source code.">PKB</a> instance to populate </td></tr>
+    <tr><td class="paramname">pkb</td><td>PKB instance to populate </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns true if successful and false otherwise </dd></dl>
+
+</div>
+</div>
+<a id="ae120348dd7b95e82e5c85856dfed63a1" name="ae120348dd7b95e82e5c85856dfed63a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae120348dd7b95e82e5c85856dfed63a1">&#9670;&nbsp;</a></span>processCfg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DesignExtractor::processCfg </td>
+          <td>(</td>
+          <td class="paramtype">std::unordered_map&lt; int, std::vector&lt; int &gt; &gt;&#160;</td>
+          <td class="paramname"><em>cfg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_pkb.html">Pkb</a> &amp;&#160;</td>
+          <td class="paramname"><em>pkb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Processes a CFG and populates the PKB. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>Root node of the CFG </td></tr>
+    <tr><td class="paramname">pkb</td><td>PKB instance to populate </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns true if successful and false otherwise </dd></dl>
+
+</div>
+</div>
+<a id="a76437d7d6e2d5f4557ac8c42881743fa" name="a76437d7d6e2d5f4557ac8c42881743fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76437d7d6e2d5f4557ac8c42881743fa">&#9670;&nbsp;</a></span>processProcedureMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DesignExtractor::processProcedureMap </td>
+          <td>(</td>
+          <td class="paramtype">std::unordered_map&lt; std::string, std::vector&lt; std::string &gt; &gt;&#160;</td>
+          <td class="paramname"><em>procedureMap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_pkb.html">Pkb</a> &amp;&#160;</td>
+          <td class="paramname"><em>pkb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Processes the procedure map and populates the PKB. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">procedureMap</td><td>The procedure map </td></tr>
+    <tr><td class="paramname">pkb</td><td><a class="el" href="class_pkb.html" title="Program Knowledge Base (Pkb) class stores information about the SIMPLE source code.">Pkb</a> instance to populate </td></tr>
   </table>
   </dd>
 </dl>
@@ -131,8 +229,8 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Users/Jody Tang/Desktop/NUS/Y3S2/CS3203/Proj/Team29/Code29/source/PKB/<a class="el" href="_design_extractor_8h_source.html">DesignExtractor.h</a></li>
-<li>C:/Users/Jody Tang/Desktop/NUS/Y3S2/CS3203/Proj/Team29/Code29/source/PKB/<a class="el" href="_design_extractor_8cpp.html">DesignExtractor.cpp</a></li>
+<li>ProgramAnalyser/<a class="el" href="_design_extractor_8h_source.html">DesignExtractor.h</a></li>
+<li>ProgramAnalyser/<a class="el" href="_design_extractor_8cpp.html">DesignExtractor.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

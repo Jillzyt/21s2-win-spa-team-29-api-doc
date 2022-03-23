@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['operation_0',['OPERATION',['../_design_entity_8h.html#a238404016566c29666c6aacd3d396022ad6a0beecbcc46b64a23307ffc084ed36',1,'DesignEntity.h']]]
+  ['modifies_0',['MODIFIES',['../_rel_ref_8h.html#a716e89e479362975d58357aa4f4e00baaaaaab5c0c5e6598f7126b1e1c6ac958a',1,'RelRef.h']]]
 ];

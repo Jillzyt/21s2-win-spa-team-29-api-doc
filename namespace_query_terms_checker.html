@@ -83,9 +83,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ad786bbeede10a468f1c2973301067194"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_query_terms_checker.html#ad786bbeede10a468f1c2973301067194">getDeclarationName</a> (std::string inputString)</td></tr>
 <tr class="memdesc:ad786bbeede10a468f1c2973301067194"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to retrieve the declaration name from an input string.  <a href="namespace_query_terms_checker.html#ad786bbeede10a468f1c2973301067194">More...</a><br /></td></tr>
 <tr class="separator:ad786bbeede10a468f1c2973301067194"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0584ea6b0addb8b3780adcec73a59bcc"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_query_terms_checker.html#a0584ea6b0addb8b3780adcec73a59bcc">getSynonymInSelectClause</a> (std::string selectClause)</td></tr>
-<tr class="memdesc:a0584ea6b0addb8b3780adcec73a59bcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to retrieve the synonym in the select clause.  <a href="namespace_query_terms_checker.html#a0584ea6b0addb8b3780adcec73a59bcc">More...</a><br /></td></tr>
-<tr class="separator:a0584ea6b0addb8b3780adcec73a59bcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a494c6f983127dd6fc78292740d01270f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_query_terms_checker.html#a494c6f983127dd6fc78292740d01270f">getResultClause</a> (std::list&lt; std::string &gt; *selectClause)</td></tr>
+<tr class="memdesc:a494c6f983127dd6fc78292740d01270f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to retrieve the synonym in the select clause.  <a href="namespace_query_terms_checker.html#a494c6f983127dd6fc78292740d01270f">More...</a><br /></td></tr>
+<tr class="separator:a494c6f983127dd6fc78292740d01270f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a260b378a64cd7ff0d1ee6694c8bd4179"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_query_terms_checker.html#a260b378a64cd7ff0d1ee6694c8bd4179">removeSynonymInSelectClause</a> (std::string selectClause, std::string nameOfSynonym)</td></tr>
 <tr class="memdesc:a260b378a64cd7ff0d1ee6694c8bd4179"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to remove the synonym in the select clause.  <a href="namespace_query_terms_checker.html#a260b378a64cd7ff0d1ee6694c8bd4179">More...</a><br /></td></tr>
 <tr class="separator:a260b378a64cd7ff0d1ee6694c8bd4179"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -95,16 +95,103 @@ Functions</h2></td></tr>
 <tr class="memitem:ae87272822f7b95e94b351bf1524efd85"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_query_terms_checker.html#ae87272822f7b95e94b351bf1524efd85">getPatternClause</a> (std::string inputString)</td></tr>
 <tr class="memdesc:ae87272822f7b95e94b351bf1524efd85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to retrieve the pattern clause in a given string.  <a href="namespace_query_terms_checker.html#ae87272822f7b95e94b351bf1524efd85">More...</a><br /></td></tr>
 <tr class="separator:ae87272822f7b95e94b351bf1524efd85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3207d4a3e86c2dd2cb597d98b1d71cef"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_query_terms_checker.html#a3207d4a3e86c2dd2cb597d98b1d71cef">isValidSuchThatClause</a> (std::string inputString)</td></tr>
-<tr class="memdesc:a3207d4a3e86c2dd2cb597d98b1d71cef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to check if a given string has a valid such that clause syntax.  <a href="namespace_query_terms_checker.html#a3207d4a3e86c2dd2cb597d98b1d71cef">More...</a><br /></td></tr>
-<tr class="separator:a3207d4a3e86c2dd2cb597d98b1d71cef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a0f159fcf330ec96424ca348d72a63b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_query_terms_checker.html#a3a0f159fcf330ec96424ca348d72a63b">isValidPatternClause</a> (std::string inputString)</td></tr>
-<tr class="memdesc:a3a0f159fcf330ec96424ca348d72a63b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to check if a given string has a valid pattern clause syntax.  <a href="namespace_query_terms_checker.html#a3a0f159fcf330ec96424ca348d72a63b">More...</a><br /></td></tr>
-<tr class="separator:a3a0f159fcf330ec96424ca348d72a63b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dc8f6c4863212cf302a868884d9b719"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_query_terms_checker.html#a5dc8f6c4863212cf302a868884d9b719">isValidResultClause</a> (std::string inputString)</td></tr>
+<tr class="memdesc:a5dc8f6c4863212cf302a868884d9b719"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to check if a given string is a syntactically valid result clause.  <a href="namespace_query_terms_checker.html#a5dc8f6c4863212cf302a868884d9b719">More...</a><br /></td></tr>
+<tr class="separator:a5dc8f6c4863212cf302a868884d9b719"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a397f68f00b9412665314b79a0aaf63bb"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_query_terms_checker.html#a397f68f00b9412665314b79a0aaf63bb">formatSuchThatClause</a> (std::string inputString)</td></tr>
+<tr class="memdesc:a397f68f00b9412665314b79a0aaf63bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to check syntactical validity of a given such that clause and returns the formatted such that clause.  <a href="namespace_query_terms_checker.html#a397f68f00b9412665314b79a0aaf63bb">More...</a><br /></td></tr>
+<tr class="separator:a397f68f00b9412665314b79a0aaf63bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a041a68cef4a0eb0c1684a7bcbfcf3598"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_query_terms_checker.html#a041a68cef4a0eb0c1684a7bcbfcf3598">formatPatternClause</a> (std::string inputString)</td></tr>
+<tr class="memdesc:a041a68cef4a0eb0c1684a7bcbfcf3598"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to check syntactical validity of a given pattern clause and returns the formatted pattern clause.  <a href="namespace_query_terms_checker.html#a041a68cef4a0eb0c1684a7bcbfcf3598">More...</a><br /></td></tr>
+<tr class="separator:a041a68cef4a0eb0c1684a7bcbfcf3598"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63d31cdd5f1e57ccff5d6f5b3b853c88"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_query_terms_checker.html#a63d31cdd5f1e57ccff5d6f5b3b853c88">formatWithClause</a> (std::string inputString)</td></tr>
+<tr class="memdesc:a63d31cdd5f1e57ccff5d6f5b3b853c88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to check syntactical validity of a given with clause and returns the formatted with clause.  <a href="namespace_query_terms_checker.html#a63d31cdd5f1e57ccff5d6f5b3b853c88">More...</a><br /></td></tr>
+<tr class="separator:a63d31cdd5f1e57ccff5d6f5b3b853c88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >This namespace contains functions to help with the checking of validity of various terms in a query. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="a041a68cef4a0eb0c1684a7bcbfcf3598" name="a041a68cef4a0eb0c1684a7bcbfcf3598"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a041a68cef4a0eb0c1684a7bcbfcf3598">&#9670;&nbsp;</a></span>formatPatternClause()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string QueryTermsChecker::formatPatternClause </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>inputString</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function to check syntactical validity of a given pattern clause and returns the formatted pattern clause. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inputString</td><td>Target string which we are trying to format as a pattern clause </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Formatted pattern clause </dd></dl>
+
+</div>
+</div>
+<a id="a397f68f00b9412665314b79a0aaf63bb" name="a397f68f00b9412665314b79a0aaf63bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a397f68f00b9412665314b79a0aaf63bb">&#9670;&nbsp;</a></span>formatSuchThatClause()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string QueryTermsChecker::formatSuchThatClause </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>inputString</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function to check syntactical validity of a given such that clause and returns the formatted such that clause. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inputString</td><td>Target string which we are trying to format as a such that clause </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Formatted such that clause </dd></dl>
+
+</div>
+</div>
+<a id="a63d31cdd5f1e57ccff5d6f5b3b853c88" name="a63d31cdd5f1e57ccff5d6f5b3b853c88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63d31cdd5f1e57ccff5d6f5b3b853c88">&#9670;&nbsp;</a></span>formatWithClause()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string QueryTermsChecker::formatWithClause </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>inputString</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function to check syntactical validity of a given with clause and returns the formatted with clause. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inputString</td><td>Target string which we are trying to format as a with clause </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Formatted with clause </dd></dl>
+
+</div>
+</div>
 <a id="ad786bbeede10a468f1c2973301067194" name="ad786bbeede10a468f1c2973301067194"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad786bbeede10a468f1c2973301067194">&#9670;&nbsp;</a></span>getDeclarationName()</h2>
 
@@ -159,6 +246,33 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a494c6f983127dd6fc78292740d01270f" name="a494c6f983127dd6fc78292740d01270f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a494c6f983127dd6fc78292740d01270f">&#9670;&nbsp;</a></span>getResultClause()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string QueryTermsChecker::getResultClause </td>
+          <td>(</td>
+          <td class="paramtype">std::list&lt; std::string &gt; *&#160;</td>
+          <td class="paramname"><em>selectClause</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function to retrieve the synonym in the select clause. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">selectClause</td><td>Target select clause string where we are trying to retrieve the synonym </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Synonym of the select clause as a string </dd></dl>
+
+</div>
+</div>
 <a id="a7ba610c040bc18cdf9a5cc379360d30e" name="a7ba610c040bc18cdf9a5cc379360d30e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7ba610c040bc18cdf9a5cc379360d30e">&#9670;&nbsp;</a></span>getSuchThatClause()</h2>
 
@@ -183,33 +297,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Such that clause </dd></dl>
-
-</div>
-</div>
-<a id="a0584ea6b0addb8b3780adcec73a59bcc" name="a0584ea6b0addb8b3780adcec73a59bcc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0584ea6b0addb8b3780adcec73a59bcc">&#9670;&nbsp;</a></span>getSynonymInSelectClause()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string QueryTermsChecker::getSynonymInSelectClause </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>selectClause</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Function to retrieve the synonym in the select clause. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">selectClause</td><td>Target select clause string where we are trying to retrieve the synonym </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Synonym of the select clause as a string </dd></dl>
 
 </div>
 </div>
@@ -267,14 +354,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3a0f159fcf330ec96424ca348d72a63b" name="a3a0f159fcf330ec96424ca348d72a63b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a0f159fcf330ec96424ca348d72a63b">&#9670;&nbsp;</a></span>isValidPatternClause()</h2>
+<a id="a5dc8f6c4863212cf302a868884d9b719" name="a5dc8f6c4863212cf302a868884d9b719"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dc8f6c4863212cf302a868884d9b719">&#9670;&nbsp;</a></span>isValidResultClause()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool QueryTermsChecker::isValidPatternClause </td>
+          <td class="memname">bool QueryTermsChecker::isValidResultClause </td>
           <td>(</td>
           <td class="paramtype">std::string&#160;</td>
           <td class="paramname"><em>inputString</em></td><td>)</td>
@@ -283,41 +370,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Function to check if a given string has a valid pattern clause syntax. </p>
+<p>Function to check if a given string is a syntactically valid result clause. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">inputString</td><td>Target string which we are trying to check the syntax of </td></tr>
+    <tr><td class="paramname">inputString</td><td>Target string which we are checking if it is a valid result clause </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the inputString is a valid pattern clause, False otherwise </dd></dl>
-
-</div>
-</div>
-<a id="a3207d4a3e86c2dd2cb597d98b1d71cef" name="a3207d4a3e86c2dd2cb597d98b1d71cef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3207d4a3e86c2dd2cb597d98b1d71cef">&#9670;&nbsp;</a></span>isValidSuchThatClause()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool QueryTermsChecker::isValidSuchThatClause </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>inputString</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Function to check if a given string has a valid such that clause syntax. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">inputString</td><td>Target string which we are trying to check the syntax of </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the inputString is a valid such that clause, False otherwise </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the inputString is a validResultClause, false otherwise </dd></dl>
 
 </div>
 </div>

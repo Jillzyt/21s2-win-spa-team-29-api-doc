@@ -81,13 +81,22 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_clause_group_evaluator.html">ClauseGroupEvaluator</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class evaluates a clause group and is responsible for optimizing evaluation.  <a href="class_clause_group_evaluator.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_param_evaluator.html">ParamEvaluator</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides functions for generating a Param from a string.  <a href="class_param_evaluator.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_query_evaluator.html">QueryEvaluator</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class evaluates a given query.  <a href="class_query_evaluator.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class evaluates a given query and is responsible for optimizing evaluation.  <a href="class_query_evaluator.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_query_semantic_validator.html">QuerySemanticValidator</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs semantic validation on a <a class="el" href="class_query_token.html" title="This class represents an object which stores the declarations, select item and functions of a PQL que...">QueryToken</a> and converts it into a Query struct.  <a href="class_query_semantic_validator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p >Query Evaluator (QE) is a sub-component of the Query Processing Subsystem. </p>
-<p >QE is in charge of semantic validation and evaluation of queries. It also retrieves query answers from the <a class="el" href="class_p_k_b.html" title="Program Knowledge Base (PKB) class helps to store information with regards to SIMPLE source code.">PKB</a> and outputs the result to the User. </p>
+<p >QE is in charge of semantic validation and evaluation of queries. It also retrieves query answers from the <a class="el" href="class_pkb.html" title="Program Knowledge Base (Pkb) class stores information about the SIMPLE source code.">Pkb</a> and outputs the result to the User. </p>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

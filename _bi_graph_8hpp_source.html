@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>CS3203 Team 29: C:/Users/Jody Tang/Desktop/NUS/Y3S2/CS3203/Proj/Team29/Code29/source/DataStructures/BiGraph.hpp Source File</title>
+<title>CS3203 Team 29: DataStructures/BiGraph.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_e04ae2849dfa520b4ee2c9f7e9ff15de.html">Desktop</a></li><li class="navelem"><a class="el" href="dir_fc535f21949c11c9ba400d65784ec52f.html">NUS</a></li><li class="navelem"><a class="el" href="dir_03b17459166973645e5999254af2c876.html">Y3S2</a></li><li class="navelem"><a class="el" href="dir_b53863b2dd4e7567b209cc69d498bd8d.html">CS3203</a></li><li class="navelem"><a class="el" href="dir_a685a0b18ca61e77064c945be78f3477.html">Proj</a></li><li class="navelem"><a class="el" href="dir_836c232a576c31fa72627368ec927480.html">Team29</a></li><li class="navelem"><a class="el" href="dir_46d9012ec6ef0c453dd63a39b5923908.html">Code29</a></li><li class="navelem"><a class="el" href="dir_c278d9d90c9f4d2e85ae516d96d8817b.html">source</a></li><li class="navelem"><a class="el" href="dir_3c4a32da2014f2b0a7d12eccb145660c.html">DataStructures</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_40af4d180baacc280484842de2ed7bd7.html">DataStructures</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -79,34 +79,39 @@ $(function() {
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> S&gt;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_bi_graph.html">   25</a></span><span class="keyword">class </span><a class="code hl_class" href="class_bi_graph.html">BiGraph</a></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    std::unordered_map&lt;T, std::unordered_set&lt;S&gt;&gt; edgesFormer;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    std::unordered_map&lt;S, std::unordered_set&lt;T&gt;&gt; edgesLatter;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <a class="code hl_class" href="class_bi_graph.html">BiGraph&lt;T, S&gt;</a>();</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_bi_graph.html#ac6f696f4cb8d16b42034c9145877ff38">insert</a>(T t, S s);</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_bi_graph.html#a88de04a13d2aac0654e7e73626a2782f">isAdjacent</a>(T t, S s);</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    std::vector&lt;S&gt; <a class="code hl_function" href="class_bi_graph.html#a3ebcdae1d3f775b881253446c1ef37f4">getByFormer</a>(T t);</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    std::vector&lt;T&gt; <a class="code hl_function" href="class_bi_graph.html#a3ddb1eacf743ba07c0743491edb1836f">getByLatter</a>(S s);</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    std::vector&lt;T&gt; <a class="code hl_function" href="class_bi_graph.html#a75539e0a3c3c959ab5018a7cf2b5d5f8">getAllFormer</a>();</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    std::vector&lt;S&gt; <a class="code hl_function" href="class_bi_graph.html#acc870730e1a41728d084b2286598e193">getAllLatter</a>();</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>};</div>
-<div class="ttc" id="aclass_bi_graph_html"><div class="ttname"><a href="class_bi_graph.html">BiGraph</a></div><div class="ttdoc">A Bipartite Graph consisting of 2 maps with inverse key-value pairs.</div><div class="ttdef"><b>Definition:</b> BiGraph.hpp:26</div></div>
-<div class="ttc" id="aclass_bi_graph_html_a3ddb1eacf743ba07c0743491edb1836f"><div class="ttname"><a href="class_bi_graph.html#a3ddb1eacf743ba07c0743491edb1836f">BiGraph::getByLatter</a></div><div class="ttdeci">std::vector&lt; T &gt; getByLatter(S s)</div><div class="ttdoc">Gets a vector of all type T that are adjacent to s.</div><div class="ttdef"><b>Definition:</b> BiGraph.cpp:31</div></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_bi_graph.html">   25</a></span><span class="keyword">class </span><a class="code hl_class" href="class_bi_graph.html">BiGraph</a> {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    std::unordered_map&lt;T, std::unordered_set&lt;S&gt;&gt; edgesFormer;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    std::unordered_map&lt;S, std::unordered_set&lt;T&gt;&gt; edgesLatter;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <a class="code hl_class" href="class_bi_graph.html">BiGraph&lt;T, S&gt;</a>();</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_bi_graph.html#ac6f696f4cb8d16b42034c9145877ff38">insert</a>(T t, S s);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_bi_graph.html#a88de04a13d2aac0654e7e73626a2782f">isAdjacent</a>(T t, S s);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    std::vector&lt;S&gt; <a class="code hl_function" href="class_bi_graph.html#a3ebcdae1d3f775b881253446c1ef37f4">getByFormer</a>(T t);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    std::vector&lt;T&gt; <a class="code hl_function" href="class_bi_graph.html#a3ddb1eacf743ba07c0743491edb1836f">getByLatter</a>(S s);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    std::vector&lt;T&gt; <a class="code hl_function" href="class_bi_graph.html#a75539e0a3c3c959ab5018a7cf2b5d5f8">getAllFormer</a>();</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    std::vector&lt;S&gt; <a class="code hl_function" href="class_bi_graph.html#acc870730e1a41728d084b2286598e193">getAllLatter</a>();</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    std::unordered_map&lt;T, std::vector&lt;S&gt;&gt; <a class="code hl_function" href="class_bi_graph.html#ae5fe89436962b04aa2b6d83516d34633">getEdgesFormer</a>();</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    std::unordered_map&lt;S, std::vector&lt;T&gt;&gt; <a class="code hl_function" href="class_bi_graph.html#acee05b8d6b69a402bd23303c3d34d5a5">getEdgesLatter</a>();</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>};</div>
+<div class="ttc" id="aclass_bi_graph_html"><div class="ttname"><a href="class_bi_graph.html">BiGraph</a></div><div class="ttdoc">A Bipartite Graph consisting of 2 maps with inverse key-value pairs.</div><div class="ttdef"><b>Definition:</b> BiGraph.hpp:25</div></div>
+<div class="ttc" id="aclass_bi_graph_html_a3ddb1eacf743ba07c0743491edb1836f"><div class="ttname"><a href="class_bi_graph.html#a3ddb1eacf743ba07c0743491edb1836f">BiGraph::getByLatter</a></div><div class="ttdeci">std::vector&lt; T &gt; getByLatter(S s)</div><div class="ttdoc">Gets a vector of all type T that are adjacent to s.</div><div class="ttdef"><b>Definition:</b> BiGraph.cpp:34</div></div>
 <div class="ttc" id="aclass_bi_graph_html_a3ebcdae1d3f775b881253446c1ef37f4"><div class="ttname"><a href="class_bi_graph.html#a3ebcdae1d3f775b881253446c1ef37f4">BiGraph::getByFormer</a></div><div class="ttdeci">std::vector&lt; S &gt; getByFormer(T t)</div><div class="ttdoc">Gets a vector of all type S that are adjacent to t.</div><div class="ttdef"><b>Definition:</b> BiGraph.cpp:26</div></div>
-<div class="ttc" id="aclass_bi_graph_html_a75539e0a3c3c959ab5018a7cf2b5d5f8"><div class="ttname"><a href="class_bi_graph.html#a75539e0a3c3c959ab5018a7cf2b5d5f8">BiGraph::getAllFormer</a></div><div class="ttdeci">std::vector&lt; T &gt; getAllFormer()</div><div class="ttdoc">Gets a vector of all type T.</div><div class="ttdef"><b>Definition:</b> BiGraph.cpp:36</div></div>
+<div class="ttc" id="aclass_bi_graph_html_a75539e0a3c3c959ab5018a7cf2b5d5f8"><div class="ttname"><a href="class_bi_graph.html#a75539e0a3c3c959ab5018a7cf2b5d5f8">BiGraph::getAllFormer</a></div><div class="ttdeci">std::vector&lt; T &gt; getAllFormer()</div><div class="ttdoc">Gets a vector of all type T.</div><div class="ttdef"><b>Definition:</b> BiGraph.cpp:42</div></div>
 <div class="ttc" id="aclass_bi_graph_html_a88de04a13d2aac0654e7e73626a2782f"><div class="ttname"><a href="class_bi_graph.html#a88de04a13d2aac0654e7e73626a2782f">BiGraph::isAdjacent</a></div><div class="ttdeci">bool isAdjacent(T t, S s)</div><div class="ttdoc">Checks if t and s are adjacent.</div><div class="ttdef"><b>Definition:</b> BiGraph.cpp:21</div></div>
 <div class="ttc" id="aclass_bi_graph_html_ac6f696f4cb8d16b42034c9145877ff38"><div class="ttname"><a href="class_bi_graph.html#ac6f696f4cb8d16b42034c9145877ff38">BiGraph::insert</a></div><div class="ttdeci">void insert(T t, S s)</div><div class="ttdoc">Inserts an edge between t and s.</div><div class="ttdef"><b>Definition:</b> BiGraph.cpp:15</div></div>
-<div class="ttc" id="aclass_bi_graph_html_acc870730e1a41728d084b2286598e193"><div class="ttname"><a href="class_bi_graph.html#acc870730e1a41728d084b2286598e193">BiGraph::getAllLatter</a></div><div class="ttdeci">std::vector&lt; S &gt; getAllLatter()</div><div class="ttdoc">Gets a vector of all type S.</div><div class="ttdef"><b>Definition:</b> BiGraph.cpp:46</div></div>
+<div class="ttc" id="aclass_bi_graph_html_acc870730e1a41728d084b2286598e193"><div class="ttname"><a href="class_bi_graph.html#acc870730e1a41728d084b2286598e193">BiGraph::getAllLatter</a></div><div class="ttdeci">std::vector&lt; S &gt; getAllLatter()</div><div class="ttdoc">Gets a vector of all type S.</div><div class="ttdef"><b>Definition:</b> BiGraph.cpp:52</div></div>
+<div class="ttc" id="aclass_bi_graph_html_acee05b8d6b69a402bd23303c3d34d5a5"><div class="ttname"><a href="class_bi_graph.html#acee05b8d6b69a402bd23303c3d34d5a5">BiGraph::getEdgesLatter</a></div><div class="ttdeci">std::unordered_map&lt; S, std::vector&lt; T &gt; &gt; getEdgesLatter()</div><div class="ttdoc">Gets a map of all edges from type S to type T.</div><div class="ttdef"><b>Definition:</b> BiGraph.cpp:71</div></div>
+<div class="ttc" id="aclass_bi_graph_html_ae5fe89436962b04aa2b6d83516d34633"><div class="ttname"><a href="class_bi_graph.html#ae5fe89436962b04aa2b6d83516d34633">BiGraph::getEdgesFormer</a></div><div class="ttdeci">std::unordered_map&lt; T, std::vector&lt; S &gt; &gt; getEdgesFormer()</div><div class="ttdoc">Gets a map of all edges from type T to type S.</div><div class="ttdef"><b>Definition:</b> BiGraph.cpp:62</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

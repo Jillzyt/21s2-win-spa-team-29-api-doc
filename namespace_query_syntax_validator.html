@@ -74,21 +74,21 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aa2e7991a54ce1f1ad312555f659e12f8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_query_syntax_validator.html#aa2e7991a54ce1f1ad312555f659e12f8">validateSyntax</a> (std::string query)</td></tr>
-<tr class="memdesc:aa2e7991a54ce1f1ad312555f659e12f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function validates syntax of a given query.  <a href="namespace_query_syntax_validator.html#aa2e7991a54ce1f1ad312555f659e12f8">More...</a><br /></td></tr>
-<tr class="separator:aa2e7991a54ce1f1ad312555f659e12f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23399b45084bdd6c2e629c29de859f28"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_query_syntax_validator.html#a23399b45084bdd6c2e629c29de859f28">validateSyntax</a> (std::string query)</td></tr>
+<tr class="memdesc:a23399b45084bdd6c2e629c29de859f28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function validates syntax of a given query.  <a href="namespace_query_syntax_validator.html#a23399b45084bdd6c2e629c29de859f28">More...</a><br /></td></tr>
+<tr class="separator:a23399b45084bdd6c2e629c29de859f28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >This namespace checks if a given string has valid PQL syntax. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="aa2e7991a54ce1f1ad312555f659e12f8" name="aa2e7991a54ce1f1ad312555f659e12f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa2e7991a54ce1f1ad312555f659e12f8">&#9670;&nbsp;</a></span>validateSyntax()</h2>
+<a id="a23399b45084bdd6c2e629c29de859f28" name="a23399b45084bdd6c2e629c29de859f28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23399b45084bdd6c2e629c29de859f28">&#9670;&nbsp;</a></span>validateSyntax()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int QuerySyntaxValidator::validateSyntax </td>
+          <td class="memname">std::string QuerySyntaxValidator::validateSyntax </td>
           <td>(</td>
           <td class="paramtype">std::string&#160;</td>
           <td class="paramname"><em>query</em></td><td>)</td>
@@ -104,7 +104,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns 0 if query has valid syntax, otherwise it returns a negative integer if syntax is invalid. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns the query string with all "and" clauses converted to such that, pattern or with format (whichever it belongs to) </dd></dl>
 
 </div>
 </div>

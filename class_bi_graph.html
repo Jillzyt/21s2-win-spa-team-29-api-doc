@@ -98,6 +98,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acc870730e1a41728d084b2286598e193"><td class="memItemLeft" align="right" valign="top">std::vector&lt; S &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bi_graph.html#acc870730e1a41728d084b2286598e193">getAllLatter</a> ()</td></tr>
 <tr class="memdesc:acc870730e1a41728d084b2286598e193"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a vector of all type S.  <a href="class_bi_graph.html#acc870730e1a41728d084b2286598e193">More...</a><br /></td></tr>
 <tr class="separator:acc870730e1a41728d084b2286598e193"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5fe89436962b04aa2b6d83516d34633"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; T, std::vector&lt; S &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bi_graph.html#ae5fe89436962b04aa2b6d83516d34633">getEdgesFormer</a> ()</td></tr>
+<tr class="memdesc:ae5fe89436962b04aa2b6d83516d34633"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a map of all edges from type T to type S.  <a href="class_bi_graph.html#ae5fe89436962b04aa2b6d83516d34633">More...</a><br /></td></tr>
+<tr class="separator:ae5fe89436962b04aa2b6d83516d34633"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acee05b8d6b69a402bd23303c3d34d5a5"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; S, std::vector&lt; T &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bi_graph.html#acee05b8d6b69a402bd23303c3d34d5a5">getEdgesLatter</a> ()</td></tr>
+<tr class="memdesc:acee05b8d6b69a402bd23303c3d34d5a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a map of all edges from type S to type T.  <a href="class_bi_graph.html#acee05b8d6b69a402bd23303c3d34d5a5">More...</a><br /></td></tr>
+<tr class="separator:acee05b8d6b69a402bd23303c3d34d5a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename T, typename S&gt;<br />
@@ -225,6 +231,44 @@ template&lt;typename T , typename S &gt; </div>
 
 </div>
 </div>
+<a id="ae5fe89436962b04aa2b6d83516d34633" name="ae5fe89436962b04aa2b6d83516d34633"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5fe89436962b04aa2b6d83516d34633">&#9670;&nbsp;</a></span>getEdgesFormer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename S &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt; T, std::vector&lt; S &gt; &gt; <a class="el" href="class_bi_graph.html">BiGraph</a>&lt; T, S &gt;::getEdgesFormer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets a map of all edges from type T to type S. </p>
+<dl class="section return"><dt>Returns</dt><dd>Returns a map of all edges from type T to type S </dd></dl>
+
+</div>
+</div>
+<a id="acee05b8d6b69a402bd23303c3d34d5a5" name="acee05b8d6b69a402bd23303c3d34d5a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acee05b8d6b69a402bd23303c3d34d5a5">&#9670;&nbsp;</a></span>getEdgesLatter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename S &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt; S, std::vector&lt; T &gt; &gt; <a class="el" href="class_bi_graph.html">BiGraph</a>&lt; T, S &gt;::getEdgesLatter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets a map of all edges from type S to type T. </p>
+<dl class="section return"><dt>Returns</dt><dd>Returns a map of all edges from type S to type T </dd></dl>
+
+</div>
+</div>
 <a id="ac6f696f4cb8d16b42034c9145877ff38" name="ac6f696f4cb8d16b42034c9145877ff38"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac6f696f4cb8d16b42034c9145877ff38">&#9670;&nbsp;</a></span>insert()</h2>
 
@@ -305,8 +349,8 @@ template&lt;typename T , typename S &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Users/Jody Tang/Desktop/NUS/Y3S2/CS3203/Proj/Team29/Code29/source/DataStructures/<a class="el" href="_bi_graph_8hpp_source.html">BiGraph.hpp</a></li>
-<li>C:/Users/Jody Tang/Desktop/NUS/Y3S2/CS3203/Proj/Team29/Code29/source/DataStructures/<a class="el" href="_bi_graph_8cpp.html">BiGraph.cpp</a></li>
+<li>DataStructures/<a class="el" href="_bi_graph_8hpp_source.html">BiGraph.hpp</a></li>
+<li>DataStructures/<a class="el" href="_bi_graph_8cpp.html">BiGraph.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

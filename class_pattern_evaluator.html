@@ -64,37 +64,73 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_pattern_evaluator-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">PatternEvaluator Class Reference<div class="ingroups"><a class="el" href="group___pattern_evaluator.html">PatternEvaluator</a></div></div></div>
+  <div class="headertitle"><div class="title">PatternEvaluator Class Reference<div class="ingroups"><a class="el" href="group___pattern_pkg.html">PatternPkg</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="class_pattern_evaluator.html" title="PatternEvaluator helps to evaluate the patterns that are passed from Query Evaluator(QE) and returns ...">PatternEvaluator</a> helps to evaluate the patterns that are passed from Query Evaluator(QE) and returns result to QE.  
+<p><a class="el" href="class_pattern_evaluator.html" title="PatternEvaluator helps to evaluate the patterns that are passed from QueryEvaluator(QE) and returns r...">PatternEvaluator</a> helps to evaluate the patterns that are passed from <a class="el" href="class_query_evaluator.html" title="This class evaluates a given query and is responsible for optimizing evaluation.">QueryEvaluator(QE)</a> and returns result to QE.  
  <a href="class_pattern_evaluator.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_pattern_evaluator_8h_source.html">PatternEvaluator.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for PatternEvaluator:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_pattern_evaluator.png" usemap="#PatternEvaluator_map" alt=""/>
+  <map id="PatternEvaluator_map" name="PatternEvaluator_map">
+<area href="class_pattern_evaluator_interface.html" title="PatternEvaluator interface helps to declare the methods that will be used by PatternEvaluator." alt="PatternEvaluatorInterface" shape="rect" coords="0,0,156,24"/>
+  </map>
+</div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a9612bba34c8fd8b30eb7157407d067db"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pattern_evaluator.html#a9612bba34c8fd8b30eb7157407d067db">getAssignsByRHS</a> (std::string rhs, <a class="el" href="class_pkb_interface.html">PkbInterface</a> &amp;)</td></tr>
-<tr class="memdesc:a9612bba34c8fd8b30eb7157407d067db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all assign statements that satisfies the rhs pattern that is given.  <a href="class_pattern_evaluator.html#a9612bba34c8fd8b30eb7157407d067db">More...</a><br /></td></tr>
-<tr class="separator:a9612bba34c8fd8b30eb7157407d067db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b0841d307725cae3728bd1152b4dcf7"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pattern_evaluator.html#a8b0841d307725cae3728bd1152b4dcf7">traverse</a> (std::vector&lt; <a class="el" href="class_t_node.html">TNode</a> * &gt; assignStmts, bool isExact)</td></tr>
-<tr class="memdesc:a8b0841d307725cae3728bd1152b4dcf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loop through all the statements.  <a href="class_pattern_evaluator.html#a8b0841d307725cae3728bd1152b4dcf7">More...</a><br /></td></tr>
-<tr class="separator:a8b0841d307725cae3728bd1152b4dcf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae00fb7a3ff3adf668880b56c539559c"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pattern_evaluator.html#aae00fb7a3ff3adf668880b56c539559c">matchExactPatternToTree</a> (<a class="el" href="class_t_node.html">TNode</a> *node, std::vector&lt; std::string &gt; <a class="el" href="_pattern_evaluator_8cpp.html#a889ba7577ab8fa13d611ba0f10b07faa">tokens</a>)</td></tr>
-<tr class="memdesc:aae00fb7a3ff3adf668880b56c539559c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the list of tokens that does not match the exact pattern.  <a href="class_pattern_evaluator.html#aae00fb7a3ff3adf668880b56c539559c">More...</a><br /></td></tr>
-<tr class="separator:aae00fb7a3ff3adf668880b56c539559c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab03f9f385799c7cb07f8442293bad9c1"><td class="memItemLeft" align="right" valign="top">static std::pair&lt; std::vector&lt; std::string &gt;, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pattern_evaluator.html#ab03f9f385799c7cb07f8442293bad9c1">matchPatternToTree</a> (<a class="el" href="class_t_node.html">TNode</a> *node, std::vector&lt; std::string &gt; <a class="el" href="_pattern_evaluator_8cpp.html#a889ba7577ab8fa13d611ba0f10b07faa">tokens</a>, bool check)</td></tr>
-<tr class="memdesc:ab03f9f385799c7cb07f8442293bad9c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the list of tokens that does not match the similar pattern.  <a href="class_pattern_evaluator.html#ab03f9f385799c7cb07f8442293bad9c1">More...</a><br /></td></tr>
-<tr class="separator:ab03f9f385799c7cb07f8442293bad9c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a201af089a9b2cb997d32516ae1635590"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pattern_evaluator.html#a201af089a9b2cb997d32516ae1635590">PatternEvaluator</a> ()=default</td></tr>
+<tr class="memdesc:a201af089a9b2cb997d32516ae1635590"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for <a class="el" href="class_pattern_evaluator.html" title="PatternEvaluator helps to evaluate the patterns that are passed from QueryEvaluator(QE) and returns r...">PatternEvaluator</a>.  <a href="class_pattern_evaluator.html#a201af089a9b2cb997d32516ae1635590">More...</a><br /></td></tr>
+<tr class="separator:a201af089a9b2cb997d32516ae1635590"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4688a33c6b99c888896e16d5346f0c2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pattern_evaluator.html#ad4688a33c6b99c888896e16d5346f0c2">PatternEvaluator</a> (<a class="el" href="class_pkb_interface.html">PkbInterface</a> *pe)</td></tr>
+<tr class="memdesc:ad4688a33c6b99c888896e16d5346f0c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="class_pattern_evaluator.html" title="PatternEvaluator helps to evaluate the patterns that are passed from QueryEvaluator(QE) and returns r...">PatternEvaluator</a> object.  <a href="class_pattern_evaluator.html#ad4688a33c6b99c888896e16d5346f0c2">More...</a><br /></td></tr>
+<tr class="separator:ad4688a33c6b99c888896e16d5346f0c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16bfcfb6b1fcf484f7faf04b2f43ea0c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pattern_evaluator.html#a16bfcfb6b1fcf484f7faf04b2f43ea0c">isSubTree</a> (<a class="el" href="class_t_node.html">TNode</a> *node1, <a class="el" href="class_t_node.html">TNode</a> *node2)</td></tr>
+<tr class="memdesc:a16bfcfb6b1fcf484f7faf04b2f43ea0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the nodes are subtree of another.  <a href="class_pattern_evaluator.html#a16bfcfb6b1fcf484f7faf04b2f43ea0c">More...</a><br /></td></tr>
+<tr class="separator:a16bfcfb6b1fcf484f7faf04b2f43ea0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e043ed694f0a3f691b450ab00d59ca2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pattern_evaluator.html#a1e043ed694f0a3f691b450ab00d59ca2">setPatternSubtree</a> (<a class="el" href="class_t_node.html">TNode</a> *subTree)</td></tr>
+<tr class="memdesc:a1e043ed694f0a3f691b450ab00d59ca2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the subtree node which represents the pattern.  <a href="class_pattern_evaluator.html#a1e043ed694f0a3f691b450ab00d59ca2">More...</a><br /></td></tr>
+<tr class="separator:a1e043ed694f0a3f691b450ab00d59ca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa437de9ccadcc021da6d9afb21834771"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pattern_evaluator.html#aa437de9ccadcc021da6d9afb21834771">setDesignEntity</a> (<a class="el" href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022">DesignEntity</a> designEntity)</td></tr>
+<tr class="memdesc:aa437de9ccadcc021da6d9afb21834771"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the subtree node which represents the pattern.  <a href="class_pattern_evaluator.html#aa437de9ccadcc021da6d9afb21834771">More...</a><br /></td></tr>
+<tr class="separator:aa437de9ccadcc021da6d9afb21834771"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2792b0485a5c8023316431e0c1b2615"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_t_node.html">TNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pattern_evaluator.html#ab2792b0485a5c8023316431e0c1b2615">getPatternSubtree</a> ()</td></tr>
+<tr class="memdesc:ab2792b0485a5c8023316431e0c1b2615"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the subtree node which represents the pattern.  <a href="class_pattern_evaluator.html#ab2792b0485a5c8023316431e0c1b2615">More...</a><br /></td></tr>
+<tr class="separator:ab2792b0485a5c8023316431e0c1b2615"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a721c1102b0e30dcac34a4a03fd113fc1"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_t_node.html">TNode</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pattern_evaluator.html#a721c1102b0e30dcac34a4a03fd113fc1">getStmtsToEvaluate</a> ()</td></tr>
+<tr class="memdesc:a721c1102b0e30dcac34a4a03fd113fc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all the stmts to be evaluated.  <a href="class_pattern_evaluator.html#a721c1102b0e30dcac34a4a03fd113fc1">More...</a><br /></td></tr>
+<tr class="separator:a721c1102b0e30dcac34a4a03fd113fc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a604bee36340927e130b430031d996131"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pattern_evaluator.html#a604bee36340927e130b430031d996131">evaluateStmts</a> (bool isExact)</td></tr>
+<tr class="memdesc:a604bee36340927e130b430031d996131"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate all the statements.  <a href="class_pattern_evaluator.html#a604bee36340927e130b430031d996131">More...</a><br /></td></tr>
+<tr class="separator:a604bee36340927e130b430031d996131"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27897952e47156e998d56a017a58d140"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pattern_evaluator.html#a27897952e47156e998d56a017a58d140">evaluateVars</a> (std::string stmtNo)</td></tr>
+<tr class="memdesc:a27897952e47156e998d56a017a58d140"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate the stmtNo and return the related variables.  <a href="class_pattern_evaluator.html#a27897952e47156e998d56a017a58d140">More...</a><br /></td></tr>
+<tr class="separator:a27897952e47156e998d56a017a58d140"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbe2079bd2a0bd565e8f5fb783084331"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pattern_evaluator_interface.html#abbe2079bd2a0bd565e8f5fb783084331">setPatternSubtree</a> (<a class="el" href="class_t_node.html">TNode</a> *subTree)=0</td></tr>
+<tr class="memdesc:abbe2079bd2a0bd565e8f5fb783084331"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the subtree node which represents the pattern.  <a href="class_pattern_evaluator_interface.html#abbe2079bd2a0bd565e8f5fb783084331">More...</a><br /></td></tr>
+<tr class="separator:abbe2079bd2a0bd565e8f5fb783084331"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6070c484243d4b6c4cd1373e612108e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pattern_evaluator_interface.html#aa6070c484243d4b6c4cd1373e612108e">setDesignEntity</a> (<a class="el" href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022">DesignEntity</a> designEntity)=0</td></tr>
+<tr class="memdesc:aa6070c484243d4b6c4cd1373e612108e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the subtree node which represents the pattern.  <a href="class_pattern_evaluator_interface.html#aa6070c484243d4b6c4cd1373e612108e">More...</a><br /></td></tr>
+<tr class="separator:aa6070c484243d4b6c4cd1373e612108e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8eae3e8b6f053879a1b87b5aee7b0459"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pattern_evaluator_interface.html#a8eae3e8b6f053879a1b87b5aee7b0459">evaluateStmts</a> (bool isExact)=0</td></tr>
+<tr class="memdesc:a8eae3e8b6f053879a1b87b5aee7b0459"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate all the ASSIGN statements.  <a href="class_pattern_evaluator_interface.html#a8eae3e8b6f053879a1b87b5aee7b0459">More...</a><br /></td></tr>
+<tr class="separator:a8eae3e8b6f053879a1b87b5aee7b0459"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73f1da45b4ae066fab4fa0cb75be4550"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pattern_evaluator_interface.html#a73f1da45b4ae066fab4fa0cb75be4550">evaluateVars</a> (std::string stmtNo)=0</td></tr>
+<tr class="memdesc:a73f1da45b4ae066fab4fa0cb75be4550"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate the stmtNo and return the related variables.  <a href="class_pattern_evaluator_interface.html#a73f1da45b4ae066fab4fa0cb75be4550">More...</a><br /></td></tr>
+<tr class="separator:a73f1da45b4ae066fab4fa0cb75be4550"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p ><a class="el" href="class_pattern_evaluator.html" title="PatternEvaluator helps to evaluate the patterns that are passed from Query Evaluator(QE) and returns ...">PatternEvaluator</a> helps to evaluate the patterns that are passed from Query Evaluator(QE) and returns result to QE. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a9612bba34c8fd8b30eb7157407d067db" name="a9612bba34c8fd8b30eb7157407d067db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9612bba34c8fd8b30eb7157407d067db">&#9670;&nbsp;</a></span>getAssignsByRHS()</h2>
+<div class="textblock"><p ><a class="el" href="class_pattern_evaluator.html" title="PatternEvaluator helps to evaluate the patterns that are passed from QueryEvaluator(QE) and returns r...">PatternEvaluator</a> helps to evaluate the patterns that are passed from <a class="el" href="class_query_evaluator.html" title="This class evaluates a given query and is responsible for optimizing evaluation.">QueryEvaluator(QE)</a> and returns result to QE. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a201af089a9b2cb997d32516ae1635590" name="a201af089a9b2cb997d32516ae1635590"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a201af089a9b2cb997d32516ae1635590">&#9670;&nbsp;</a></span>PatternEvaluator() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -103,62 +139,181 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">vector&lt; string &gt; PatternEvaluator::getAssignsByRHS </td>
+          <td class="memname">PatternEvaluator::PatternEvaluator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Default constructor for <a class="el" href="class_pattern_evaluator.html" title="PatternEvaluator helps to evaluate the patterns that are passed from QueryEvaluator(QE) and returns r...">PatternEvaluator</a>. </p>
+
+</div>
+</div>
+<a id="ad4688a33c6b99c888896e16d5346f0c2" name="ad4688a33c6b99c888896e16d5346f0c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4688a33c6b99c888896e16d5346f0c2">&#9670;&nbsp;</a></span>PatternEvaluator() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PatternEvaluator::PatternEvaluator </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_pkb_interface.html">PkbInterface</a> *&#160;</td>
+          <td class="paramname"><em>pe</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construct a new <a class="el" href="class_pattern_evaluator.html" title="PatternEvaluator helps to evaluate the patterns that are passed from QueryEvaluator(QE) and returns r...">PatternEvaluator</a> object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pkbInstance</td><td><a class="el" href="class_pkb_interface.html" title="Pkb interface helps to declare the methods that will be used by Pkb.">PkbInterface</a> pointer to query program data on </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a604bee36340927e130b430031d996131" name="a604bee36340927e130b430031d996131"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a604bee36340927e130b430031d996131">&#9670;&nbsp;</a></span>evaluateStmts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt; string &gt; PatternEvaluator::evaluateStmts </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isExact</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Evaluate all the statements. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">isExact</td><td>represents whether exact pattern matching (true if exact pattern matching) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a list of stmts that satisfies the condition or rhs pattern that is populated </dd></dl>
+
+<p>Implements <a class="el" href="class_pattern_evaluator_interface.html#a8eae3e8b6f053879a1b87b5aee7b0459">PatternEvaluatorInterface</a>.</p>
+
+</div>
+</div>
+<a id="a27897952e47156e998d56a017a58d140" name="a27897952e47156e998d56a017a58d140"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27897952e47156e998d56a017a58d140">&#9670;&nbsp;</a></span>evaluateVars()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt; string &gt; PatternEvaluator::evaluateVars </td>
           <td>(</td>
           <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>rhs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>stmtNo</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_pkb_interface.html">PkbInterface</a> &amp;&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get all assign statements that satisfies the rhs pattern that is given. </p>
+<p>Evaluate the stmtNo and return the related variables. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">rhs</td><td>The query that is given by Query Evaluator </td></tr>
-    <tr><td class="paramname"><a class="el" href="class_pkb_interface.html">PkbInterface</a></td><td>The pkb object that will be passed to used to query the data structures </td></tr>
+    <tr><td class="paramname">stmtNo</td><td>stmt that is to be evaluated </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>a vector of assign statements that satisfies the rhs pattern that is given </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a vector of variables that satisfies the stmtNo </dd></dl>
+
+<p>Implements <a class="el" href="class_pattern_evaluator_interface.html#a73f1da45b4ae066fab4fa0cb75be4550">PatternEvaluatorInterface</a>.</p>
 
 </div>
 </div>
-<a id="aae00fb7a3ff3adf668880b56c539559c" name="aae00fb7a3ff3adf668880b56c539559c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae00fb7a3ff3adf668880b56c539559c">&#9670;&nbsp;</a></span>matchExactPatternToTree()</h2>
+<a id="ab2792b0485a5c8023316431e0c1b2615" name="ab2792b0485a5c8023316431e0c1b2615"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2792b0485a5c8023316431e0c1b2615">&#9670;&nbsp;</a></span>getPatternSubtree()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">vector&lt; string &gt; PatternEvaluator::matchExactPatternToTree </td>
+          <td class="memname"><a class="el" href="class_t_node.html">TNode</a> * PatternEvaluator::getPatternSubtree </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the subtree node which represents the pattern. </p>
+<dl class="section return"><dt>Returns</dt><dd>subtree node which represents the pattern </dd></dl>
+
+</div>
+</div>
+<a id="a721c1102b0e30dcac34a4a03fd113fc1" name="a721c1102b0e30dcac34a4a03fd113fc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a721c1102b0e30dcac34a4a03fd113fc1">&#9670;&nbsp;</a></span>getStmtsToEvaluate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt; <a class="el" href="class_t_node.html">TNode</a> * &gt; PatternEvaluator::getStmtsToEvaluate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get all the stmts to be evaluated. </p>
+<p >This is set as public as will be used for testing purposes </p><dl class="section return"><dt>Returns</dt><dd>a vector of TNodes that represents each stmt to be evaluated </dd></dl>
+
+</div>
+</div>
+<a id="a16bfcfb6b1fcf484f7faf04b2f43ea0c" name="a16bfcfb6b1fcf484f7faf04b2f43ea0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16bfcfb6b1fcf484f7faf04b2f43ea0c">&#9670;&nbsp;</a></span>isSubTree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PatternEvaluator::isSubTree </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_t_node.html">TNode</a> *&#160;</td>
-          <td class="paramname"><em>node</em>, </td>
+          <td class="paramname"><em>node1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; std::string &gt;&#160;</td>
-          <td class="paramname"><em>tokens</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="class_t_node.html">TNode</a> *&#160;</td>
+          <td class="paramname"><em>node2</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -166,27 +321,22 @@ Static Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Returns the list of tokens that does not match the exact pattern. </p>
+<p>Check if the nodes are subtree of another. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">node</td><td>The assign statement node which will be used to traverse to check for exact pattern </td></tr>
-    <tr><td class="paramname">tokens</td><td>The list of tokens of the pattern is broken into </td></tr>
+    <tr><td class="paramname">first</td><td>node to evaluate </td></tr>
+    <tr><td class="paramname">second</td><td>node to evaluate </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The list of tokens remaining after eliminating all the tokens that are exact </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the node1 is subtree of node2 </dd></dl>
 
 </div>
 </div>
-<a id="ab03f9f385799c7cb07f8442293bad9c1" name="ab03f9f385799c7cb07f8442293bad9c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab03f9f385799c7cb07f8442293bad9c1">&#9670;&nbsp;</a></span>matchPatternToTree()</h2>
+<a id="aa437de9ccadcc021da6d9afb21834771" name="aa437de9ccadcc021da6d9afb21834771"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa437de9ccadcc021da6d9afb21834771">&#9670;&nbsp;</a></span>setDesignEntity()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -195,90 +345,73 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">pair&lt; vector&lt; string &gt;, bool &gt; PatternEvaluator::matchPatternToTree </td>
+          <td class="memname">bool PatternEvaluator::setDesignEntity </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022">DesignEntity</a>&#160;</td>
+          <td class="paramname"><em>designEntity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the subtree node which represents the pattern. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">designEntity</td><td><a class="el" href="namespace_design_entity.html" title="Constructor of the class QueryFunction.">DesignEntity</a> that is to be evaluated </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true when successfully set </dd></dl>
+
+<p>Implements <a class="el" href="class_pattern_evaluator_interface.html#aa6070c484243d4b6c4cd1373e612108e">PatternEvaluatorInterface</a>.</p>
+
+</div>
+</div>
+<a id="a1e043ed694f0a3f691b450ab00d59ca2" name="a1e043ed694f0a3f691b450ab00d59ca2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e043ed694f0a3f691b450ab00d59ca2">&#9670;&nbsp;</a></span>setPatternSubtree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PatternEvaluator::setPatternSubtree </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_t_node.html">TNode</a> *&#160;</td>
-          <td class="paramname"><em>node</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>subTree</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">std::vector&lt; std::string &gt;&#160;</td>
-          <td class="paramname"><em>tokens</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>check</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the list of tokens that does not match the similar pattern. </p>
+<p>Set the subtree node which represents the pattern. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">node</td><td>The assign statement node which will be used to traverse to check for similar pattern </td></tr>
-    <tr><td class="paramname">tokens</td><td>The list of tokens of the pattern is broken into </td></tr>
+    <tr><td class="paramname">subTree</td><td>subtree pattern that is to be evaluated </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The list of tokens remaining after eliminating all the tokens that are similar </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true when successfully set </dd></dl>
 
-</div>
-</div>
-<a id="a8b0841d307725cae3728bd1152b4dcf7" name="a8b0841d307725cae3728bd1152b4dcf7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b0841d307725cae3728bd1152b4dcf7">&#9670;&nbsp;</a></span>traverse()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">vector&lt; string &gt; PatternEvaluator::traverse </td>
-          <td>(</td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="class_t_node.html">TNode</a> * &gt;&#160;</td>
-          <td class="paramname"><em>assignStmts</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>isExact</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Loop through all the statements. </p>
-<dl class="section return"><dt>Returns</dt><dd>a assign statements that satisfies the rhs pattern that is given </dd></dl>
+<p>Implements <a class="el" href="class_pattern_evaluator_interface.html#abbe2079bd2a0bd565e8f5fb783084331">PatternEvaluatorInterface</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Users/Jody Tang/Desktop/NUS/Y3S2/CS3203/Proj/Team29/Code29/source/PKB/<a class="el" href="_pattern_evaluator_8h_source.html">PatternEvaluator.h</a></li>
-<li>C:/Users/Jody Tang/Desktop/NUS/Y3S2/CS3203/Proj/Team29/Code29/source/PKB/<a class="el" href="_pattern_evaluator_8cpp.html">PatternEvaluator.cpp</a></li>
+<li>PatternPkg/<a class="el" href="_pattern_evaluator_8h_source.html">PatternEvaluator.h</a></li>
+<li>PatternPkg/<a class="el" href="_pattern_evaluator_8cpp.html">PatternEvaluator.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

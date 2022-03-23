@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['parameters_0',['parameters',['../struct_pql_1_1_clause.html#a95e047ef2736afb5f4995d373803a573',1,'Pql::Clause']]],
-  ['paramtype_1',['paramType',['../struct_pql_1_1_param.html#acd80867715fd1656c428db5d1072d6da',1,'Pql::Param']]]
+  ['open_5fbracket_5fexpr_0',['OPEN_BRACKET_EXPR',['../_constants_8h.html#a8c76957f8c2ff61c47ab4370e699a602',1,'Constants.h']]],
+  ['open_5fbracket_5fstmtlst_1',['OPEN_BRACKET_STMTLST',['../_constants_8h.html#a2362d2fb379931b77766e9e5edf8f5d5',1,'Constants.h']]]
 ];

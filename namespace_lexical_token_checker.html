@@ -92,10 +92,60 @@ Functions</h2></td></tr>
 <tr class="memitem:a99a8351f638f038c9b3e9f65f8df3d0b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lexical_token_checker.html#a99a8351f638f038c9b3e9f65f8df3d0b">isValidEntRef</a> (std::string)</td></tr>
 <tr class="memdesc:a99a8351f638f038c9b3e9f65f8df3d0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decides if the string is a valid entRef.  <a href="namespace_lexical_token_checker.html#a99a8351f638f038c9b3e9f65f8df3d0b">More...</a><br /></td></tr>
 <tr class="separator:a99a8351f638f038c9b3e9f65f8df3d0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a984714909cc988899e9c4821a7cbda9b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lexical_token_checker.html#a984714909cc988899e9c4821a7cbda9b">isValidElem</a> (std::string elem)</td></tr>
+<tr class="memdesc:a984714909cc988899e9c4821a7cbda9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decides if the string is a valid elem.  <a href="namespace_lexical_token_checker.html#a984714909cc988899e9c4821a7cbda9b">More...</a><br /></td></tr>
+<tr class="separator:a984714909cc988899e9c4821a7cbda9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e1b7b7c542390ac83f82082f4609622"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_lexical_token_checker.html#a3e1b7b7c542390ac83f82082f4609622">isValidAttrName</a> (std::string attrName)</td></tr>
+<tr class="memdesc:a3e1b7b7c542390ac83f82082f4609622"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decides if the string is a valid attrName.  <a href="namespace_lexical_token_checker.html#a3e1b7b7c542390ac83f82082f4609622">More...</a><br /></td></tr>
+<tr class="separator:a3e1b7b7c542390ac83f82082f4609622"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >This namespace provides funtions to check if strings match certain lexical tokens specified by PQL. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="a3e1b7b7c542390ac83f82082f4609622" name="a3e1b7b7c542390ac83f82082f4609622"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e1b7b7c542390ac83f82082f4609622">&#9670;&nbsp;</a></span>isValidAttrName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LexicalTokenChecker::isValidAttrName </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>attrName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Decides if the string is a valid attrName. </p>
+<p >attrName : 'procName'| 'varName' | 'value' | 'stmt#'</p>
+<dl class="section return"><dt>Returns</dt><dd>true, if the string is a valid attrName. false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a984714909cc988899e9c4821a7cbda9b" name="a984714909cc988899e9c4821a7cbda9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a984714909cc988899e9c4821a7cbda9b">&#9670;&nbsp;</a></span>isValidElem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LexicalTokenChecker::isValidElem </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>elem</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Decides if the string is a valid elem. </p>
+<p >elem : synonym | attrRef</p>
+<dl class="section return"><dt>Returns</dt><dd>true, if the string is a valid elem. false otherwise. </dd></dl>
+
+</div>
+</div>
 <a id="a99a8351f638f038c9b3e9f65f8df3d0b" name="a99a8351f638f038c9b3e9f65f8df3d0b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a99a8351f638f038c9b3e9f65f8df3d0b">&#9670;&nbsp;</a></span>isValidEntRef()</h2>
 
@@ -106,7 +156,7 @@ Functions</h2></td></tr>
           <td class="memname">bool LexicalTokenChecker::isValidEntRef </td>
           <td>(</td>
           <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>string</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -128,7 +178,7 @@ Functions</h2></td></tr>
           <td class="memname">bool LexicalTokenChecker::isValidIdent </td>
           <td>(</td>
           <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>ident</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -150,7 +200,7 @@ Functions</h2></td></tr>
           <td class="memname">bool LexicalTokenChecker::isValidInteger </td>
           <td>(</td>
           <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>integer</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -172,7 +222,7 @@ Functions</h2></td></tr>
           <td class="memname">bool LexicalTokenChecker::isValidName </td>
           <td>(</td>
           <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>name</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -194,7 +244,7 @@ Functions</h2></td></tr>
           <td class="memname">bool LexicalTokenChecker::isValidStmtRef </td>
           <td>(</td>
           <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>string</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -216,7 +266,7 @@ Functions</h2></td></tr>
           <td class="memname">bool LexicalTokenChecker::isValidSynonym </td>
           <td>(</td>
           <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>synonym</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>

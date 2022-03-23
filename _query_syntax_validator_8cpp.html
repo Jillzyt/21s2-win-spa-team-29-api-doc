@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>CS3203 Team 29: C:/Users/Jody Tang/Desktop/NUS/Y3S2/CS3203/Proj/Team29/Code29/source/QPP/QuerySyntaxValidator.cpp File Reference</title>
+<title>CS3203 Team 29: QPP/QuerySyntaxValidator.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_e04ae2849dfa520b4ee2c9f7e9ff15de.html">Desktop</a></li><li class="navelem"><a class="el" href="dir_fc535f21949c11c9ba400d65784ec52f.html">NUS</a></li><li class="navelem"><a class="el" href="dir_03b17459166973645e5999254af2c876.html">Y3S2</a></li><li class="navelem"><a class="el" href="dir_b53863b2dd4e7567b209cc69d498bd8d.html">CS3203</a></li><li class="navelem"><a class="el" href="dir_a685a0b18ca61e77064c945be78f3477.html">Proj</a></li><li class="navelem"><a class="el" href="dir_836c232a576c31fa72627368ec927480.html">Team29</a></li><li class="navelem"><a class="el" href="dir_46d9012ec6ef0c453dd63a39b5923908.html">Code29</a></li><li class="navelem"><a class="el" href="dir_c278d9d90c9f4d2e85ae516d96d8817b.html">source</a></li><li class="navelem"><a class="el" href="dir_1c793c10dd6ad0bc1cf5cb5771769fd3.html">QPP</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_6547928fef5eab07c3cb95c8d28c90b4.html">QPP</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -79,50 +79,143 @@ $(function() {
 <code>#include &quot;<a class="el" href="_string_addon_8h_source.html">../Utils/StringAddon.h</a>&quot;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;list&gt;</code><br />
+<code>#include &lt;stdexcept&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;ctype.h&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aed2f2bade64d76594c614da26ca24fa2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_syntax_validator_8cpp.html#aed2f2bade64d76594c614da26ca24fa2">validateDeclarationSynonym</a> (string synStr)</td></tr>
-<tr class="separator:aed2f2bade64d76594c614da26ca24fa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd884d783c76fe3f2e33792b8be87804"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_syntax_validator_8cpp.html#abd884d783c76fe3f2e33792b8be87804">validateDeclaration</a> (string declaration)</td></tr>
-<tr class="separator:abd884d783c76fe3f2e33792b8be87804"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e56fc23ca5d2ff3149cffa131de1090"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_syntax_validator_8cpp.html#a8e56fc23ca5d2ff3149cffa131de1090">isValidDeclarationSynonym</a> (string synStr)</td></tr>
+<tr class="separator:a8e56fc23ca5d2ff3149cffa131de1090"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab890b2bfecbc95613d4cd42c366d5b55"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_syntax_validator_8cpp.html#ab890b2bfecbc95613d4cd42c366d5b55">isValidDeclaration</a> (string declaration)</td></tr>
+<tr class="separator:ab890b2bfecbc95613d4cd42c366d5b55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addbaa0c6fdee72c1f3e2e19faf8fab6c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_syntax_validator_8cpp.html#addbaa0c6fdee72c1f3e2e19faf8fab6c">isFirstItem</a> (string input, string item)</td></tr>
+<tr class="separator:addbaa0c6fdee72c1f3e2e19faf8fab6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f431693bf0d34ecd275409e2de5e4e7"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_syntax_validator_8cpp.html#a3f431693bf0d34ecd275409e2de5e4e7">getFirstClauseKeyword</a> (list&lt; string &gt; *clausesSplitBySpaces)</td></tr>
+<tr class="separator:a3f431693bf0d34ecd275409e2de5e4e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2adfea41e444c4c06298605411a1c9f5"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_syntax_validator_8cpp.html#a2adfea41e444c4c06298605411a1c9f5">getFirstClause</a> (list&lt; string &gt; *clausesSplitBySpaces)</td></tr>
+<tr class="separator:a2adfea41e444c4c06298605411a1c9f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a418bc0ce3017db6a2d8f5b66800157ec"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_syntax_validator_8cpp.html#a418bc0ce3017db6a2d8f5b66800157ec">validateDeclarationsReturnDeclarations</a> (string query, string *selectClause)</td></tr>
+<tr class="separator:a418bc0ce3017db6a2d8f5b66800157ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1be6cc0db0cc141a3f90cbccd697fff3"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_syntax_validator_8cpp.html#a1be6cc0db0cc141a3f90cbccd697fff3">handleSelectClauseReturnResultClause</a> (list&lt; string &gt; *selectClauseNoExtraSpaces)</td></tr>
+<tr class="separator:a1be6cc0db0cc141a3f90cbccd697fff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69e497e2aa543777e9902a226efa494f"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_syntax_validator_8cpp.html#a69e497e2aa543777e9902a226efa494f">handleClauseFormattingReturnFormattedClause</a> (list&lt; string &gt; *selectClauseNoExtraSpaces)</td></tr>
+<tr class="separator:a69e497e2aa543777e9902a226efa494f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:abe60a9f2bde8bc2afea53b9efcf055bf"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_syntax_validator_8cpp.html#abe60a9f2bde8bc2afea53b9efcf055bf">SUCCESS</a> = 0</td></tr>
-<tr class="separator:abe60a9f2bde8bc2afea53b9efcf055bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac268943f22ac450c3fb96d07fa1fe168"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_syntax_validator_8cpp.html#ac268943f22ac450c3fb96d07fa1fe168">NO_DECLARATION_MADE</a> = -1</td></tr>
-<tr class="separator:ac268943f22ac450c3fb96d07fa1fe168"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4987e3141f7a77456a99534535148f63"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_syntax_validator_8cpp.html#a4987e3141f7a77456a99534535148f63">INVALID_DECLARATION_TYPE</a> = -2</td></tr>
-<tr class="separator:a4987e3141f7a77456a99534535148f63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0d7197fb98bc6532e90a877c31f1688"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_syntax_validator_8cpp.html#ac0d7197fb98bc6532e90a877c31f1688">NO_DECLARATION_SYNONYM</a> = -3</td></tr>
-<tr class="separator:ac0d7197fb98bc6532e90a877c31f1688"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65b18417a26a32a34072575e201bee48"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_syntax_validator_8cpp.html#a65b18417a26a32a34072575e201bee48">INVALID_SELECT_CLAUSE</a> = -4</td></tr>
-<tr class="separator:a65b18417a26a32a34072575e201bee48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9a632866e6923856a8234f05dc607aa"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_syntax_validator_8cpp.html#ab9a632866e6923856a8234f05dc607aa">INVALID_SUCH_THAT_CLAUSE</a> = 5</td></tr>
-<tr class="separator:ab9a632866e6923856a8234f05dc607aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaaaa4334750a2311f14f8e363bd57e2e"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_syntax_validator_8cpp.html#aaaaa4334750a2311f14f8e363bd57e2e">INVALID_DECLARATION_SYNONYM</a> = -6</td></tr>
-<tr class="separator:aaaaa4334750a2311f14f8e363bd57e2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac92226d6169f604079a1d21579249eaf"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_syntax_validator_8cpp.html#ac92226d6169f604079a1d21579249eaf">NO_SELECT_CLAUSE</a> = -7</td></tr>
-<tr class="separator:ac92226d6169f604079a1d21579249eaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5bd273e482928a84f4a389e81237c034"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_syntax_validator_8cpp.html#a5bd273e482928a84f4a389e81237c034">INVALID_SELECT_SYNONYM</a> = -8</td></tr>
-<tr class="separator:a5bd273e482928a84f4a389e81237c034"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99e31066243e73bcc4ab5322f2d885e0"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_syntax_validator_8cpp.html#a99e31066243e73bcc4ab5322f2d885e0">INVALID_PATTERN_CLAUSE</a> = -9</td></tr>
-<tr class="separator:a99e31066243e73bcc4ab5322f2d885e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f47c6f0588c5d24985f216d93b809e6"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_syntax_validator_8cpp.html#a9f47c6f0588c5d24985f216d93b809e6">END_OF_SYNTAX_VALIDATOR</a> = -10</td></tr>
-<tr class="separator:a9f47c6f0588c5d24985f216d93b809e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91def61d780ca0c14654ee8fc1bd4a49"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_syntax_validator_8cpp.html#a91def61d780ca0c14654ee8fc1bd4a49">SUCCESS</a> = true</td></tr>
+<tr class="separator:a91def61d780ca0c14654ee8fc1bd4a49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="abd884d783c76fe3f2e33792b8be87804" name="abd884d783c76fe3f2e33792b8be87804"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd884d783c76fe3f2e33792b8be87804">&#9670;&nbsp;</a></span>validateDeclaration()</h2>
+<a id="a2adfea41e444c4c06298605411a1c9f5" name="a2adfea41e444c4c06298605411a1c9f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2adfea41e444c4c06298605411a1c9f5">&#9670;&nbsp;</a></span>getFirstClause()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int validateDeclaration </td>
+          <td class="memname">string getFirstClause </td>
+          <td>(</td>
+          <td class="paramtype">list&lt; string &gt; *&#160;</td>
+          <td class="paramname"><em>clausesSplitBySpaces</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3f431693bf0d34ecd275409e2de5e4e7" name="a3f431693bf0d34ecd275409e2de5e4e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f431693bf0d34ecd275409e2de5e4e7">&#9670;&nbsp;</a></span>getFirstClauseKeyword()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string getFirstClauseKeyword </td>
+          <td>(</td>
+          <td class="paramtype">list&lt; string &gt; *&#160;</td>
+          <td class="paramname"><em>clausesSplitBySpaces</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a69e497e2aa543777e9902a226efa494f" name="a69e497e2aa543777e9902a226efa494f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69e497e2aa543777e9902a226efa494f">&#9670;&nbsp;</a></span>handleClauseFormattingReturnFormattedClause()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string handleClauseFormattingReturnFormattedClause </td>
+          <td>(</td>
+          <td class="paramtype">list&lt; string &gt; *&#160;</td>
+          <td class="paramname"><em>selectClauseNoExtraSpaces</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1be6cc0db0cc141a3f90cbccd697fff3" name="a1be6cc0db0cc141a3f90cbccd697fff3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1be6cc0db0cc141a3f90cbccd697fff3">&#9670;&nbsp;</a></span>handleSelectClauseReturnResultClause()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string handleSelectClauseReturnResultClause </td>
+          <td>(</td>
+          <td class="paramtype">list&lt; string &gt; *&#160;</td>
+          <td class="paramname"><em>selectClauseNoExtraSpaces</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="addbaa0c6fdee72c1f3e2e19faf8fab6c" name="addbaa0c6fdee72c1f3e2e19faf8fab6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addbaa0c6fdee72c1f3e2e19faf8fab6c">&#9670;&nbsp;</a></span>isFirstItem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isFirstItem </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>item</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab890b2bfecbc95613d4cd42c366d5b55" name="ab890b2bfecbc95613d4cd42c366d5b55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab890b2bfecbc95613d4cd42c366d5b55">&#9670;&nbsp;</a></span>isValidDeclaration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isValidDeclaration </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>declaration</em></td><td>)</td>
@@ -133,14 +226,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="aed2f2bade64d76594c614da26ca24fa2" name="aed2f2bade64d76594c614da26ca24fa2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed2f2bade64d76594c614da26ca24fa2">&#9670;&nbsp;</a></span>validateDeclarationSynonym()</h2>
+<a id="a8e56fc23ca5d2ff3149cffa131de1090" name="a8e56fc23ca5d2ff3149cffa131de1090"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e56fc23ca5d2ff3149cffa131de1090">&#9670;&nbsp;</a></span>isValidDeclarationSynonym()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int validateDeclarationSynonym </td>
+          <td class="memname">bool isValidDeclarationSynonym </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>synStr</em></td><td>)</td>
@@ -151,155 +244,43 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a418bc0ce3017db6a2d8f5b66800157ec" name="a418bc0ce3017db6a2d8f5b66800157ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a418bc0ce3017db6a2d8f5b66800157ec">&#9670;&nbsp;</a></span>validateDeclarationsReturnDeclarations()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string validateDeclarationsReturnDeclarations </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>query</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string *&#160;</td>
+          <td class="paramname"><em>selectClause</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="a9f47c6f0588c5d24985f216d93b809e6" name="a9f47c6f0588c5d24985f216d93b809e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f47c6f0588c5d24985f216d93b809e6">&#9670;&nbsp;</a></span>END_OF_SYNTAX_VALIDATOR</h2>
+<a id="a91def61d780ca0c14654ee8fc1bd4a49" name="a91def61d780ca0c14654ee8fc1bd4a49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91def61d780ca0c14654ee8fc1bd4a49">&#9670;&nbsp;</a></span>SUCCESS</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const int END_OF_SYNTAX_VALIDATOR = -10</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aaaaa4334750a2311f14f8e363bd57e2e" name="aaaaa4334750a2311f14f8e363bd57e2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaaaa4334750a2311f14f8e363bd57e2e">&#9670;&nbsp;</a></span>INVALID_DECLARATION_SYNONYM</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int INVALID_DECLARATION_SYNONYM = -6</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4987e3141f7a77456a99534535148f63" name="a4987e3141f7a77456a99534535148f63"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4987e3141f7a77456a99534535148f63">&#9670;&nbsp;</a></span>INVALID_DECLARATION_TYPE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int INVALID_DECLARATION_TYPE = -2</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a99e31066243e73bcc4ab5322f2d885e0" name="a99e31066243e73bcc4ab5322f2d885e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a99e31066243e73bcc4ab5322f2d885e0">&#9670;&nbsp;</a></span>INVALID_PATTERN_CLAUSE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int INVALID_PATTERN_CLAUSE = -9</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a65b18417a26a32a34072575e201bee48" name="a65b18417a26a32a34072575e201bee48"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65b18417a26a32a34072575e201bee48">&#9670;&nbsp;</a></span>INVALID_SELECT_CLAUSE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int INVALID_SELECT_CLAUSE = -4</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5bd273e482928a84f4a389e81237c034" name="a5bd273e482928a84f4a389e81237c034"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5bd273e482928a84f4a389e81237c034">&#9670;&nbsp;</a></span>INVALID_SELECT_SYNONYM</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int INVALID_SELECT_SYNONYM = -8</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab9a632866e6923856a8234f05dc607aa" name="ab9a632866e6923856a8234f05dc607aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab9a632866e6923856a8234f05dc607aa">&#9670;&nbsp;</a></span>INVALID_SUCH_THAT_CLAUSE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int INVALID_SUCH_THAT_CLAUSE = 5</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac268943f22ac450c3fb96d07fa1fe168" name="ac268943f22ac450c3fb96d07fa1fe168"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac268943f22ac450c3fb96d07fa1fe168">&#9670;&nbsp;</a></span>NO_DECLARATION_MADE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int NO_DECLARATION_MADE = -1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac0d7197fb98bc6532e90a877c31f1688" name="ac0d7197fb98bc6532e90a877c31f1688"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0d7197fb98bc6532e90a877c31f1688">&#9670;&nbsp;</a></span>NO_DECLARATION_SYNONYM</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int NO_DECLARATION_SYNONYM = -3</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac92226d6169f604079a1d21579249eaf" name="ac92226d6169f604079a1d21579249eaf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac92226d6169f604079a1d21579249eaf">&#9670;&nbsp;</a></span>NO_SELECT_CLAUSE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int NO_SELECT_CLAUSE = -7</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abe60a9f2bde8bc2afea53b9efcf055bf" name="abe60a9f2bde8bc2afea53b9efcf055bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe60a9f2bde8bc2afea53b9efcf055bf">&#9670;&nbsp;</a></span>SUCCESS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int SUCCESS = 0</td>
+          <td class="memname">const bool SUCCESS = true</td>
         </tr>
       </table>
 </div><div class="memdoc">

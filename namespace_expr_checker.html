@@ -65,7 +65,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">ExprChecker Namespace Reference<div class="ingroups"><a class="el" href="group___q_p_p.html">QPP</a></div></div></div>
+  <div class="headertitle"><div class="title">ExprChecker Namespace Reference<div class="ingroups"><a class="el" href="group___utils.html">Utils</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -86,10 +86,46 @@ Functions</h2></td></tr>
 <tr class="memitem:aff227186cde35c17de488f676669487d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_expr_checker.html#aff227186cde35c17de488f676669487d">isValidExpr</a> (std::string expr)</td></tr>
 <tr class="memdesc:aff227186cde35c17de488f676669487d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decides if a string forms a valid expression.  <a href="namespace_expr_checker.html#aff227186cde35c17de488f676669487d">More...</a><br /></td></tr>
 <tr class="separator:aff227186cde35c17de488f676669487d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3945f528bd3e23052041283847a5eda5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_expr_checker.html#a3945f528bd3e23052041283847a5eda5">isValidAttrRef</a> (std::string attrRef)</td></tr>
+<tr class="memdesc:a3945f528bd3e23052041283847a5eda5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decides if a string forms a valid attribute reference.  <a href="namespace_expr_checker.html#a3945f528bd3e23052041283847a5eda5">More...</a><br /></td></tr>
+<tr class="separator:a3945f528bd3e23052041283847a5eda5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d45908d01018a7d3ff1e2c3492aa97a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_expr_checker.html#a4d45908d01018a7d3ff1e2c3492aa97a">isValidTuple</a> (std::string tuple)</td></tr>
+<tr class="memdesc:a4d45908d01018a7d3ff1e2c3492aa97a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decides if a string forms a valid tuple.  <a href="namespace_expr_checker.html#a4d45908d01018a7d3ff1e2c3492aa97a">More...</a><br /></td></tr>
+<tr class="separator:a4d45908d01018a7d3ff1e2c3492aa97a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff35812efd957ae68730003b7c91504d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_expr_checker.html#aff35812efd957ae68730003b7c91504d">isValidRef</a> (std::string ref)</td></tr>
+<tr class="memdesc:aff35812efd957ae68730003b7c91504d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decides if a string forms a valid ref.  <a href="namespace_expr_checker.html#aff35812efd957ae68730003b7c91504d">More...</a><br /></td></tr>
+<tr class="separator:aff35812efd957ae68730003b7c91504d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >This namespace checks if a given Expresion is valid syntax. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="a3945f528bd3e23052041283847a5eda5" name="a3945f528bd3e23052041283847a5eda5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3945f528bd3e23052041283847a5eda5">&#9670;&nbsp;</a></span>isValidAttrRef()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ExprChecker::isValidAttrRef </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>attrRef</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Decides if a string forms a valid attribute reference. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">attrRef</td><td>String text to be checked. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the string forms a valid attribute reference, false otherwise. </dd></dl>
+
+</div>
+</div>
 <a id="aff227186cde35c17de488f676669487d" name="aff227186cde35c17de488f676669487d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aff227186cde35c17de488f676669487d">&#9670;&nbsp;</a></span>isValidExpr()</h2>
 
@@ -171,6 +207,33 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aff35812efd957ae68730003b7c91504d" name="aff35812efd957ae68730003b7c91504d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff35812efd957ae68730003b7c91504d">&#9670;&nbsp;</a></span>isValidRef()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ExprChecker::isValidRef </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>ref</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Decides if a string forms a valid ref. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ref</td><td>String text to be checked. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the string forms a valid ref, false otherwise. </dd></dl>
+
+</div>
+</div>
 <a id="a8720cbd19e30e3d8b977320232ab9302" name="a8720cbd19e30e3d8b977320232ab9302"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8720cbd19e30e3d8b977320232ab9302">&#9670;&nbsp;</a></span>isValidTerm()</h2>
 
@@ -195,6 +258,33 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the string forms a valid term, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a4d45908d01018a7d3ff1e2c3492aa97a" name="a4d45908d01018a7d3ff1e2c3492aa97a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d45908d01018a7d3ff1e2c3492aa97a">&#9670;&nbsp;</a></span>isValidTuple()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ExprChecker::isValidTuple </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>tuple</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Decides if a string forms a valid tuple. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tuple</td><td>String text to be checked. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the string forms a valid tuple, false otherwise. </dd></dl>
 
 </div>
 </div>

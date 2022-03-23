@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>CS3203 Team 29: C:/Users/Jody Tang/Desktop/NUS/Y3S2/CS3203/Proj/Team29/Code29/source/PKB/DesignExtractor.cpp File Reference</title>
+<title>CS3203 Team 29: ProgramAnalyser/DesignExtractor.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_e04ae2849dfa520b4ee2c9f7e9ff15de.html">Desktop</a></li><li class="navelem"><a class="el" href="dir_fc535f21949c11c9ba400d65784ec52f.html">NUS</a></li><li class="navelem"><a class="el" href="dir_03b17459166973645e5999254af2c876.html">Y3S2</a></li><li class="navelem"><a class="el" href="dir_b53863b2dd4e7567b209cc69d498bd8d.html">CS3203</a></li><li class="navelem"><a class="el" href="dir_a685a0b18ca61e77064c945be78f3477.html">Proj</a></li><li class="navelem"><a class="el" href="dir_836c232a576c31fa72627368ec927480.html">Team29</a></li><li class="navelem"><a class="el" href="dir_46d9012ec6ef0c453dd63a39b5923908.html">Code29</a></li><li class="navelem"><a class="el" href="dir_c278d9d90c9f4d2e85ae516d96d8817b.html">source</a></li><li class="navelem"><a class="el" href="dir_10c7ac1531d3cd14e633c05d8002d102.html">PKB</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_4f6af3abbba83dad4673c00568db21c7.html">ProgramAnalyser</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -74,116 +74,49 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="_design_extractor_8h_source.html">DesignExtractor.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_p_k_b_8h_source.html">PKB.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_t_node_8h_source.html">TNode.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_pkb_8h_source.html">../Pkb/Pkb.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_t_node_8h_source.html">../DataStructures/TNode.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_bi_graph_8h_source.html">../DataStructures/BiGraph.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_dfs_graph_8h_source.html">../DataStructures/DfsGraph.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_design_entity_8h_source.html">../Enums/DesignEntity.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_rel_ref_8h_source.html">../Enums/RelRef.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_container_helper_8h_source.html">../Utils/ContainerHelper.h</a>&quot;</code><br />
-<code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
 <code>#include &lt;unordered_map&gt;</code><br />
 <code>#include &lt;unordered_set&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae2c442cc28b5759863665940c5d274cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_design_extractor_8cpp.html#ae2c442cc28b5759863665940c5d274cb">traverse</a> (<a class="el" href="class_t_node.html">TNode</a> *node, string user=&quot;&quot;)</td></tr>
-<tr class="separator:ae2c442cc28b5759863665940c5d274cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f43369d9521205e812b95e33dab1139"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_design_extractor_8cpp.html#a8f43369d9521205e812b95e33dab1139">isStmt</a> (<a class="el" href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022">DesignEntity</a> entity)</td></tr>
 <tr class="separator:a8f43369d9521205e812b95e33dab1139"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cf81e8ee6badef21b4229adc41ef2a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_design_extractor_8cpp.html#a0cf81e8ee6badef21b4229adc41ef2a4">grandparentInsert</a> (<a class="el" href="_rel_ref_8h.html#a716e89e479362975d58357aa4f4e00ba">RelRef</a> relationship, string parent, string child)</td></tr>
-<tr class="separator:a0cf81e8ee6badef21b4229adc41ef2a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9d03a4bc23a44c7f24fd8564892b930"><td class="memItemLeft" align="right" valign="top">unordered_map&lt; <a class="el" href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022">DesignEntity</a>, vector&lt; string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_design_extractor_8cpp.html#ab9d03a4bc23a44c7f24fd8564892b930">getEntityVectors</a> ()</td></tr>
-<tr class="separator:ab9d03a4bc23a44c7f24fd8564892b930"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab96033f4d58d26ac42da3552f5c74af3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_design_extractor_8cpp.html#ab96033f4d58d26ac42da3552f5c74af3">debugRel</a> (<a class="el" href="_rel_ref_8h.html#a716e89e479362975d58357aa4f4e00ba">RelRef</a> relationship, string name)</td></tr>
-<tr class="separator:ab96033f4d58d26ac42da3552f5c74af3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38cec59b7254d97c3e7ef6853cc661a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_design_extractor_8cpp.html#a38cec59b7254d97c3e7ef6853cc661a0">traverseProcedureMap</a> (std::unordered_map&lt; std::string, std::vector&lt; std::string &gt; &gt; procedureMap, <a class="el" href="class_pkb.html">Pkb</a> &amp;pkb, string caller, string called)</td></tr>
+<tr class="separator:a38cec59b7254d97c3e7ef6853cc661a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3a6eee5c62679dc0e6a563ba7bb3872"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_design_extractor_8cpp.html#ae3a6eee5c62679dc0e6a563ba7bb3872">traverseAst</a> (<a class="el" href="class_t_node.html">TNode</a> *node, <a class="el" href="class_pkb.html">Pkb</a> &amp;pkb, string proc=&quot;&quot;, string user=&quot;&quot;)</td></tr>
+<tr class="separator:ae3a6eee5c62679dc0e6a563ba7bb3872"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98724acacf3347030b27a14fb65d0b23"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_design_extractor_8cpp.html#a98724acacf3347030b27a14fb65d0b23">addCallTransitiveRelationships</a> (<a class="el" href="class_pkb.html">Pkb</a> &amp;pkb)</td></tr>
+<tr class="separator:a98724acacf3347030b27a14fb65d0b23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ac067742370a8dd6894e000158101d8ab"><td class="memItemLeft" align="right" valign="top">unordered_map&lt; <a class="el" href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022">DesignEntity</a>, unordered_set&lt; string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_design_extractor_8cpp.html#ac067742370a8dd6894e000158101d8ab">entitySets</a></td></tr>
-<tr class="separator:ac067742370a8dd6894e000158101d8ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13f3613962f8a0b0d39ead448eaa6289"><td class="memItemLeft" align="right" valign="top">unordered_map&lt; <a class="el" href="_rel_ref_8h.html#a716e89e479362975d58357aa4f4e00ba">RelRef</a>, <a class="el" href="class_bi_graph.html">BiGraph</a>&lt; string, string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_design_extractor_8cpp.html#a13f3613962f8a0b0d39ead448eaa6289">relGraphs</a></td></tr>
-<tr class="separator:a13f3613962f8a0b0d39ead448eaa6289"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56d6005020ef9e4f150de8023cb87863"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="class_t_node.html">TNode</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_design_extractor_8cpp.html#a56d6005020ef9e4f150de8023cb87863">assigns</a></td></tr>
-<tr class="separator:a56d6005020ef9e4f150de8023cb87863"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57681c1dd514412b9d8cfbf8e83a54bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022">DesignEntity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_design_extractor_8cpp.html#a57681c1dd514412b9d8cfbf8e83a54bb">stmtEntities</a> []</td></tr>
-<tr class="separator:a57681c1dd514412b9d8cfbf8e83a54bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a667200cce09d372efa89c5554c601843"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022">DesignEntity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_design_extractor_8cpp.html#a667200cce09d372efa89c5554c601843">STMT_ENTITIES</a> []</td></tr>
+<tr class="separator:a667200cce09d372efa89c5554c601843"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ab96033f4d58d26ac42da3552f5c74af3" name="ab96033f4d58d26ac42da3552f5c74af3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab96033f4d58d26ac42da3552f5c74af3">&#9670;&nbsp;</a></span>debugRel()</h2>
+<a id="a98724acacf3347030b27a14fb65d0b23" name="a98724acacf3347030b27a14fb65d0b23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98724acacf3347030b27a14fb65d0b23">&#9670;&nbsp;</a></span>addCallTransitiveRelationships()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void debugRel </td>
+          <td class="memname">void addCallTransitiveRelationships </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_rel_ref_8h.html#a716e89e479362975d58357aa4f4e00ba">RelRef</a>&#160;</td>
-          <td class="paramname"><em>relationship</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="class_pkb.html">Pkb</a> &amp;&#160;</td>
+          <td class="paramname"><em>pkb</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>name</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab9d03a4bc23a44c7f24fd8564892b930" name="ab9d03a4bc23a44c7f24fd8564892b930"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab9d03a4bc23a44c7f24fd8564892b930">&#9670;&nbsp;</a></span>getEntityVectors()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">unordered_map&lt; <a class="el" href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022">DesignEntity</a>, vector&lt; string &gt; &gt; getEntityVectors </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0cf81e8ee6badef21b4229adc41ef2a4" name="a0cf81e8ee6badef21b4229adc41ef2a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0cf81e8ee6badef21b4229adc41ef2a4">&#9670;&nbsp;</a></span>grandparentInsert()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void grandparentInsert </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="_rel_ref_8h.html#a716e89e479362975d58357aa4f4e00ba">RelRef</a>&#160;</td>
-          <td class="paramname"><em>relationship</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>parent</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>child</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -208,17 +141,29 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ae2c442cc28b5759863665940c5d274cb" name="ae2c442cc28b5759863665940c5d274cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2c442cc28b5759863665940c5d274cb">&#9670;&nbsp;</a></span>traverse()</h2>
+<a id="ae3a6eee5c62679dc0e6a563ba7bb3872" name="ae3a6eee5c62679dc0e6a563ba7bb3872"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3a6eee5c62679dc0e6a563ba7bb3872">&#9670;&nbsp;</a></span>traverseAst()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void traverse </td>
+          <td class="memname">void traverseAst </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_t_node.html">TNode</a> *&#160;</td>
           <td class="paramname"><em>node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_pkb.html">Pkb</a> &amp;&#160;</td>
+          <td class="paramname"><em>pkb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>proc</em> = <code>&quot;&quot;</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -236,57 +181,55 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a38cec59b7254d97c3e7ef6853cc661a0" name="a38cec59b7254d97c3e7ef6853cc661a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38cec59b7254d97c3e7ef6853cc661a0">&#9670;&nbsp;</a></span>traverseProcedureMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void traverseProcedureMap </td>
+          <td>(</td>
+          <td class="paramtype">std::unordered_map&lt; std::string, std::vector&lt; std::string &gt; &gt;&#160;</td>
+          <td class="paramname"><em>procedureMap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_pkb.html">Pkb</a> &amp;&#160;</td>
+          <td class="paramname"><em>pkb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>caller</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>called</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="a56d6005020ef9e4f150de8023cb87863" name="a56d6005020ef9e4f150de8023cb87863"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a56d6005020ef9e4f150de8023cb87863">&#9670;&nbsp;</a></span>assigns</h2>
+<a id="a667200cce09d372efa89c5554c601843" name="a667200cce09d372efa89c5554c601843"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a667200cce09d372efa89c5554c601843">&#9670;&nbsp;</a></span>STMT_ENTITIES</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">vector&lt;<a class="el" href="class_t_node.html">TNode</a>*&gt; assigns</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac067742370a8dd6894e000158101d8ab" name="ac067742370a8dd6894e000158101d8ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac067742370a8dd6894e000158101d8ab">&#9670;&nbsp;</a></span>entitySets</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">unordered_map&lt;<a class="el" href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022">DesignEntity</a>, unordered_set&lt;string&gt; &gt; entitySets</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a13f3613962f8a0b0d39ead448eaa6289" name="a13f3613962f8a0b0d39ead448eaa6289"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13f3613962f8a0b0d39ead448eaa6289">&#9670;&nbsp;</a></span>relGraphs</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">unordered_map&lt;<a class="el" href="_rel_ref_8h.html#a716e89e479362975d58357aa4f4e00ba">RelRef</a>, <a class="el" href="class_bi_graph.html">BiGraph</a>&lt;string, string&gt; &gt; relGraphs</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a57681c1dd514412b9d8cfbf8e83a54bb" name="a57681c1dd514412b9d8cfbf8e83a54bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a57681c1dd514412b9d8cfbf8e83a54bb">&#9670;&nbsp;</a></span>stmtEntities</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022">DesignEntity</a> stmtEntities[]</td>
+          <td class="memname">const <a class="el" href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022">DesignEntity</a> STMT_ENTITIES[]</td>
         </tr>
       </table>
 </div><div class="memdoc">

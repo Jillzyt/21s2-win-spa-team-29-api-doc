@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>CS3203 Team 29: C:/Users/Jody Tang/Desktop/NUS/Y3S2/CS3203/Proj/Team29/Code29/source/PKB/PatternEvaluator.h Source File</title>
+<title>CS3203 Team 29: PatternPkg/PatternEvaluator.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_e04ae2849dfa520b4ee2c9f7e9ff15de.html">Desktop</a></li><li class="navelem"><a class="el" href="dir_fc535f21949c11c9ba400d65784ec52f.html">NUS</a></li><li class="navelem"><a class="el" href="dir_03b17459166973645e5999254af2c876.html">Y3S2</a></li><li class="navelem"><a class="el" href="dir_b53863b2dd4e7567b209cc69d498bd8d.html">CS3203</a></li><li class="navelem"><a class="el" href="dir_a685a0b18ca61e77064c945be78f3477.html">Proj</a></li><li class="navelem"><a class="el" href="dir_836c232a576c31fa72627368ec927480.html">Team29</a></li><li class="navelem"><a class="el" href="dir_46d9012ec6ef0c453dd63a39b5923908.html">Code29</a></li><li class="navelem"><a class="el" href="dir_c278d9d90c9f4d2e85ae516d96d8817b.html">source</a></li><li class="navelem"><a class="el" href="dir_10c7ac1531d3cd14e633c05d8002d102.html">PKB</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_9b2cc84f67f0d06c87465b1e1cb8475a.html">PatternPkg</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -75,33 +75,59 @@ $(function() {
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="_t_node_8h.html">TNode.h</a>&quot;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="_p_k_b_interface_8h.html">PKBInterface.h</a>&quot;</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;../DataStructures/TNode.h&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;../Pkb/PkbInterface.h&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;../PatternPkg/PatternEvaluatorInterface.h&quot;</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_pattern_evaluator.html">   23</a></span><span class="keyword">class </span><a class="code hl_class" href="class_pattern_evaluator.html">PatternEvaluator</a></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>{</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keyword">static</span> std::vector&lt;std::string&gt; <a class="code hl_function" href="class_pattern_evaluator.html#a9612bba34c8fd8b30eb7157407d067db">getAssignsByRHS</a>(std::string rhs, <a class="code hl_class" href="class_pkb_interface.html">PkbInterface</a>&amp;);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_pattern_evaluator.html">   23</a></span><span class="keyword">class </span><a class="code hl_class" href="class_pattern_evaluator.html">PatternEvaluator</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_pattern_evaluator_interface.html">PatternEvaluatorInterface</a> {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <a class="code hl_class" href="class_pkb_interface.html">PkbInterface</a>* pkb;  </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <a class="code hl_class" href="class_t_node.html">TNode</a>* patternSubtree; </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    std::vector&lt;TNode*&gt; stmtsToEvaluate; </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <a class="code hl_namespace" href="namespace_design_entity.html">DesignEntity</a> designEntityToEvaluate; </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <a class="code hl_namespace" href="namespace_design_entity.html">DesignEntity</a> getDesignEntity();</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keyword">static</span> std::vector&lt;std::string&gt; <a class="code hl_function" href="class_pattern_evaluator.html#a8b0841d307725cae3728bd1152b4dcf7">traverse</a>(std::vector&lt;TNode*&gt; assignStmts, <span class="keywordtype">bool</span> isExact);</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keyword">static</span> std::vector&lt;std::string&gt; <a class="code hl_function" href="class_pattern_evaluator.html#aae00fb7a3ff3adf668880b56c539559c">matchExactPatternToTree</a>(<a class="code hl_class" href="class_t_node.html">TNode</a>* node, std::vector&lt;std::string&gt; <a class="code hl_variable" href="_pattern_evaluator_8cpp.html#a889ba7577ab8fa13d611ba0f10b07faa">tokens</a>);</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="keyword">static</span> std::pair&lt;std::vector&lt;std::string&gt;, <span class="keywordtype">bool</span>&gt; <a class="code hl_function" href="class_pattern_evaluator.html#ab03f9f385799c7cb07f8442293bad9c1">matchPatternToTree</a>(<a class="code hl_class" href="class_t_node.html">TNode</a>* node, std::vector&lt;std::string&gt; <a class="code hl_variable" href="_pattern_evaluator_8cpp.html#a889ba7577ab8fa13d611ba0f10b07faa">tokens</a>, <span class="keywordtype">bool</span> check);</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>};</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="ttc" id="a_p_k_b_interface_8h_html"><div class="ttname"><a href="_p_k_b_interface_8h.html">PKBInterface.h</a></div></div>
-<div class="ttc" id="a_pattern_evaluator_8cpp_html_a889ba7577ab8fa13d611ba0f10b07faa"><div class="ttname"><a href="_pattern_evaluator_8cpp.html#a889ba7577ab8fa13d611ba0f10b07faa">tokens</a></div><div class="ttdeci">vector&lt; string &gt; tokens</div><div class="ttdef"><b>Definition:</b> PatternEvaluator.cpp:31</div></div>
-<div class="ttc" id="a_t_node_8h_html"><div class="ttname"><a href="_t_node_8h.html">TNode.h</a></div></div>
-<div class="ttc" id="aclass_pattern_evaluator_html"><div class="ttname"><a href="class_pattern_evaluator.html">PatternEvaluator</a></div><div class="ttdoc">PatternEvaluator helps to evaluate the patterns that are passed from Query Evaluator(QE) and returns ...</div><div class="ttdef"><b>Definition:</b> PatternEvaluator.h:24</div></div>
-<div class="ttc" id="aclass_pattern_evaluator_html_a8b0841d307725cae3728bd1152b4dcf7"><div class="ttname"><a href="class_pattern_evaluator.html#a8b0841d307725cae3728bd1152b4dcf7">PatternEvaluator::traverse</a></div><div class="ttdeci">static std::vector&lt; std::string &gt; traverse(std::vector&lt; TNode * &gt; assignStmts, bool isExact)</div><div class="ttdoc">Loop through all the statements.</div><div class="ttdef"><b>Definition:</b> PatternEvaluator.cpp:62</div></div>
-<div class="ttc" id="aclass_pattern_evaluator_html_a9612bba34c8fd8b30eb7157407d067db"><div class="ttname"><a href="class_pattern_evaluator.html#a9612bba34c8fd8b30eb7157407d067db">PatternEvaluator::getAssignsByRHS</a></div><div class="ttdeci">static std::vector&lt; std::string &gt; getAssignsByRHS(std::string rhs, PkbInterface &amp;)</div><div class="ttdoc">Get all assign statements that satisfies the rhs pattern that is given.</div><div class="ttdef"><b>Definition:</b> PatternEvaluator.cpp:33</div></div>
-<div class="ttc" id="aclass_pattern_evaluator_html_aae00fb7a3ff3adf668880b56c539559c"><div class="ttname"><a href="class_pattern_evaluator.html#aae00fb7a3ff3adf668880b56c539559c">PatternEvaluator::matchExactPatternToTree</a></div><div class="ttdeci">static std::vector&lt; std::string &gt; matchExactPatternToTree(TNode *node, std::vector&lt; std::string &gt; tokens)</div><div class="ttdoc">Returns the list of tokens that does not match the exact pattern.</div><div class="ttdef"><b>Definition:</b> PatternEvaluator.cpp:95</div></div>
-<div class="ttc" id="aclass_pattern_evaluator_html_ab03f9f385799c7cb07f8442293bad9c1"><div class="ttname"><a href="class_pattern_evaluator.html#ab03f9f385799c7cb07f8442293bad9c1">PatternEvaluator::matchPatternToTree</a></div><div class="ttdeci">static std::pair&lt; std::vector&lt; std::string &gt;, bool &gt; matchPatternToTree(TNode *node, std::vector&lt; std::string &gt; tokens, bool check)</div><div class="ttdoc">Returns the list of tokens that does not match the similar pattern.</div><div class="ttdef"><b>Definition:</b> PatternEvaluator.cpp:122</div></div>
-<div class="ttc" id="aclass_pkb_interface_html"><div class="ttname"><a href="class_pkb_interface.html">PkbInterface</a></div><div class="ttdef"><b>Definition:</b> PKBInterface.h:16</div></div>
-<div class="ttc" id="aclass_t_node_html"><div class="ttname"><a href="class_t_node.html">TNode</a></div><div class="ttdoc">Makes up the tree nodes of the AST.</div><div class="ttdef"><b>Definition:</b> TNode.h:29</div></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="class_pattern_evaluator.html#a201af089a9b2cb997d32516ae1635590">   40</a></span>    <a class="code hl_function" href="class_pattern_evaluator.html#a201af089a9b2cb997d32516ae1635590">PatternEvaluator</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <a class="code hl_function" href="class_pattern_evaluator.html#a201af089a9b2cb997d32516ae1635590">PatternEvaluator</a>(<a class="code hl_class" href="class_pkb_interface.html">PkbInterface</a>* pe);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_pattern_evaluator.html#a16bfcfb6b1fcf484f7faf04b2f43ea0c">isSubTree</a>(<a class="code hl_class" href="class_t_node.html">TNode</a>* node1, <a class="code hl_class" href="class_t_node.html">TNode</a>* node2);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_pattern_evaluator.html#a1e043ed694f0a3f691b450ab00d59ca2">setPatternSubtree</a>(<a class="code hl_class" href="class_t_node.html">TNode</a>* subTree);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_pattern_evaluator.html#aa437de9ccadcc021da6d9afb21834771">setDesignEntity</a>(<a class="code hl_namespace" href="namespace_design_entity.html">DesignEntity</a> designEntity);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <a class="code hl_class" href="class_t_node.html">TNode</a>* <a class="code hl_function" href="class_pattern_evaluator.html#ab2792b0485a5c8023316431e0c1b2615">getPatternSubtree</a>();</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    std::vector&lt;TNode*&gt; <a class="code hl_function" href="class_pattern_evaluator.html#a721c1102b0e30dcac34a4a03fd113fc1">getStmtsToEvaluate</a>();</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    std::vector&lt;std::string&gt; <a class="code hl_function" href="class_pattern_evaluator.html#a604bee36340927e130b430031d996131">evaluateStmts</a>(<span class="keywordtype">bool</span> isExact);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    std::vector&lt;std::string&gt; <a class="code hl_function" href="class_pattern_evaluator.html#a27897952e47156e998d56a017a58d140">evaluateVars</a>(std::string stmtNo);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>};</div>
+<div class="ttc" id="aclass_pattern_evaluator_html"><div class="ttname"><a href="class_pattern_evaluator.html">PatternEvaluator</a></div><div class="ttdoc">PatternEvaluator helps to evaluate the patterns that are passed from QueryEvaluator(QE) and returns r...</div><div class="ttdef"><b>Definition:</b> PatternEvaluator.h:23</div></div>
+<div class="ttc" id="aclass_pattern_evaluator_html_a16bfcfb6b1fcf484f7faf04b2f43ea0c"><div class="ttname"><a href="class_pattern_evaluator.html#a16bfcfb6b1fcf484f7faf04b2f43ea0c">PatternEvaluator::isSubTree</a></div><div class="ttdeci">bool isSubTree(TNode *node1, TNode *node2)</div><div class="ttdoc">Check if the nodes are subtree of another.</div><div class="ttdef"><b>Definition:</b> PatternEvaluator.cpp:85</div></div>
+<div class="ttc" id="aclass_pattern_evaluator_html_a1e043ed694f0a3f691b450ab00d59ca2"><div class="ttname"><a href="class_pattern_evaluator.html#a1e043ed694f0a3f691b450ab00d59ca2">PatternEvaluator::setPatternSubtree</a></div><div class="ttdeci">bool setPatternSubtree(TNode *subTree)</div><div class="ttdoc">Set the subtree node which represents the pattern.</div><div class="ttdef"><b>Definition:</b> PatternEvaluator.cpp:37</div></div>
+<div class="ttc" id="aclass_pattern_evaluator_html_a201af089a9b2cb997d32516ae1635590"><div class="ttname"><a href="class_pattern_evaluator.html#a201af089a9b2cb997d32516ae1635590">PatternEvaluator::PatternEvaluator</a></div><div class="ttdeci">PatternEvaluator()=default</div><div class="ttdoc">Default constructor for PatternEvaluator.</div></div>
+<div class="ttc" id="aclass_pattern_evaluator_html_a27897952e47156e998d56a017a58d140"><div class="ttname"><a href="class_pattern_evaluator.html#a27897952e47156e998d56a017a58d140">PatternEvaluator::evaluateVars</a></div><div class="ttdeci">std::vector&lt; std::string &gt; evaluateVars(std::string stmtNo)</div><div class="ttdoc">Evaluate the stmtNo and return the related variables.</div><div class="ttdef"><b>Definition:</b> PatternEvaluator.cpp:72</div></div>
+<div class="ttc" id="aclass_pattern_evaluator_html_a604bee36340927e130b430031d996131"><div class="ttname"><a href="class_pattern_evaluator.html#a604bee36340927e130b430031d996131">PatternEvaluator::evaluateStmts</a></div><div class="ttdeci">std::vector&lt; std::string &gt; evaluateStmts(bool isExact)</div><div class="ttdoc">Evaluate all the statements.</div><div class="ttdef"><b>Definition:</b> PatternEvaluator.cpp:49</div></div>
+<div class="ttc" id="aclass_pattern_evaluator_html_a721c1102b0e30dcac34a4a03fd113fc1"><div class="ttname"><a href="class_pattern_evaluator.html#a721c1102b0e30dcac34a4a03fd113fc1">PatternEvaluator::getStmtsToEvaluate</a></div><div class="ttdeci">std::vector&lt; TNode * &gt; getStmtsToEvaluate()</div><div class="ttdoc">Get all the stmts to be evaluated.</div><div class="ttdef"><b>Definition:</b> PatternEvaluator.cpp:29</div></div>
+<div class="ttc" id="aclass_pattern_evaluator_html_aa437de9ccadcc021da6d9afb21834771"><div class="ttname"><a href="class_pattern_evaluator.html#aa437de9ccadcc021da6d9afb21834771">PatternEvaluator::setDesignEntity</a></div><div class="ttdeci">bool setDesignEntity(DesignEntity designEntity)</div><div class="ttdoc">Set the subtree node which represents the pattern.</div><div class="ttdef"><b>Definition:</b> PatternEvaluator.cpp:42</div></div>
+<div class="ttc" id="aclass_pattern_evaluator_html_ab2792b0485a5c8023316431e0c1b2615"><div class="ttname"><a href="class_pattern_evaluator.html#ab2792b0485a5c8023316431e0c1b2615">PatternEvaluator::getPatternSubtree</a></div><div class="ttdeci">TNode * getPatternSubtree()</div><div class="ttdoc">Get the subtree node which represents the pattern.</div><div class="ttdef"><b>Definition:</b> PatternEvaluator.cpp:25</div></div>
+<div class="ttc" id="aclass_pattern_evaluator_interface_html"><div class="ttname"><a href="class_pattern_evaluator_interface.html">PatternEvaluatorInterface</a></div><div class="ttdoc">PatternEvaluator interface helps to declare the methods that will be used by PatternEvaluator.</div><div class="ttdef"><b>Definition:</b> PatternEvaluatorInterface.h:22</div></div>
+<div class="ttc" id="aclass_pkb_interface_html"><div class="ttname"><a href="class_pkb_interface.html">PkbInterface</a></div><div class="ttdoc">Pkb interface helps to declare the methods that will be used by Pkb.</div><div class="ttdef"><b>Definition:</b> PkbInterface.h:17</div></div>
+<div class="ttc" id="aclass_t_node_html"><div class="ttname"><a href="class_t_node.html">TNode</a></div><div class="ttdoc">Makes up the tree nodes of the Ast.</div><div class="ttdef"><b>Definition:</b> TNode.h:29</div></div>
+<div class="ttc" id="anamespace_design_entity_html"><div class="ttname"><a href="namespace_design_entity.html">DesignEntity</a></div><div class="ttdoc">Constructor of the class QueryFunction.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

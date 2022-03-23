@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>CS3203 Team 29: C:/Users/Jody Tang/Desktop/NUS/Y3S2/CS3203/Proj/Team29/Code29/source/QPP/RelRefChecker.cpp File Reference</title>
+<title>CS3203 Team 29: QPP/RelRefChecker.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_e04ae2849dfa520b4ee2c9f7e9ff15de.html">Desktop</a></li><li class="navelem"><a class="el" href="dir_fc535f21949c11c9ba400d65784ec52f.html">NUS</a></li><li class="navelem"><a class="el" href="dir_03b17459166973645e5999254af2c876.html">Y3S2</a></li><li class="navelem"><a class="el" href="dir_b53863b2dd4e7567b209cc69d498bd8d.html">CS3203</a></li><li class="navelem"><a class="el" href="dir_a685a0b18ca61e77064c945be78f3477.html">Proj</a></li><li class="navelem"><a class="el" href="dir_836c232a576c31fa72627368ec927480.html">Team29</a></li><li class="navelem"><a class="el" href="dir_46d9012ec6ef0c453dd63a39b5923908.html">Code29</a></li><li class="navelem"><a class="el" href="dir_c278d9d90c9f4d2e85ae516d96d8817b.html">source</a></li><li class="navelem"><a class="el" href="dir_1c793c10dd6ad0bc1cf5cb5771769fd3.html">QPP</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_6547928fef5eab07c3cb95c8d28c90b4.html">QPP</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -79,30 +79,171 @@ $(function() {
 <code>#include &lt;cstring&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
+<code>#include &lt;stdexcept&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:acdfb7b6a51a69ce452eee263a296c32d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rel_ref_checker_8cpp.html#acdfb7b6a51a69ce452eee263a296c32d">isValidParams</a> (string str, string term, string ref1, string ref2)</td></tr>
-<tr class="separator:acdfb7b6a51a69ce452eee263a296c32d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5876ce42d6844e7c89c5b7dbba41bca3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rel_ref_checker_8cpp.html#a5876ce42d6844e7c89c5b7dbba41bca3">checkIsValidRefsGiven</a> (string ref1, string ref2)</td></tr>
+<tr class="separator:a5876ce42d6844e7c89c5b7dbba41bca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab63384d1358aa121e20b53cdc9453f45"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rel_ref_checker_8cpp.html#ab63384d1358aa121e20b53cdc9453f45">isValidBeforeOpenBracket</a> (string remaining)</td></tr>
+<tr class="separator:ab63384d1358aa121e20b53cdc9453f45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8807add5edc19bc49e3ee89dd0c45285"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rel_ref_checker_8cpp.html#a8807add5edc19bc49e3ee89dd0c45285">isValidFirstRef</a> (string params, int idxOfComma, string ref1)</td></tr>
+<tr class="separator:a8807add5edc19bc49e3ee89dd0c45285"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8ea97a38b25ee2b3f981da71715d87f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rel_ref_checker_8cpp.html#aa8ea97a38b25ee2b3f981da71715d87f">isValidSecRef</a> (string secondParam, int idxOfCloseBracket, string ref2)</td></tr>
+<tr class="separator:aa8ea97a38b25ee2b3f981da71715d87f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8af367a6fde3f060428703fc69fcadfe"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rel_ref_checker_8cpp.html#a8af367a6fde3f060428703fc69fcadfe">checkValidParamsReturnAfterParams</a> (string remaining, string ref1, string ref2)</td></tr>
+<tr class="separator:a8af367a6fde3f060428703fc69fcadfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fa4d22f2f5e7603100028cd5c95ec0f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rel_ref_checker_8cpp.html#a2fa4d22f2f5e7603100028cd5c95ec0f">isValidAfterClosingBracket</a> (string secondParam)</td></tr>
+<tr class="separator:a2fa4d22f2f5e7603100028cd5c95ec0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a087dc814ff65e5f3cd0478fad585a704"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rel_ref_checker_8cpp.html#a087dc814ff65e5f3cd0478fad585a704">isValidParams</a> (string str, string term, string ref1, string ref2)</td></tr>
+<tr class="separator:a087dc814ff65e5f3cd0478fad585a704"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:abe60a9f2bde8bc2afea53b9efcf055bf"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rel_ref_checker_8cpp.html#abe60a9f2bde8bc2afea53b9efcf055bf">SUCCESS</a> = 0</td></tr>
-<tr class="separator:abe60a9f2bde8bc2afea53b9efcf055bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af910c409e0e5b410fc6aa983863ff93d"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rel_ref_checker_8cpp.html#af910c409e0e5b410fc6aa983863ff93d">INCORRECT_INPUT_GIVEN</a> = -1</td></tr>
-<tr class="separator:af910c409e0e5b410fc6aa983863ff93d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e7c0b2080f92c6a4c05c28f85d46046"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rel_ref_checker_8cpp.html#a9e7c0b2080f92c6a4c05c28f85d46046">INVALID</a> = -2</td></tr>
-<tr class="separator:a9e7c0b2080f92c6a4c05c28f85d46046"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5f4ba0050108232af689068efded5dc"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rel_ref_checker_8cpp.html#ad5f4ba0050108232af689068efded5dc">INVALID_INPUT</a> = &quot;INVALID_INPUT!&quot;</td></tr>
+<tr class="separator:ad5f4ba0050108232af689068efded5dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="acdfb7b6a51a69ce452eee263a296c32d" name="acdfb7b6a51a69ce452eee263a296c32d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acdfb7b6a51a69ce452eee263a296c32d">&#9670;&nbsp;</a></span>isValidParams()</h2>
+<a id="a5876ce42d6844e7c89c5b7dbba41bca3" name="a5876ce42d6844e7c89c5b7dbba41bca3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5876ce42d6844e7c89c5b7dbba41bca3">&#9670;&nbsp;</a></span>checkIsValidRefsGiven()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int isValidParams </td>
+          <td class="memname">void checkIsValidRefsGiven </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>ref1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>ref2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8af367a6fde3f060428703fc69fcadfe" name="a8af367a6fde3f060428703fc69fcadfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8af367a6fde3f060428703fc69fcadfe">&#9670;&nbsp;</a></span>checkValidParamsReturnAfterParams()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string checkValidParamsReturnAfterParams </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>remaining</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>ref1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>ref2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2fa4d22f2f5e7603100028cd5c95ec0f" name="a2fa4d22f2f5e7603100028cd5c95ec0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fa4d22f2f5e7603100028cd5c95ec0f">&#9670;&nbsp;</a></span>isValidAfterClosingBracket()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isValidAfterClosingBracket </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>secondParam</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab63384d1358aa121e20b53cdc9453f45" name="ab63384d1358aa121e20b53cdc9453f45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab63384d1358aa121e20b53cdc9453f45">&#9670;&nbsp;</a></span>isValidBeforeOpenBracket()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isValidBeforeOpenBracket </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>remaining</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8807add5edc19bc49e3ee89dd0c45285" name="a8807add5edc19bc49e3ee89dd0c45285"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8807add5edc19bc49e3ee89dd0c45285">&#9670;&nbsp;</a></span>isValidFirstRef()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isValidFirstRef </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>params</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>idxOfComma</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>ref1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a087dc814ff65e5f3cd0478fad585a704" name="a087dc814ff65e5f3cd0478fad585a704"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a087dc814ff65e5f3cd0478fad585a704">&#9670;&nbsp;</a></span>isValidParams()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isValidParams </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>str</em>, </td>
@@ -135,43 +276,49 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="aa8ea97a38b25ee2b3f981da71715d87f" name="aa8ea97a38b25ee2b3f981da71715d87f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8ea97a38b25ee2b3f981da71715d87f">&#9670;&nbsp;</a></span>isValidSecRef()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isValidSecRef </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>secondParam</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>idxOfCloseBracket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>ref2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="af910c409e0e5b410fc6aa983863ff93d" name="af910c409e0e5b410fc6aa983863ff93d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af910c409e0e5b410fc6aa983863ff93d">&#9670;&nbsp;</a></span>INCORRECT_INPUT_GIVEN</h2>
+<a id="ad5f4ba0050108232af689068efded5dc" name="ad5f4ba0050108232af689068efded5dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5f4ba0050108232af689068efded5dc">&#9670;&nbsp;</a></span>INVALID_INPUT</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const int INCORRECT_INPUT_GIVEN = -1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9e7c0b2080f92c6a4c05c28f85d46046" name="a9e7c0b2080f92c6a4c05c28f85d46046"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e7c0b2080f92c6a4c05c28f85d46046">&#9670;&nbsp;</a></span>INVALID</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int INVALID = -2</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abe60a9f2bde8bc2afea53b9efcf055bf" name="abe60a9f2bde8bc2afea53b9efcf055bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe60a9f2bde8bc2afea53b9efcf055bf">&#9670;&nbsp;</a></span>SUCCESS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int SUCCESS = 0</td>
+          <td class="memname">const string INVALID_INPUT = &quot;INVALID_INPUT!&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">

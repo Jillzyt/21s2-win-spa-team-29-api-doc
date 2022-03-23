@@ -1,13 +1,22 @@
 var searchData=
 [
-  ['end_5fof_5fsyntax_5fvalidator_0',['END_OF_SYNTAX_VALIDATOR',['../_query_syntax_validator_8cpp.html#a9f47c6f0588c5d24985f216d93b809e6',1,'QuerySyntaxValidator.cpp']]],
-  ['entitysets_1',['entitySets',['../_design_extractor_8cpp.html#ac067742370a8dd6894e000158101d8ab',1,'DesignExtractor.cpp']]],
-  ['equal_2',['equal',['../class_table.html#a804dc155399667b6e04e3418f47fff8b',1,'Table']]],
-  ['evaluatequery_3',['evaluateQuery',['../class_query_evaluator.html#ae6fe557c5591418cb7d94bd3b66ef706',1,'QueryEvaluator']]],
-  ['exprchecker_4',['ExprChecker',['../namespace_expr_checker.html',1,'']]],
-  ['exprchecker_2ecpp_5',['ExprChecker.cpp',['../_expr_checker_8cpp.html',1,'']]],
-  ['exprchecker_2eh_6',['ExprChecker.h',['../_expr_checker_8h.html',1,'']]],
-  ['expressionparser_7',['ExpressionParser',['../class_expression_parser.html',1,'']]],
-  ['expressionparser_2ecpp_8',['ExpressionParser.cpp',['../_expression_parser_8cpp.html',1,'']]],
-  ['expressionparser_2eh_9',['ExpressionParser.h',['../_expression_parser_8h.html',1,'']]]
+  ['end_0',['end',['../class_dfs_graph.html#a57d0515c30d5450edeab74eab47c91c2',1,'DfsGraph']]],
+  ['end_5fof_5fstmt_1',['END_OF_STMT',['../_constants_8h.html#ab619a57e403fe555b2b6dbe42255cfac',1,'Constants.h']]],
+  ['entref_2',['ENTREF',['../namespace_pql.html#a4713be08c153bdfddcc1529111b7590ea6b8a7968d6052e8f7652185482dd29ef',1,'Pql']]],
+  ['equal_3',['equal',['../class_table.html#a804dc155399667b6e04e3418f47fff8b',1,'Table']]],
+  ['evaluateclause_4',['evaluateClause',['../class_clause_evaluator.html#a9147025ba81474ed7e5b50ac1ecc09f2',1,'ClauseEvaluator']]],
+  ['evaluategeneral_5',['evaluateGeneral',['../class_clause_evaluator.html#a7969856a968486a3b625579115f286f0',1,'ClauseEvaluator']]],
+  ['evaluategroup_6',['evaluateGroup',['../class_clause_group_evaluator.html#ab5b0993dccf214ccabf1b4e213be513e',1,'ClauseGroupEvaluator']]],
+  ['evaluatequery_7',['evaluateQuery',['../class_query_evaluator.html#a73c758a86a2730544159fd054280f75c',1,'QueryEvaluator']]],
+  ['evaluatestmts_8',['evaluateStmts',['../class_pattern_evaluator.html#a604bee36340927e130b430031d996131',1,'PatternEvaluator::evaluateStmts()'],['../class_pattern_evaluator_interface.html#a8eae3e8b6f053879a1b87b5aee7b0459',1,'PatternEvaluatorInterface::evaluateStmts()']]],
+  ['evaluatevars_9',['evaluateVars',['../class_pattern_evaluator.html#a27897952e47156e998d56a017a58d140',1,'PatternEvaluator::evaluateVars()'],['../class_pattern_evaluator_interface.html#a73f1da45b4ae066fab4fa0cb75be4550',1,'PatternEvaluatorInterface::evaluateVars()']]],
+  ['expr_5fminus_10',['EXPR_MINUS',['../_constants_8h.html#a494e8a5038c537e2e1e40ecd40d0e031',1,'Constants.h']]],
+  ['expr_5fplus_11',['EXPR_PLUS',['../_constants_8h.html#a13d58818b84103f75d30349db7c230d8',1,'Constants.h']]],
+  ['expr_5fspec_12',['EXPR_SPEC',['../namespace_pql.html#a4713be08c153bdfddcc1529111b7590ead98d0598f1e2b7e3e32adb2c612c14b5',1,'Pql']]],
+  ['exprchecker_13',['ExprChecker',['../namespace_expr_checker.html',1,'']]],
+  ['exprchecker_2ecpp_14',['ExprChecker.cpp',['../_expr_checker_8cpp.html',1,'']]],
+  ['exprchecker_2eh_15',['ExprChecker.h',['../_expr_checker_8h.html',1,'']]],
+  ['expressionparser_16',['ExpressionParser',['../class_expression_parser.html',1,'']]],
+  ['expressionparser_2ecpp_17',['ExpressionParser.cpp',['../_expression_parser_8cpp.html',1,'']]],
+  ['expressionparser_2eh_18',['ExpressionParser.h',['../_expression_parser_8h.html',1,'']]]
 ];
