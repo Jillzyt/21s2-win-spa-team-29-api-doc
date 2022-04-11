@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>CS3203 Team 29: QPP/QueryTermsChecker.cpp File Reference</title>
+<title>CS3203 Team 29: C:/Users/Jody Tang/Desktop/NUS/Y3S2/CS3203/Proj/Team29/Code29/source/QPP/QueryTermsChecker.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_6547928fef5eab07c3cb95c8d28c90b4.html">QPP</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_e04ae2849dfa520b4ee2c9f7e9ff15de.html">Desktop</a></li><li class="navelem"><a class="el" href="dir_fc535f21949c11c9ba400d65784ec52f.html">NUS</a></li><li class="navelem"><a class="el" href="dir_03b17459166973645e5999254af2c876.html">Y3S2</a></li><li class="navelem"><a class="el" href="dir_b53863b2dd4e7567b209cc69d498bd8d.html">CS3203</a></li><li class="navelem"><a class="el" href="dir_a685a0b18ca61e77064c945be78f3477.html">Proj</a></li><li class="navelem"><a class="el" href="dir_836c232a576c31fa72627368ec927480.html">Team29</a></li><li class="navelem"><a class="el" href="dir_46d9012ec6ef0c453dd63a39b5923908.html">Code29</a></li><li class="navelem"><a class="el" href="dir_c278d9d90c9f4d2e85ae516d96d8817b.html">source</a></li><li class="navelem"><a class="el" href="dir_1c793c10dd6ad0bc1cf5cb5771769fd3.html">QPP</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -74,6 +74,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="_query_terms_checker_8h_source.html">QueryTermsChecker.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_qpp_errors_8h_source.html">QppErrors.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_rel_ref_checker_8h_source.html">RelRefChecker.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_expr_checker_8h_source.html">../Utils/ExprChecker.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_lexical_token_checker_8h_source.html">../Utils/LexicalTokenChecker.h</a>&quot;</code><br />
@@ -85,20 +86,46 @@ $(function() {
 Functions</h2></td></tr>
 <tr class="memitem:aa15c1a6783f1f31a95dca78226397fab"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_terms_checker_8cpp.html#aa15c1a6783f1f31a95dca78226397fab">getDotResultClause</a> (list&lt; string &gt; *ls, string firstItem)</td></tr>
 <tr class="separator:aa15c1a6783f1f31a95dca78226397fab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca251a40a7af0ba19e796541efa501c5"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_terms_checker_8cpp.html#aca251a40a7af0ba19e796541efa501c5">getBeforeIncludingDelimPushfrontAfterDelim</a> (list&lt; string &gt; *ls, string mainString, string delim)</td></tr>
+<tr class="separator:aca251a40a7af0ba19e796541efa501c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e4ee2ff36933b4766a6133da0e7b90b"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_terms_checker_8cpp.html#a3e4ee2ff36933b4766a6133da0e7b90b">getCarrotResultClause</a> (list&lt; string &gt; *ls, string firstItem)</td></tr>
 <tr class="separator:a3e4ee2ff36933b4766a6133da0e7b90b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f180df6443395d48da8af8b4d256217"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_terms_checker_8cpp.html#a4f180df6443395d48da8af8b4d256217">handleCarrotsNoSpace</a> (list&lt; string &gt; *selectClause, string *firstItem)</td></tr>
+<tr class="separator:a4f180df6443395d48da8af8b4d256217"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa09f61c1c47bccd36f2e17afe002460b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_terms_checker_8cpp.html#aa09f61c1c47bccd36f2e17afe002460b">isValidRelRef</a> (string str)</td></tr>
 <tr class="separator:aa09f61c1c47bccd36f2e17afe002460b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d715f8900367df0ce4a130cd298e0a2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_terms_checker_8cpp.html#a0d715f8900367df0ce4a130cd298e0a2">isValidAssignPatternClause</a> (string str)</td></tr>
-<tr class="separator:a0d715f8900367df0ce4a130cd298e0a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1bbaf52912c9801137e6190cf4ec2d03"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_terms_checker_8cpp.html#a1bbaf52912c9801137e6190cf4ec2d03">isValidWhilePatternClause</a> (string str)</td></tr>
-<tr class="separator:a1bbaf52912c9801137e6190cf4ec2d03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af44d192ff270478cd8cbebf4c0aab702"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_terms_checker_8cpp.html#af44d192ff270478cd8cbebf4c0aab702">isValidIfPatternClause</a> (string str)</td></tr>
-<tr class="separator:af44d192ff270478cd8cbebf4c0aab702"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe2a68ac627ea6ccce9fe237ca7e61d2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_terms_checker_8cpp.html#abe2a68ac627ea6ccce9fe237ca7e61d2">isValidPatternClauseBeforeAfterBrackets</a> (string str)</td></tr>
+<tr class="separator:abe2a68ac627ea6ccce9fe237ca7e61d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afff6920fc0a21d9d9fbcdda8a68274b7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_terms_checker_8cpp.html#afff6920fc0a21d9d9fbcdda8a68274b7">isValidPatternClauseParams</a> (string params)</td></tr>
+<tr class="separator:afff6920fc0a21d9d9fbcdda8a68274b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59292b0138567ced3994213be3630c99"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_terms_checker_8cpp.html#a59292b0138567ced3994213be3630c99">isValidPatternClause</a> (string str)</td></tr>
 <tr class="separator:a59292b0138567ced3994213be3630c99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05c53e9a7c52f8362950f181692515a5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_terms_checker_8cpp.html#a05c53e9a7c52f8362950f181692515a5">isValidAttrCompare</a> (string str)</td></tr>
 <tr class="separator:a05c53e9a7c52f8362950f181692515a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab010380a7e2a9074a6f35340a9b8058c"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_terms_checker_8cpp.html#ab010380a7e2a9074a6f35340a9b8058c">getFirstCond</a> (list&lt; string &gt; *inputStringSplitBySpaces)</td></tr>
+<tr class="separator:ab010380a7e2a9074a6f35340a9b8058c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0964e85e380c07aff39c07b054bf24cf"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_terms_checker_8cpp.html#a0964e85e380c07aff39c07b054bf24cf">removeTrailingAnd</a> (string input)</td></tr>
+<tr class="separator:a0964e85e380c07aff39c07b054bf24cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99e97bef76f7547c80988c2660bb42e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_terms_checker_8cpp.html#a99e97bef76f7547c80988c2660bb42e9">handleConnectingAndInSuchThatPatternClause</a> (list&lt; string &gt; *inputStringSplitBySpaces, string *firstCond)</td></tr>
+<tr class="separator:a99e97bef76f7547c80988c2660bb42e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a763fc177c8541e888a8739c16dc77756"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_terms_checker_8cpp.html#a763fc177c8541e888a8739c16dc77756">formatReturnString</a> (string clauseType, string *firstCond, string *returnString)</td></tr>
+<tr class="separator:a763fc177c8541e888a8739c16dc77756"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ea754a7d110e7ea84b220acf6d7b387"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_terms_checker_8cpp.html#a6ea754a7d110e7ea84b220acf6d7b387">handleFormattingOfSuchThatPatternClause</a> (list&lt; string &gt; *inputStringSplitBySpaces, string clauseType)</td></tr>
+<tr class="separator:a6ea754a7d110e7ea84b220acf6d7b387"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adef665196fdc925b0d44d4cf8d24e4ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_terms_checker_8cpp.html#adef665196fdc925b0d44d4cf8d24e4ca">handleConnectingAnd</a> (list&lt; string &gt; *attrCondSplitBySpaces)</td></tr>
+<tr class="separator:adef665196fdc925b0d44d4cf8d24e4ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7b2bc934f6a03d769cc423c8a42e8e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_terms_checker_8cpp.html#ac7b2bc934f6a03d769cc423c8a42e8e4">handleAfterEquals</a> (list&lt; string &gt; *clausesSplitBySpaces, string *afterEquals, string *wholeWithClause, int *idxOfEqual)</td></tr>
+<tr class="separator:ac7b2bc934f6a03d769cc423c8a42e8e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2a7d74f18e36febe058088357e32802"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_terms_checker_8cpp.html#ae2a7d74f18e36febe058088357e32802">getUntilEquals</a> (list&lt; string &gt; *clausesSplitBySpaces, string *afterEquals, string *wholeWithClause, int *idxOfEqual)</td></tr>
+<tr class="separator:ae2a7d74f18e36febe058088357e32802"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6c6b6ba28e1c230d4a194e1a04d7917"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_terms_checker_8cpp.html#af6c6b6ba28e1c230d4a194e1a04d7917">handleOpenCommas</a> (list&lt; string &gt; *clausesSplitBySpaces, string *afterEquals)</td></tr>
+<tr class="separator:af6c6b6ba28e1c230d4a194e1a04d7917"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af02322ff053ca5d84c4b9f6babcc084f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_terms_checker_8cpp.html#af02322ff053ca5d84c4b9f6babcc084f">handleFirstWithClauseOpenComma</a> (list&lt; string &gt; *clausesSplitBySpaces, string *afterEquals)</td></tr>
+<tr class="separator:af02322ff053ca5d84c4b9f6babcc084f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a5926776bc885ddfcba16dde0763727"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_terms_checker_8cpp.html#a9a5926776bc885ddfcba16dde0763727">handleFirstWithClauseDot</a> (list&lt; string &gt; *clausesSplitBySpaces, string *afterEquals, string nextItem)</td></tr>
+<tr class="separator:a9a5926776bc885ddfcba16dde0763727"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3cfdf06686fb0a7f265ab72b791c9d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_terms_checker_8cpp.html#af3cfdf06686fb0a7f265ab72b791c9d3">handleFirstWithClauseNoComma</a> (list&lt; string &gt; *clausesSplitBySpaces, string *afterEquals)</td></tr>
+<tr class="separator:af3cfdf06686fb0a7f265ab72b791c9d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -110,6 +137,74 @@ Variables</h2></td></tr>
 <tr class="separator:a3f60a5a6c4fe94a30449f53b9530e80b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a763fc177c8541e888a8739c16dc77756" name="a763fc177c8541e888a8739c16dc77756"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a763fc177c8541e888a8739c16dc77756">&#9670;&nbsp;</a></span>formatReturnString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void formatReturnString </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>clauseType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string *&#160;</td>
+          <td class="paramname"><em>firstCond</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string *&#160;</td>
+          <td class="paramname"><em>returnString</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aca251a40a7af0ba19e796541efa501c5" name="aca251a40a7af0ba19e796541efa501c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca251a40a7af0ba19e796541efa501c5">&#9670;&nbsp;</a></span>getBeforeIncludingDelimPushfrontAfterDelim()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string getBeforeIncludingDelimPushfrontAfterDelim </td>
+          <td>(</td>
+          <td class="paramtype">list&lt; string &gt; *&#160;</td>
+          <td class="paramname"><em>ls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>mainString</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>delim</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a3e4ee2ff36933b4766a6133da0e7b90b" name="a3e4ee2ff36933b4766a6133da0e7b90b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3e4ee2ff36933b4766a6133da0e7b90b">&#9670;&nbsp;</a></span>getCarrotResultClause()</h2>
 
@@ -166,18 +261,318 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a0d715f8900367df0ce4a130cd298e0a2" name="a0d715f8900367df0ce4a130cd298e0a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d715f8900367df0ce4a130cd298e0a2">&#9670;&nbsp;</a></span>isValidAssignPatternClause()</h2>
+<a id="ab010380a7e2a9074a6f35340a9b8058c" name="ab010380a7e2a9074a6f35340a9b8058c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab010380a7e2a9074a6f35340a9b8058c">&#9670;&nbsp;</a></span>getFirstCond()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool isValidAssignPatternClause </td>
+          <td class="memname">string getFirstCond </td>
           <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>str</em></td><td>)</td>
+          <td class="paramtype">list&lt; string &gt; *&#160;</td>
+          <td class="paramname"><em>inputStringSplitBySpaces</em></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae2a7d74f18e36febe058088357e32802" name="ae2a7d74f18e36febe058088357e32802"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2a7d74f18e36febe058088357e32802">&#9670;&nbsp;</a></span>getUntilEquals()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void getUntilEquals </td>
+          <td>(</td>
+          <td class="paramtype">list&lt; string &gt; *&#160;</td>
+          <td class="paramname"><em>clausesSplitBySpaces</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string *&#160;</td>
+          <td class="paramname"><em>afterEquals</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string *&#160;</td>
+          <td class="paramname"><em>wholeWithClause</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>idxOfEqual</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac7b2bc934f6a03d769cc423c8a42e8e4" name="ac7b2bc934f6a03d769cc423c8a42e8e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7b2bc934f6a03d769cc423c8a42e8e4">&#9670;&nbsp;</a></span>handleAfterEquals()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void handleAfterEquals </td>
+          <td>(</td>
+          <td class="paramtype">list&lt; string &gt; *&#160;</td>
+          <td class="paramname"><em>clausesSplitBySpaces</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string *&#160;</td>
+          <td class="paramname"><em>afterEquals</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string *&#160;</td>
+          <td class="paramname"><em>wholeWithClause</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>idxOfEqual</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4f180df6443395d48da8af8b4d256217" name="a4f180df6443395d48da8af8b4d256217"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f180df6443395d48da8af8b4d256217">&#9670;&nbsp;</a></span>handleCarrotsNoSpace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void handleCarrotsNoSpace </td>
+          <td>(</td>
+          <td class="paramtype">list&lt; string &gt; *&#160;</td>
+          <td class="paramname"><em>selectClause</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string *&#160;</td>
+          <td class="paramname"><em>firstItem</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adef665196fdc925b0d44d4cf8d24e4ca" name="adef665196fdc925b0d44d4cf8d24e4ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adef665196fdc925b0d44d4cf8d24e4ca">&#9670;&nbsp;</a></span>handleConnectingAnd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void handleConnectingAnd </td>
+          <td>(</td>
+          <td class="paramtype">list&lt; string &gt; *&#160;</td>
+          <td class="paramname"><em>attrCondSplitBySpaces</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a99e97bef76f7547c80988c2660bb42e9" name="a99e97bef76f7547c80988c2660bb42e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99e97bef76f7547c80988c2660bb42e9">&#9670;&nbsp;</a></span>handleConnectingAndInSuchThatPatternClause()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void handleConnectingAndInSuchThatPatternClause </td>
+          <td>(</td>
+          <td class="paramtype">list&lt; string &gt; *&#160;</td>
+          <td class="paramname"><em>inputStringSplitBySpaces</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string *&#160;</td>
+          <td class="paramname"><em>firstCond</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9a5926776bc885ddfcba16dde0763727" name="a9a5926776bc885ddfcba16dde0763727"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a5926776bc885ddfcba16dde0763727">&#9670;&nbsp;</a></span>handleFirstWithClauseDot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void handleFirstWithClauseDot </td>
+          <td>(</td>
+          <td class="paramtype">list&lt; string &gt; *&#160;</td>
+          <td class="paramname"><em>clausesSplitBySpaces</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string *&#160;</td>
+          <td class="paramname"><em>afterEquals</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>nextItem</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af3cfdf06686fb0a7f265ab72b791c9d3" name="af3cfdf06686fb0a7f265ab72b791c9d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3cfdf06686fb0a7f265ab72b791c9d3">&#9670;&nbsp;</a></span>handleFirstWithClauseNoComma()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void handleFirstWithClauseNoComma </td>
+          <td>(</td>
+          <td class="paramtype">list&lt; string &gt; *&#160;</td>
+          <td class="paramname"><em>clausesSplitBySpaces</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string *&#160;</td>
+          <td class="paramname"><em>afterEquals</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af02322ff053ca5d84c4b9f6babcc084f" name="af02322ff053ca5d84c4b9f6babcc084f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af02322ff053ca5d84c4b9f6babcc084f">&#9670;&nbsp;</a></span>handleFirstWithClauseOpenComma()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void handleFirstWithClauseOpenComma </td>
+          <td>(</td>
+          <td class="paramtype">list&lt; string &gt; *&#160;</td>
+          <td class="paramname"><em>clausesSplitBySpaces</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string *&#160;</td>
+          <td class="paramname"><em>afterEquals</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6ea754a7d110e7ea84b220acf6d7b387" name="a6ea754a7d110e7ea84b220acf6d7b387"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ea754a7d110e7ea84b220acf6d7b387">&#9670;&nbsp;</a></span>handleFormattingOfSuchThatPatternClause()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string handleFormattingOfSuchThatPatternClause </td>
+          <td>(</td>
+          <td class="paramtype">list&lt; string &gt; *&#160;</td>
+          <td class="paramname"><em>inputStringSplitBySpaces</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>clauseType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af6c6b6ba28e1c230d4a194e1a04d7917" name="af6c6b6ba28e1c230d4a194e1a04d7917"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6c6b6ba28e1c230d4a194e1a04d7917">&#9670;&nbsp;</a></span>handleOpenCommas()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void handleOpenCommas </td>
+          <td>(</td>
+          <td class="paramtype">list&lt; string &gt; *&#160;</td>
+          <td class="paramname"><em>clausesSplitBySpaces</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string *&#160;</td>
+          <td class="paramname"><em>afterEquals</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -192,24 +587,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">bool isValidAttrCompare </td>
-          <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>str</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af44d192ff270478cd8cbebf4c0aab702" name="af44d192ff270478cd8cbebf4c0aab702"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af44d192ff270478cd8cbebf4c0aab702">&#9670;&nbsp;</a></span>isValidIfPatternClause()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool isValidIfPatternClause </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>str</em></td><td>)</td>
@@ -238,6 +615,42 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="abe2a68ac627ea6ccce9fe237ca7e61d2" name="abe2a68ac627ea6ccce9fe237ca7e61d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe2a68ac627ea6ccce9fe237ca7e61d2">&#9670;&nbsp;</a></span>isValidPatternClauseBeforeAfterBrackets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isValidPatternClauseBeforeAfterBrackets </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afff6920fc0a21d9d9fbcdda8a68274b7" name="afff6920fc0a21d9d9fbcdda8a68274b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afff6920fc0a21d9d9fbcdda8a68274b7">&#9670;&nbsp;</a></span>isValidPatternClauseParams()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isValidPatternClauseParams </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>params</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aa09f61c1c47bccd36f2e17afe002460b" name="aa09f61c1c47bccd36f2e17afe002460b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa09f61c1c47bccd36f2e17afe002460b">&#9670;&nbsp;</a></span>isValidRelRef()</h2>
 
@@ -256,17 +669,17 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a1bbaf52912c9801137e6190cf4ec2d03" name="a1bbaf52912c9801137e6190cf4ec2d03"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1bbaf52912c9801137e6190cf4ec2d03">&#9670;&nbsp;</a></span>isValidWhilePatternClause()</h2>
+<a id="a0964e85e380c07aff39c07b054bf24cf" name="a0964e85e380c07aff39c07b054bf24cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0964e85e380c07aff39c07b054bf24cf">&#9670;&nbsp;</a></span>removeTrailingAnd()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool isValidWhilePatternClause </td>
+          <td class="memname">string removeTrailingAnd </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>str</em></td><td>)</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
           <td></td>
         </tr>
       </table>

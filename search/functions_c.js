@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['operator_21_3d_0',['operator!=',['../class_dfs_iterator.html#aa041dc1df709d0df74647dfb43c579ea',1,'DfsIterator']]],
-  ['operator_28_29_1',['operator()',['../struct_container_hash_1_1_hasher.html#a296b5ed30d946d9dcebf736263d6a78c',1,'ContainerHash::Hasher']]],
-  ['operator_2a_2',['operator*',['../class_dfs_iterator.html#a3531208e1b4344d00eefb4ece6cbeafa',1,'DfsIterator']]],
-  ['operator_2b_2b_3',['operator++',['../class_dfs_iterator.html#a680e86a591a71002869c52ada3574f40',1,'DfsIterator::operator++()'],['../class_dfs_iterator.html#a0e96c7ab41a1c0364616434f68eea212',1,'DfsIterator::operator++(int)']]],
-  ['operator_3d_3d_4',['operator==',['../class_dfs_iterator.html#acb4c484f67a6bccf329453260798faf9',1,'DfsIterator']]]
+  ['nexttrelrefextractor_0',['NextTRelRefExtractor',['../class_next_t_rel_ref_extractor.html#a9a9783e08222a11ccb6a77e89b023085',1,'NextTRelRefExtractor::NextTRelRefExtractor()'],['../class_next_t_rel_ref_extractor.html#aae7d920d5f886d7dce4134113749edd0',1,'NextTRelRefExtractor::NextTRelRefExtractor(PkbInterface *pkbInstance)']]],
+  ['numofoccurrences_1',['numOfOccurrences',['../namespace_string_addon.html#ad24039e80199d59cf7113a11f67ea84b',1,'StringAddon']]]
 ];

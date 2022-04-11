@@ -66,11 +66,11 @@ $(function() {
   <div class="summary">
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="class_subtree_generator-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">SubtreeGenerator Class Reference<div class="ingroups"><a class="el" href="group___ast.html">Ast</a></div></div></div>
+  <div class="headertitle"><div class="title">SubtreeGenerator Class Reference<div class="ingroups"><a class="el" href="group___program_analyser.html">ProgramAnalyser</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Contains only functions for the purpose of generating Subtree.  
+<p>Contains only functions for the purpose of generating Subtree of an AST.  
  <a href="class_subtree_generator.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_subtree_generator_8h_source.html">SubtreeGenerator.h</a>&gt;</code></p>
@@ -86,6 +86,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aaec4ee566b956f5fb034a30874271c33"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_subtree_generator.html#aaec4ee566b956f5fb034a30874271c33">generateCondSubTree</a> (std::vector&lt; <a class="el" href="class_t_node.html">TNode</a> * &gt; &amp;nodeList)</td></tr>
 <tr class="memdesc:aaec4ee566b956f5fb034a30874271c33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function edits a <a class="el" href="class_t_node.html" title="Makes up the tree nodes of the Ast.">TNode</a> in list to be a subtree rooted in conditions if there exist a suitable <a class="el" href="class_t_node.html" title="Makes up the tree nodes of the Ast.">TNode</a> to be parent.  <a href="class_subtree_generator.html#aaec4ee566b956f5fb034a30874271c33">More...</a><br /></td></tr>
 <tr class="separator:aaec4ee566b956f5fb034a30874271c33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed7bdc1b4b3efec284041e8997b4c9ef"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_t_node.html">TNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_subtree_generator.html#aed7bdc1b4b3efec284041e8997b4c9ef">generateTNodeElement</a> (<a class="el" href="struct_token_class.html">TokenClass</a> token)</td></tr>
+<tr class="memdesc:aed7bdc1b4b3efec284041e8997b4c9ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a <a class="el" href="class_t_node.html" title="Makes up the tree nodes of the Ast.">TNode</a> based on input string value.  <a href="class_subtree_generator.html#aed7bdc1b4b3efec284041e8997b4c9ef">More...</a><br /></td></tr>
+<tr class="separator:aed7bdc1b4b3efec284041e8997b4c9ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e6686f57439c4499a905353c9fb6aa6"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; <a class="el" href="class_t_node.html">TNode</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_subtree_generator.html#a9e6686f57439c4499a905353c9fb6aa6">formOperativeLink</a> (std::vector&lt; <a class="el" href="class_t_node.html">TNode</a> * &gt; nodeList, int i)</td></tr>
 <tr class="memdesc:a9e6686f57439c4499a905353c9fb6aa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Edits list of TNode* object such that valid <a class="el" href="class_t_node.html" title="Makes up the tree nodes of the Ast.">TNode</a> will have adjacent <a class="el" href="class_t_node.html" title="Makes up the tree nodes of the Ast.">TNode</a> removed and instilled as its child.  <a href="class_subtree_generator.html#a9e6686f57439c4499a905353c9fb6aa6">More...</a><br /></td></tr>
 <tr class="separator:a9e6686f57439c4499a905353c9fb6aa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -108,10 +111,11 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:aea9bfac8e5074b42930b248b8dc1d115"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if <a class="el" href="class_t_node.html" title="Makes up the tree nodes of the Ast.">TNode</a> token is an operator.  <a href="class_subtree_generator.html#aea9bfac8e5074b42930b248b8dc1d115">More...</a><br /></td></tr>
 <tr class="separator:aea9bfac8e5074b42930b248b8dc1d115"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a409f6d4fdda290cb42b8818556d19032"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_t_node.html">TNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_subtree_generator.html#a409f6d4fdda290cb42b8818556d19032">generateExpression</a> (std::vector&lt; std::string &gt; &amp;tokenList)</td></tr>
+<tr class="memdesc:a409f6d4fdda290cb42b8818556d19032"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function generates a expression subtree from an expression string.  <a href="class_subtree_generator.html#a409f6d4fdda290cb42b8818556d19032">More...</a><br /></td></tr>
 <tr class="separator:a409f6d4fdda290cb42b8818556d19032"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Contains only functions for the purpose of generating Subtree. </p>
+<div class="textblock"><p >Contains only functions for the purpose of generating Subtree of an AST. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a9e6686f57439c4499a905353c9fb6aa6" name="a9e6686f57439c4499a905353c9fb6aa6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9e6686f57439c4499a905353c9fb6aa6">&#9670;&nbsp;</a></span>formOperativeLink()</h2>
@@ -220,6 +224,15 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Function generates a expression subtree from an expression string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tokenList</td><td>Vector of token strings to generate from. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns Pointer to root of the subtree. </dd></dl>
+
 </div>
 </div>
 <a id="ae02a5f0f2c120b0f8c3586700a88d754" name="ae02a5f0f2c120b0f8c3586700a88d754"></a>
@@ -291,6 +304,42 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Return true if nodeList was edited, False otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="aed7bdc1b4b3efec284041e8997b4c9ef" name="aed7bdc1b4b3efec284041e8997b4c9ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed7bdc1b4b3efec284041e8997b4c9ef">&#9670;&nbsp;</a></span>generateTNodeElement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_t_node.html">TNode</a> * SubtreeGenerator::generateTNodeElement </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_token_class.html">TokenClass</a>&#160;</td>
+          <td class="paramname"><em>token</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Generates a <a class="el" href="class_t_node.html" title="Makes up the tree nodes of the Ast.">TNode</a> based on input string value. </p>
+<p >Given a token, identifies if its A) Operation, B) Constant or C) Variable and generate a <a class="el" href="class_t_node.html" title="Makes up the tree nodes of the Ast.">TNode</a> corresponding to it.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">token</td><td>String of token </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns pointer to <a class="el" href="class_t_node.html" title="Makes up the tree nodes of the Ast.">TNode</a> generated. </dd></dl>
 
 </div>
 </div>
@@ -510,8 +559,8 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>ProgramAnalyser/<a class="el" href="_subtree_generator_8h_source.html">SubtreeGenerator.h</a></li>
-<li>ProgramAnalyser/<a class="el" href="_subtree_generator_8cpp.html">SubtreeGenerator.cpp</a></li>
+<li>C:/Users/Jody Tang/Desktop/NUS/Y3S2/CS3203/Proj/Team29/Code29/source/ProgramAnalyser/<a class="el" href="_subtree_generator_8h_source.html">SubtreeGenerator.h</a></li>
+<li>C:/Users/Jody Tang/Desktop/NUS/Y3S2/CS3203/Proj/Team29/Code29/source/ProgramAnalyser/<a class="el" href="_subtree_generator_8cpp.html">SubtreeGenerator.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

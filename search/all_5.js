@@ -13,7 +13,8 @@ var searchData=
   ['follows_10',['FOLLOWS',['../_rel_ref_8h.html#a716e89e479362975d58357aa4f4e00baaff87a8c86b58b08888f1cd1c40372069',1,'RelRef.h']]],
   ['followst_11',['FOLLOWST',['../_rel_ref_8h.html#a716e89e479362975d58357aa4f4e00baab1821ea0fbfc747530bd23b03544515d',1,'RelRef.h']]],
   ['formatpatternclause_12',['formatPatternClause',['../namespace_query_terms_checker.html#a041a68cef4a0eb0c1684a7bcbfcf3598',1,'QueryTermsChecker']]],
-  ['formatsuchthatclause_13',['formatSuchThatClause',['../namespace_query_terms_checker.html#a397f68f00b9412665314b79a0aaf63bb',1,'QueryTermsChecker']]],
-  ['formatwithclause_14',['formatWithClause',['../namespace_query_terms_checker.html#a63d31cdd5f1e57ccff5d6f5b3b853c88',1,'QueryTermsChecker']]],
-  ['formoperativelink_15',['formOperativeLink',['../class_subtree_generator.html#a9e6686f57439c4499a905353c9fb6aa6',1,'SubtreeGenerator']]]
+  ['formatreturnstring_13',['formatReturnString',['../_query_terms_checker_8cpp.html#a763fc177c8541e888a8739c16dc77756',1,'QueryTermsChecker.cpp']]],
+  ['formatsuchthatclause_14',['formatSuchThatClause',['../namespace_query_terms_checker.html#a397f68f00b9412665314b79a0aaf63bb',1,'QueryTermsChecker']]],
+  ['formatwithclause_15',['formatWithClause',['../namespace_query_terms_checker.html#a63d31cdd5f1e57ccff5d6f5b3b853c88',1,'QueryTermsChecker']]],
+  ['formoperativelink_16',['formOperativeLink',['../class_subtree_generator.html#a9e6686f57439c4499a905353c9fb6aa6',1,'SubtreeGenerator']]]
 ];

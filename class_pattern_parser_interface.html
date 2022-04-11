@@ -74,18 +74,27 @@ $(function() {
  <a href="class_pattern_parser_interface.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_pattern_parser_interface_8h_source.html">PatternParserInterface.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for PatternParserInterface:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_pattern_parser_interface.png" usemap="#PatternParserInterface_map" alt=""/>
+  <map id="PatternParserInterface_map" name="PatternParserInterface_map">
+<area href="class_pattern_parser.html" title="PatternParser helps to parse the patterns that are passed from QueryEvaluator(QE) and calls PatternEv..." alt="PatternParser" shape="rect" coords="0,56,140,80"/>
+  </map>
+</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:afd3f541fac1a76d0e55790b0ebc52230"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pattern_parser_interface.html#afd3f541fac1a76d0e55790b0ebc52230">getAssignsByRHS</a> (std::string rhs, <a class="el" href="class_pkb_interface.html">PkbInterface</a> *)=0</td></tr>
-<tr class="memdesc:afd3f541fac1a76d0e55790b0ebc52230"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse and get all ASSIGN stmts that satisfies the rhs pattern that is given.  <a href="class_pattern_parser_interface.html#afd3f541fac1a76d0e55790b0ebc52230">More...</a><br /></td></tr>
-<tr class="separator:afd3f541fac1a76d0e55790b0ebc52230"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31d2646910a9ea43ed99d99c792566b2"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pattern_parser_interface.html#a31d2646910a9ea43ed99d99c792566b2">getIfsByCond</a> (std::string cond, <a class="el" href="class_pkb_interface.html">PkbInterface</a> *)=0</td></tr>
-<tr class="memdesc:a31d2646910a9ea43ed99d99c792566b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse and get all IF stmts that satisfies the rhs pattern that is given.  <a href="class_pattern_parser_interface.html#a31d2646910a9ea43ed99d99c792566b2">More...</a><br /></td></tr>
-<tr class="separator:a31d2646910a9ea43ed99d99c792566b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a754705bb98bd04a90cc8667a8b27644c"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pattern_parser_interface.html#a754705bb98bd04a90cc8667a8b27644c">getWhilesByCond</a> (std::string cond, <a class="el" href="class_pkb_interface.html">PkbInterface</a> *)=0</td></tr>
-<tr class="memdesc:a754705bb98bd04a90cc8667a8b27644c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse and get all WHILE stmts that satisfies the rhs pattern that is given.  <a href="class_pattern_parser_interface.html#a754705bb98bd04a90cc8667a8b27644c">More...</a><br /></td></tr>
-<tr class="separator:a754705bb98bd04a90cc8667a8b27644c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab117f5d79b981359a7d21ad384a08b97"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pattern_parser_interface.html#ab117f5d79b981359a7d21ad384a08b97">getAssignsByRHS</a> (std::string rhs)=0</td></tr>
+<tr class="memdesc:ab117f5d79b981359a7d21ad384a08b97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse and get all ASSIGN stmts that satisfies the rhs pattern that is given.  <a href="class_pattern_parser_interface.html#ab117f5d79b981359a7d21ad384a08b97">More...</a><br /></td></tr>
+<tr class="separator:ab117f5d79b981359a7d21ad384a08b97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeaa8660283a43145c5f85505756c2768"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pattern_parser_interface.html#aeaa8660283a43145c5f85505756c2768">getIfsByCond</a> (std::string cond)=0</td></tr>
+<tr class="memdesc:aeaa8660283a43145c5f85505756c2768"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse and get all IF stmts that satisfies the rhs pattern that is given.  <a href="class_pattern_parser_interface.html#aeaa8660283a43145c5f85505756c2768">More...</a><br /></td></tr>
+<tr class="separator:aeaa8660283a43145c5f85505756c2768"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac98b8372b11c407579211a002d8c8194"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pattern_parser_interface.html#ac98b8372b11c407579211a002d8c8194">getWhilesByCond</a> (std::string cond)=0</td></tr>
+<tr class="memdesc:ac98b8372b11c407579211a002d8c8194"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse and get all WHILE stmts that satisfies the rhs pattern that is given.  <a href="class_pattern_parser_interface.html#ac98b8372b11c407579211a002d8c8194">More...</a><br /></td></tr>
+<tr class="separator:ac98b8372b11c407579211a002d8c8194"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37a2c6ef29eb5373824ea6a13d6b3851"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pattern_parser_interface.html#a37a2c6ef29eb5373824ea6a13d6b3851">getVarsForWhile</a> (std::string stmtNo)=0</td></tr>
 <tr class="memdesc:a37a2c6ef29eb5373824ea6a13d6b3851"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse and get all variables that satisfies the WHILE stmt given.  <a href="class_pattern_parser_interface.html#a37a2c6ef29eb5373824ea6a13d6b3851">More...</a><br /></td></tr>
 <tr class="separator:a37a2c6ef29eb5373824ea6a13d6b3851"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -96,8 +105,8 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p ><a class="el" href="class_pattern_parser.html" title="PatternParser helps to parse the patterns that are passed from QueryEvaluator(QE) and calls PatternEv...">PatternParser</a> interface helps to declare the methods that will be used by <a class="el" href="class_pattern_parser.html" title="PatternParser helps to parse the patterns that are passed from QueryEvaluator(QE) and calls PatternEv...">PatternParser</a>. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="afd3f541fac1a76d0e55790b0ebc52230" name="afd3f541fac1a76d0e55790b0ebc52230"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd3f541fac1a76d0e55790b0ebc52230">&#9670;&nbsp;</a></span>getAssignsByRHS()</h2>
+<a id="ab117f5d79b981359a7d21ad384a08b97" name="ab117f5d79b981359a7d21ad384a08b97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab117f5d79b981359a7d21ad384a08b97">&#9670;&nbsp;</a></span>getAssignsByRHS()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -109,18 +118,8 @@ Public Member Functions</h2></td></tr>
           <td class="memname">virtual std::vector&lt; std::string &gt; PatternParserInterface::getAssignsByRHS </td>
           <td>(</td>
           <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>rhs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_pkb_interface.html">PkbInterface</a> *&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -140,10 +139,12 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a vector of ASSIGN stmts that satisfies the rhs pattern that is given </dd></dl>
 
+<p>Implemented in <a class="el" href="class_pattern_parser.html#aadc4d324bce8ab870aba6b22c5fd51f1">PatternParser</a>.</p>
+
 </div>
 </div>
-<a id="a31d2646910a9ea43ed99d99c792566b2" name="a31d2646910a9ea43ed99d99c792566b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31d2646910a9ea43ed99d99c792566b2">&#9670;&nbsp;</a></span>getIfsByCond()</h2>
+<a id="aeaa8660283a43145c5f85505756c2768" name="aeaa8660283a43145c5f85505756c2768"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeaa8660283a43145c5f85505756c2768">&#9670;&nbsp;</a></span>getIfsByCond()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -155,18 +156,8 @@ Public Member Functions</h2></td></tr>
           <td class="memname">virtual std::vector&lt; std::string &gt; PatternParserInterface::getIfsByCond </td>
           <td>(</td>
           <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>cond</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>cond</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_pkb_interface.html">PkbInterface</a> *&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -185,6 +176,8 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a vector of IF stmts that satisfies the rhs pattern that is given </dd></dl>
+
+<p>Implemented in <a class="el" href="class_pattern_parser.html#aab4a57caf199e0425f3dd8c69a55563e">PatternParser</a>.</p>
 
 </div>
 </div>
@@ -221,6 +214,8 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a vector of variables that satisfies the stmtNo given </dd></dl>
 
+<p>Implemented in <a class="el" href="class_pattern_parser.html#a31be5c59d84998e244e5cb62ec64d863">PatternParser</a>.</p>
+
 </div>
 </div>
 <a id="a37a2c6ef29eb5373824ea6a13d6b3851" name="a37a2c6ef29eb5373824ea6a13d6b3851"></a>
@@ -256,10 +251,12 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a vector of variables that satisfies the stmtNo given </dd></dl>
 
+<p>Implemented in <a class="el" href="class_pattern_parser.html#a604e70e8711ad4b826ad854ba3b2d9b8">PatternParser</a>.</p>
+
 </div>
 </div>
-<a id="a754705bb98bd04a90cc8667a8b27644c" name="a754705bb98bd04a90cc8667a8b27644c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a754705bb98bd04a90cc8667a8b27644c">&#9670;&nbsp;</a></span>getWhilesByCond()</h2>
+<a id="ac98b8372b11c407579211a002d8c8194" name="ac98b8372b11c407579211a002d8c8194"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac98b8372b11c407579211a002d8c8194">&#9670;&nbsp;</a></span>getWhilesByCond()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -271,18 +268,8 @@ Public Member Functions</h2></td></tr>
           <td class="memname">virtual std::vector&lt; std::string &gt; PatternParserInterface::getWhilesByCond </td>
           <td>(</td>
           <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>cond</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>cond</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_pkb_interface.html">PkbInterface</a> *&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -302,10 +289,12 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a vector of WHILE stmts that satisfies the rhs pattern that is given </dd></dl>
 
+<p>Implemented in <a class="el" href="class_pattern_parser.html#a79265e09141c444efda9fadfe50769fa">PatternParser</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>PatternPkg/<a class="el" href="_pattern_parser_interface_8h_source.html">PatternParserInterface.h</a></li>
+<li>C:/Users/Jody Tang/Desktop/NUS/Y3S2/CS3203/Proj/Team29/Code29/source/PatternPkg/<a class="el" href="_pattern_parser_interface_8h_source.html">PatternParserInterface.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

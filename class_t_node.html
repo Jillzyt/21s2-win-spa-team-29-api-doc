@@ -66,7 +66,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_t_node-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">TNode Class Reference<div class="ingroups"><a class="el" href="group___ast.html">Ast</a></div></div></div>
+  <div class="headertitle"><div class="title">TNode Class Reference<div class="ingroups"><a class="el" href="group___data_structures.html">DataStructures</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -121,17 +121,19 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6354796b82a0a68c3357e7f7e2ba2cb0"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_node.html#a6354796b82a0a68c3357e7f7e2ba2cb0">getExprString</a> ()</td></tr>
 <tr class="memdesc:a6354796b82a0a68c3357e7f7e2ba2cb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function for <a class="el" href="class_pkb.html" title="Program Knowledge Base (Pkb) class stores information about the SIMPLE source code.">Pkb</a>.  <a href="class_t_node.html#a6354796b82a0a68c3357e7f7e2ba2cb0">More...</a><br /></td></tr>
 <tr class="separator:a6354796b82a0a68c3357e7f7e2ba2cb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a694d4a5475d5a5660e696d46d6440162"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_node.html#a694d4a5475d5a5660e696d46d6440162">isEqual</a> (<a class="el" href="class_t_node.html">TNode</a> *node)</td></tr>
-<tr class="separator:a694d4a5475d5a5660e696d46d6440162"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59ccf5d7e7c82f4d6c459c3e2d974250"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_node.html#a59ccf5d7e7c82f4d6c459c3e2d974250">isEqualSubtree</a> (<a class="el" href="class_t_node.html">TNode</a> *node)</td></tr>
 <tr class="memdesc:a59ccf5d7e7c82f4d6c459c3e2d974250"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to check if the subtree is equal.  <a href="class_t_node.html#a59ccf5d7e7c82f4d6c459c3e2d974250">More...</a><br /></td></tr>
 <tr class="separator:a59ccf5d7e7c82f4d6c459c3e2d974250"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab41988f264013b4276ec47482f0d8fab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_node.html#ab41988f264013b4276ec47482f0d8fab">getVariables</a> (std::vector&lt; std::string &gt; &amp;varList)</td></tr>
+<tr class="memdesc:ab41988f264013b4276ec47482f0d8fab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all the variables and store it inside varList.  <a href="class_t_node.html#ab41988f264013b4276ec47482f0d8fab">More...</a><br /></td></tr>
 <tr class="separator:ab41988f264013b4276ec47482f0d8fab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d574ed9b298d7c7495d962a7f12c2a2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_node.html#a2d574ed9b298d7c7495d962a7f12c2a2">hasVariables</a> ()</td></tr>
+<tr class="memdesc:a2d574ed9b298d7c7495d962a7f12c2a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the <a class="el" href="class_t_node.html" title="Makes up the tree nodes of the Ast.">TNode</a> subtree has variables.  <a href="class_t_node.html#a2d574ed9b298d7c7495d962a7f12c2a2">More...</a><br /></td></tr>
+<tr class="separator:a2d574ed9b298d7c7495d962a7f12c2a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Makes up the tree nodes of the Ast. </p>
-<p >Contains the lineNo, token and <a class="el" href="namespace_design_entity.html" title="Constructor of the class QueryFunction.">DesignEntity</a> type represented by the <a class="el" href="class_t_node.html" title="Makes up the tree nodes of the Ast.">TNode</a> object. Has references to a parent <a class="el" href="class_t_node.html" title="Makes up the tree nodes of the Ast.">TNode</a> object and a list of children <a class="el" href="class_t_node.html" title="Makes up the tree nodes of the Ast.">TNode</a> (if any). </p>
+<p >Contains the lineNo, token and DesignEntity type represented by the <a class="el" href="class_t_node.html" title="Makes up the tree nodes of the Ast.">TNode</a> object. Has references to a parent <a class="el" href="class_t_node.html" title="Makes up the tree nodes of the Ast.">TNode</a> object and a list of children <a class="el" href="class_t_node.html" title="Makes up the tree nodes of the Ast.">TNode</a> (if any). </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5d7ab5171cd0dfb220b01778e2804225" name="a5d7ab5171cd0dfb220b01778e2804225"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5d7ab5171cd0dfb220b01778e2804225">&#9670;&nbsp;</a></span>TNode() <span class="overload">[1/3]</span></h2>
@@ -192,7 +194,7 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">lineNo</td><td>Line Number of the token. </td></tr>
     <tr><td class="paramname">token</td><td>A string of the token. </td></tr>
-    <tr><td class="paramname">type</td><td>The kind of <a class="el" href="namespace_design_entity.html" title="Constructor of the class QueryFunction.">DesignEntity</a> the token is. </td></tr>
+    <tr><td class="paramname">type</td><td>The kind of DesignEntity the token is. </td></tr>
   </table>
   </dd>
 </dl>
@@ -243,7 +245,7 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">lineNo</td><td>Line Number of the token. </td></tr>
     <tr><td class="paramname">token</td><td>A string of the token. </td></tr>
-    <tr><td class="paramname">type</td><td>The kind of <a class="el" href="namespace_design_entity.html" title="Constructor of the class QueryFunction.">DesignEntity</a> the token is. </td></tr>
+    <tr><td class="paramname">type</td><td>The kind of DesignEntity the token is. </td></tr>
     <tr><td class="paramname">parent</td><td>A pointer to the parent <a class="el" href="class_t_node.html" title="Makes up the tree nodes of the Ast.">TNode</a>. </td></tr>
   </table>
   </dd>
@@ -414,7 +416,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the type of the <a class="el" href="class_t_node.html" title="Makes up the tree nodes of the Ast.">TNode</a>. </p>
-<dl class="section return"><dt>Returns</dt><dd>Returns <a class="el" href="namespace_design_entity.html" title="Constructor of the class QueryFunction.">DesignEntity</a> object. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns DesignEntity object. </dd></dl>
 
 </div>
 </div>
@@ -433,6 +435,15 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get all the variables and store it inside varList. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">varList</td><td>pointer which points to the variable list to add the variables to </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Return true once done processing </dd></dl>
 
 </div>
 </div>
@@ -457,21 +468,23 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a694d4a5475d5a5660e696d46d6440162" name="a694d4a5475d5a5660e696d46d6440162"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a694d4a5475d5a5660e696d46d6440162">&#9670;&nbsp;</a></span>isEqual()</h2>
+<a id="a2d574ed9b298d7c7495d962a7f12c2a2" name="a2d574ed9b298d7c7495d962a7f12c2a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d574ed9b298d7c7495d962a7f12c2a2">&#9670;&nbsp;</a></span>hasVariables()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool TNode::isEqual </td>
+          <td class="memname">bool TNode::hasVariables </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_t_node.html">TNode</a> *&#160;</td>
-          <td class="paramname"><em>node</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Check if the <a class="el" href="class_t_node.html" title="Makes up the tree nodes of the Ast.">TNode</a> subtree has variables. </p>
+<dl class="section return"><dt>Returns</dt><dd>Return true if the <a class="el" href="class_t_node.html" title="Makes up the tree nodes of the Ast.">TNode</a> or subtree of <a class="el" href="class_t_node.html" title="Makes up the tree nodes of the Ast.">TNode</a> has a variable </dd></dl>
 
 </div>
 </div>
@@ -570,8 +583,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>DataStructures/<a class="el" href="_t_node_8h_source.html">TNode.h</a></li>
-<li>DataStructures/<a class="el" href="_t_node_8cpp.html">TNode.cpp</a></li>
+<li>C:/Users/Jody Tang/Desktop/NUS/Y3S2/CS3203/Proj/Team29/Code29/source/DataStructures/<a class="el" href="_t_node_8h_source.html">TNode.h</a></li>
+<li>C:/Users/Jody Tang/Desktop/NUS/Y3S2/CS3203/Proj/Team29/Code29/source/DataStructures/<a class="el" href="_t_node_8cpp.html">TNode.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

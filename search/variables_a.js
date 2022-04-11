@@ -1,10 +1,11 @@
 var searchData=
 [
-  ['rel_5fexpr_5fequals_5fto_0',['REL_EXPR_EQUALS_TO',['../_constants_8h.html#a19bff1bf85fa41047923817f339fd4d1',1,'Constants.h']]],
-  ['rel_5fexpr_5fless_5for_5fequal_1',['REL_EXPR_LESS_OR_EQUAL',['../_constants_8h.html#a5e09f3c918a0cfc1b4acbb9cbf43d65f',1,'Constants.h']]],
-  ['rel_5fexpr_5fless_5fthan_2',['REL_EXPR_LESS_THAN',['../_constants_8h.html#ab59275bd5494670e40d502565be13c45',1,'Constants.h']]],
-  ['rel_5fexpr_5fmore_5for_5fequal_3',['REL_EXPR_MORE_OR_EQUAL',['../_constants_8h.html#acb74cdbcbfee1fa7d0be1fc248c92efe',1,'Constants.h']]],
-  ['rel_5fexpr_5fmore_5fthan_4',['REL_EXPR_MORE_THAN',['../_constants_8h.html#aae04e5df2f497336cc662dac3ea58d5d',1,'Constants.h']]],
-  ['rel_5fexpr_5fnot_5fequals_5fto_5',['REL_EXPR_NOT_EQUALS_TO',['../_constants_8h.html#a565675dc70e2ad7b303daeb471ff1f4a',1,'Constants.h']]],
-  ['relationship_6',['relationship',['../struct_pql_1_1_clause.html#a59a3b90d16c6dc69c1b1e405be0febac',1,'Pql::Clause']]]
+  ['name_0',['name',['../struct_pql_1_1_param.html#a05d3121c3a99bb1bbec185536c0ba26c',1,'Pql::Param']]],
+  ['no_5fdeclaration_1',['NO_DECLARATION',['../class_qpp_errors.html#aea481d67996193c30016021884028f89',1,'QppErrors']]],
+  ['no_5fdeclaration_5fsynonym_2',['NO_DECLARATION_SYNONYM',['../class_qpp_errors.html#a0fee9836218386b3b8db3322e908a023',1,'QppErrors']]],
+  ['no_5fresult_5fclause_3',['NO_RESULT_CLAUSE',['../class_qpp_errors.html#aa42c4cfd13fbec87270980fee8f02493',1,'QppErrors']]],
+  ['no_5fselect_5fclause_4',['NO_SELECT_CLAUSE',['../class_qpp_errors.html#a1998ca0f8ea414d15ca93150009db78d',1,'QppErrors']]],
+  ['num_5fof_5fdeclarations_5',['NUM_OF_DECLARATIONS',['../_query_terms_checker_8cpp.html#abef8aa53b5f1d1afe773a807881137da',1,'QueryTermsChecker.cpp']]],
+  ['numofassigns_6',['numOfAssigns',['../_pkb_8cpp.html#ae3e65acd6e19380f999959dd2be4e201',1,'Pkb.cpp']]],
+  ['numofstmts_7',['numOfStmts',['../_pkb_8cpp.html#ab320602ad31f6f41f37340cbf80ff4ff',1,'Pkb.cpp']]]
 ];

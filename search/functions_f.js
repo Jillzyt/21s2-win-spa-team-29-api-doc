@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['relreftostring_0',['relRefToString',['../namespace_string_addon.html#acd45eaf2deb8e3a81c294c6bb1f7694c',1,'StringAddon']]],
-  ['removechar_1',['removeChar',['../namespace_string_addon.html#a439db4f625d888a1e7192449a7525ef7',1,'StringAddon']]],
-  ['removeleadingtrailingspaces_2',['removeLeadingTrailingSpaces',['../namespace_string_addon.html#a96935d5ead3d4aa3cad446015b29d997',1,'StringAddon']]],
-  ['removespaces_3',['removeSpaces',['../namespace_string_addon.html#ae86671dad11d2fa3a6697d5d1da01093',1,'StringAddon']]],
-  ['removesynonyminselectclause_4',['removeSynonymInSelectClause',['../namespace_query_terms_checker.html#a260b378a64cd7ff0d1ee6694c8bd4179',1,'QueryTermsChecker']]],
-  ['removewhitespace_5',['removeWhitespace',['../_program_parser_8cpp.html#ad94c17981120822c0192f2fbca7b816a',1,'ProgramParser.cpp']]]
+  ['qeerror_0',['QeError',['../class_qe_error.html#a1ce8e8de520fe41d168cd53f8c0e113e',1,'QeError']]],
+  ['querydeclaration_1',['QueryDeclaration',['../class_query_declaration.html#abaad47d4b95da5b287daa32d6dd87ecd',1,'QueryDeclaration']]],
+  ['queryevaluator_2',['QueryEvaluator',['../class_query_evaluator.html#a88a247db4df1a32c0394aa5c3bdbf05d',1,'QueryEvaluator']]],
+  ['queryfunction_3',['QueryFunction',['../class_query_function.html#a78ffff14e4986a72371c031327c82a26',1,'QueryFunction']]],
+  ['querysemanticvalidator_4',['QuerySemanticValidator',['../class_query_semantic_validator.html#ad04e41673478d03dbe0f4aa45de5a578',1,'QuerySemanticValidator']]],
+  ['querytoken_5',['QueryToken',['../class_query_token.html#aa609addb71efed9ca4f66ff2407ebcf6',1,'QueryToken::QueryToken()'],['../class_query_token.html#a47e05caf327ffc32bc41719f38a48032',1,'QueryToken::QueryToken(std::list&lt; QueryDeclaration &gt; listOfQueryDeclarations, std::list&lt; std::string &gt; resultClauseAsList, bool isWithinCarrots, std::list&lt; QueryFunction &gt; listOfQueryFunctions)']]]
 ];

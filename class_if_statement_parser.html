@@ -77,19 +77,19 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:af191a21eef5c4d278e20134dc29981dd"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_if_statement_parser.html#af191a21eef5c4d278e20134dc29981dd">isStatementValid</a> (<a class="el" href="struct_program_parser_result.html">ProgramParserResult</a> parserResult, int start)</td></tr>
-<tr class="memdesc:af191a21eef5c4d278e20134dc29981dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a <a class="el" href="struct_program_parser_result.html" title="Stores relationships between line numbers and string tokens from the SIMPLE source.">ProgramParserResult</a>, the function checks if the if statement starting at the specified token index is valid.  <a href="class_if_statement_parser.html#af191a21eef5c4d278e20134dc29981dd">More...</a><br /></td></tr>
-<tr class="separator:af191a21eef5c4d278e20134dc29981dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab849715a24d7e76c182e58595fd3b532"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_if_statement_parser.html#ab849715a24d7e76c182e58595fd3b532">getNextIndex</a> (<a class="el" href="struct_program_parser_result.html">ProgramParserResult</a> parserResult, int start)</td></tr>
-<tr class="memdesc:ab849715a24d7e76c182e58595fd3b532"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the index of the token that immediately follows after the end of the IF statement.  <a href="class_if_statement_parser.html#ab849715a24d7e76c182e58595fd3b532">More...</a><br /></td></tr>
-<tr class="separator:ab849715a24d7e76c182e58595fd3b532"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8c9a6aef9d7cd1945535f3919c65b54"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_if_statement_parser.html#ad8c9a6aef9d7cd1945535f3919c65b54">isStatementValid</a> (<a class="el" href="struct_program_parser_result.html">ProgramParserResult</a> &amp;parserResult, int start)</td></tr>
+<tr class="memdesc:ad8c9a6aef9d7cd1945535f3919c65b54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a <a class="el" href="struct_program_parser_result.html" title="Stores relationships between line numbers and string tokens from the SIMPLE source.">ProgramParserResult</a>, the function checks if the if statement starting at the specified token index is valid.  <a href="class_if_statement_parser.html#ad8c9a6aef9d7cd1945535f3919c65b54">More...</a><br /></td></tr>
+<tr class="separator:ad8c9a6aef9d7cd1945535f3919c65b54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38fca412205f376dbf2c10a2bc9c1b09"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_if_statement_parser.html#a38fca412205f376dbf2c10a2bc9c1b09">getNextIndex</a> (<a class="el" href="struct_program_parser_result.html">ProgramParserResult</a> &amp;parserResult, int start)</td></tr>
+<tr class="memdesc:a38fca412205f376dbf2c10a2bc9c1b09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the index of the token that immediately follows after the end of the IF statement.  <a href="class_if_statement_parser.html#a38fca412205f376dbf2c10a2bc9c1b09">More...</a><br /></td></tr>
+<tr class="separator:a38fca412205f376dbf2c10a2bc9c1b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Contains methods to determine if the tokens starting from an index form a valid if statement. </p>
 <p >Contains methods to determine if the tokens starting from an index form a valid while statement. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab849715a24d7e76c182e58595fd3b532" name="ab849715a24d7e76c182e58595fd3b532"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab849715a24d7e76c182e58595fd3b532">&#9670;&nbsp;</a></span>getNextIndex()</h2>
+<a id="a38fca412205f376dbf2c10a2bc9c1b09" name="a38fca412205f376dbf2c10a2bc9c1b09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38fca412205f376dbf2c10a2bc9c1b09">&#9670;&nbsp;</a></span>getNextIndex()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -100,7 +100,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">int IfStatementParser::getNextIndex </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_program_parser_result.html">ProgramParserResult</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_program_parser_result.html">ProgramParserResult</a> &amp;&#160;</td>
           <td class="paramname"><em>parserResult</em>, </td>
         </tr>
         <tr>
@@ -135,8 +135,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af191a21eef5c4d278e20134dc29981dd" name="af191a21eef5c4d278e20134dc29981dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af191a21eef5c4d278e20134dc29981dd">&#9670;&nbsp;</a></span>isStatementValid()</h2>
+<a id="ad8c9a6aef9d7cd1945535f3919c65b54" name="ad8c9a6aef9d7cd1945535f3919c65b54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8c9a6aef9d7cd1945535f3919c65b54">&#9670;&nbsp;</a></span>isStatementValid()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -147,7 +147,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">bool IfStatementParser::isStatementValid </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_program_parser_result.html">ProgramParserResult</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_program_parser_result.html">ProgramParserResult</a> &amp;&#160;</td>
           <td class="paramname"><em>parserResult</em>, </td>
         </tr>
         <tr>
@@ -182,8 +182,8 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>Parser/<a class="el" href="_if_statement_parser_8h_source.html">IfStatementParser.h</a></li>
-<li>Parser/<a class="el" href="_if_statement_parser_8cpp.html">IfStatementParser.cpp</a></li>
+<li>C:/Users/Jody Tang/Desktop/NUS/Y3S2/CS3203/Proj/Team29/Code29/source/Parser/<a class="el" href="_if_statement_parser_8h_source.html">IfStatementParser.h</a></li>
+<li>C:/Users/Jody Tang/Desktop/NUS/Y3S2/CS3203/Proj/Team29/Code29/source/Parser/<a class="el" href="_if_statement_parser_8cpp.html">IfStatementParser.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

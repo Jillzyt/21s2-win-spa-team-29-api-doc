@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>CS3203 Team 29: ProgramAnalyser/DesignExtractor.cpp File Reference</title>
+<title>CS3203 Team 29: C:/Users/Jody Tang/Desktop/NUS/Y3S2/CS3203/Proj/Team29/Code29/source/ProgramAnalyser/DesignExtractor.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_4f6af3abbba83dad4673c00568db21c7.html">ProgramAnalyser</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_e04ae2849dfa520b4ee2c9f7e9ff15de.html">Desktop</a></li><li class="navelem"><a class="el" href="dir_fc535f21949c11c9ba400d65784ec52f.html">NUS</a></li><li class="navelem"><a class="el" href="dir_03b17459166973645e5999254af2c876.html">Y3S2</a></li><li class="navelem"><a class="el" href="dir_b53863b2dd4e7567b209cc69d498bd8d.html">CS3203</a></li><li class="navelem"><a class="el" href="dir_a685a0b18ca61e77064c945be78f3477.html">Proj</a></li><li class="navelem"><a class="el" href="dir_836c232a576c31fa72627368ec927480.html">Team29</a></li><li class="navelem"><a class="el" href="dir_46d9012ec6ef0c453dd63a39b5923908.html">Code29</a></li><li class="navelem"><a class="el" href="dir_c278d9d90c9f4d2e85ae516d96d8817b.html">source</a></li><li class="navelem"><a class="el" href="dir_1f9853a2fdd3b52985fe72db3371b440.html">ProgramAnalyser</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -74,6 +74,15 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="_design_extractor_8h_source.html">DesignExtractor.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_assign_extractor_8h_source.html">AssignExtractor.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_call_extractor_8h_source.html">CallExtractor.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_constant_extractor_8h_source.html">ConstantExtractor.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_entity_extractor_8h_source.html">EntityExtractor.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_print_extractor_8h_source.html">PrintExtractor.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_procedure_extractor_8h_source.html">ProcedureExtractor.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_read_extractor_8h_source.html">ReadExtractor.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_stmt_lst_extractor_8h_source.html">StmtLstExtractor.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_variable_extractor_8h_source.html">VariableExtractor.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_pkb_8h_source.html">../Pkb/Pkb.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_t_node_8h_source.html">../DataStructures/TNode.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_bi_graph_8h_source.html">../DataStructures/BiGraph.h</a>&quot;</code><br />
@@ -96,6 +105,10 @@ Functions</h2></td></tr>
 <tr class="separator:a38cec59b7254d97c3e7ef6853cc661a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3a6eee5c62679dc0e6a563ba7bb3872"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_design_extractor_8cpp.html#ae3a6eee5c62679dc0e6a563ba7bb3872">traverseAst</a> (<a class="el" href="class_t_node.html">TNode</a> *node, <a class="el" href="class_pkb.html">Pkb</a> &amp;pkb, string proc=&quot;&quot;, string user=&quot;&quot;)</td></tr>
 <tr class="separator:ae3a6eee5c62679dc0e6a563ba7bb3872"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9f06fdfaf1198c219e3bb9bd5874325"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_design_extractor_8cpp.html#ab9f06fdfaf1198c219e3bb9bd5874325">addNodeToSets</a> (<a class="el" href="class_pkb.html">Pkb</a> &amp;pkb, <a class="el" href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022">DesignEntity</a> type, std::string &amp;name, <a class="el" href="class_t_node.html">TNode</a> *node)</td></tr>
+<tr class="separator:ab9f06fdfaf1198c219e3bb9bd5874325"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70182baae99ed2b9d0f1fddacacd52e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_design_extractor_8cpp.html#a70182baae99ed2b9d0f1fddacacd52e6">addProcTransitiveRelationships</a> (<a class="el" href="class_pkb.html">Pkb</a> &amp;pkb)</td></tr>
+<tr class="separator:a70182baae99ed2b9d0f1fddacacd52e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98724acacf3347030b27a14fb65d0b23"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_design_extractor_8cpp.html#a98724acacf3347030b27a14fb65d0b23">addCallTransitiveRelationships</a> (<a class="el" href="class_pkb.html">Pkb</a> &amp;pkb)</td></tr>
 <tr class="separator:a98724acacf3347030b27a14fb65d0b23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -103,6 +116,24 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:a667200cce09d372efa89c5554c601843"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022">DesignEntity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_design_extractor_8cpp.html#a667200cce09d372efa89c5554c601843">STMT_ENTITIES</a> []</td></tr>
 <tr class="separator:a667200cce09d372efa89c5554c601843"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abea819b68e3469282baf392ea26a9590"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_assign_extractor.html">AssignExtractor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_design_extractor_8cpp.html#abea819b68e3469282baf392ea26a9590">assignExtractor</a> = <a class="el" href="class_assign_extractor.html">AssignExtractor</a>()</td></tr>
+<tr class="separator:abea819b68e3469282baf392ea26a9590"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59f55d4f4cc94c0524f8894b9db670d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_call_extractor.html">CallExtractor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_design_extractor_8cpp.html#a59f55d4f4cc94c0524f8894b9db670d4">callExtractor</a> = <a class="el" href="class_call_extractor.html">CallExtractor</a>()</td></tr>
+<tr class="separator:a59f55d4f4cc94c0524f8894b9db670d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add01dcf1c0bc94f033f7eed0cc91dff3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_constant_extractor.html">ConstantExtractor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_design_extractor_8cpp.html#add01dcf1c0bc94f033f7eed0cc91dff3">constantExtractor</a> = <a class="el" href="class_constant_extractor.html">ConstantExtractor</a>()</td></tr>
+<tr class="separator:add01dcf1c0bc94f033f7eed0cc91dff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a858311bfb583fe1fd9b1bb963190d48a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_print_extractor.html">PrintExtractor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_design_extractor_8cpp.html#a858311bfb583fe1fd9b1bb963190d48a">printExtractor</a> = <a class="el" href="class_print_extractor.html">PrintExtractor</a>()</td></tr>
+<tr class="separator:a858311bfb583fe1fd9b1bb963190d48a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a723f5d9f52e9aa5a744e59b03ef99dca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_procedure_extractor.html">ProcedureExtractor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_design_extractor_8cpp.html#a723f5d9f52e9aa5a744e59b03ef99dca">procedureExtractor</a> = <a class="el" href="class_procedure_extractor.html">ProcedureExtractor</a>()</td></tr>
+<tr class="separator:a723f5d9f52e9aa5a744e59b03ef99dca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96cbed726688de4b67c378bd786a4eaa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_read_extractor.html">ReadExtractor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_design_extractor_8cpp.html#a96cbed726688de4b67c378bd786a4eaa">readExtractor</a> = <a class="el" href="class_read_extractor.html">ReadExtractor</a>()</td></tr>
+<tr class="separator:a96cbed726688de4b67c378bd786a4eaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cc1c4ec86d7a1d2c7e294d19b36ab6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_stmt_lst_extractor.html">StmtLstExtractor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_design_extractor_8cpp.html#a4cc1c4ec86d7a1d2c7e294d19b36ab6d">stmtLstExtractor</a> = <a class="el" href="class_stmt_lst_extractor.html">StmtLstExtractor</a>()</td></tr>
+<tr class="separator:a4cc1c4ec86d7a1d2c7e294d19b36ab6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88e4f1ee42bd3a308162b392e7fac04b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_variable_extractor.html">VariableExtractor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_design_extractor_8cpp.html#a88e4f1ee42bd3a308162b392e7fac04b">variableExtractor</a> = <a class="el" href="class_variable_extractor.html">VariableExtractor</a>()</td></tr>
+<tr class="separator:a88e4f1ee42bd3a308162b392e7fac04b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53b4c099e1199d25e2b401c26768c585"><td class="memItemLeft" align="right" valign="top">unordered_map&lt; <a class="el" href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022">DesignEntity</a>, <a class="el" href="class_entity_extractor.html">EntityExtractor</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_design_extractor_8cpp.html#a53b4c099e1199d25e2b401c26768c585">extractors</a></td></tr>
+<tr class="separator:a53b4c099e1199d25e2b401c26768c585"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a98724acacf3347030b27a14fb65d0b23" name="a98724acacf3347030b27a14fb65d0b23"></a>
@@ -113,6 +144,64 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void addCallTransitiveRelationships </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_pkb.html">Pkb</a> &amp;&#160;</td>
+          <td class="paramname"><em>pkb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab9f06fdfaf1198c219e3bb9bd5874325" name="ab9f06fdfaf1198c219e3bb9bd5874325"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9f06fdfaf1198c219e3bb9bd5874325">&#9670;&nbsp;</a></span>addNodeToSets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void addNodeToSets </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_pkb.html">Pkb</a> &amp;&#160;</td>
+          <td class="paramname"><em>pkb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022">DesignEntity</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_t_node.html">TNode</a> *&#160;</td>
+          <td class="paramname"><em>node</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a70182baae99ed2b9d0f1fddacacd52e6" name="a70182baae99ed2b9d0f1fddacacd52e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70182baae99ed2b9d0f1fddacacd52e6">&#9670;&nbsp;</a></span>addProcTransitiveRelationships()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void addProcTransitiveRelationships </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_pkb.html">Pkb</a> &amp;&#160;</td>
           <td class="paramname"><em>pkb</em></td><td>)</td>
@@ -222,6 +311,130 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="abea819b68e3469282baf392ea26a9590" name="abea819b68e3469282baf392ea26a9590"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abea819b68e3469282baf392ea26a9590">&#9670;&nbsp;</a></span>assignExtractor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_assign_extractor.html">AssignExtractor</a> assignExtractor = <a class="el" href="class_assign_extractor.html">AssignExtractor</a>()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a59f55d4f4cc94c0524f8894b9db670d4" name="a59f55d4f4cc94c0524f8894b9db670d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59f55d4f4cc94c0524f8894b9db670d4">&#9670;&nbsp;</a></span>callExtractor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_call_extractor.html">CallExtractor</a> callExtractor = <a class="el" href="class_call_extractor.html">CallExtractor</a>()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="add01dcf1c0bc94f033f7eed0cc91dff3" name="add01dcf1c0bc94f033f7eed0cc91dff3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add01dcf1c0bc94f033f7eed0cc91dff3">&#9670;&nbsp;</a></span>constantExtractor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_constant_extractor.html">ConstantExtractor</a> constantExtractor = <a class="el" href="class_constant_extractor.html">ConstantExtractor</a>()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a53b4c099e1199d25e2b401c26768c585" name="a53b4c099e1199d25e2b401c26768c585"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53b4c099e1199d25e2b401c26768c585">&#9670;&nbsp;</a></span>extractors</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unordered_map&lt;<a class="el" href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022">DesignEntity</a>, <a class="el" href="class_entity_extractor.html">EntityExtractor</a>*&gt; extractors</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    { <a class="code hl_enumvalue" href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022affd6976a2b4f6934eb075d0013316ff1">DesignEntity::ASSIGN</a>, &amp;<a class="code hl_variable" href="_design_extractor_8cpp.html#abea819b68e3469282baf392ea26a9590">assignExtractor</a> },</div>
+<div class="line">    { <a class="code hl_enumvalue" href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022aca3547acb9162b49fb4a6594ed9b3030">DesignEntity::CALL</a>, &amp;<a class="code hl_variable" href="_design_extractor_8cpp.html#a59f55d4f4cc94c0524f8894b9db670d4">callExtractor</a> },</div>
+<div class="line">    { <a class="code hl_enumvalue" href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022a8d6b5cada83510220f59e00ce86d4d92">DesignEntity::CONSTANT</a>, &amp;<a class="code hl_variable" href="_design_extractor_8cpp.html#add01dcf1c0bc94f033f7eed0cc91dff3">constantExtractor</a> },</div>
+<div class="line">    { <a class="code hl_enumvalue" href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022af96eee4e48ee90430f17fb3a8388507b">DesignEntity::PRINT</a>, &amp;<a class="code hl_variable" href="_design_extractor_8cpp.html#a858311bfb583fe1fd9b1bb963190d48a">printExtractor</a> },</div>
+<div class="line">    { <a class="code hl_enumvalue" href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022a6c4d52355c694ee12dcd648562757f52">DesignEntity::PROCEDURE</a>, &amp;<a class="code hl_variable" href="_design_extractor_8cpp.html#a723f5d9f52e9aa5a744e59b03ef99dca">procedureExtractor</a> },</div>
+<div class="line">    { <a class="code hl_enumvalue" href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022a3466fab4975481651940ed328aa990e4">DesignEntity::READ</a>, &amp;<a class="code hl_variable" href="_design_extractor_8cpp.html#a96cbed726688de4b67c378bd786a4eaa">readExtractor</a> },</div>
+<div class="line">    { <a class="code hl_enumvalue" href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022a8ce856c62b1a87e78a505930cf5531f1">DesignEntity::STMT_LST</a>, &amp;<a class="code hl_variable" href="_design_extractor_8cpp.html#a4cc1c4ec86d7a1d2c7e294d19b36ab6d">stmtLstExtractor</a> },</div>
+<div class="line">    { <a class="code hl_enumvalue" href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022ae61ad9b2553a293b4a3f4d3b4fa5ab31">DesignEntity::VARIABLE</a>, &amp;<a class="code hl_variable" href="_design_extractor_8cpp.html#a88e4f1ee42bd3a308162b392e7fac04b">variableExtractor</a> },</div>
+<div class="line">}</div>
+<div class="ttc" id="a_design_entity_8h_html_a238404016566c29666c6aacd3d396022a3466fab4975481651940ed328aa990e4"><div class="ttname"><a href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022a3466fab4975481651940ed328aa990e4">DesignEntity::READ</a></div><div class="ttdeci">@ READ</div></div>
+<div class="ttc" id="a_design_entity_8h_html_a238404016566c29666c6aacd3d396022a6c4d52355c694ee12dcd648562757f52"><div class="ttname"><a href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022a6c4d52355c694ee12dcd648562757f52">DesignEntity::PROCEDURE</a></div><div class="ttdeci">@ PROCEDURE</div></div>
+<div class="ttc" id="a_design_entity_8h_html_a238404016566c29666c6aacd3d396022a8ce856c62b1a87e78a505930cf5531f1"><div class="ttname"><a href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022a8ce856c62b1a87e78a505930cf5531f1">DesignEntity::STMT_LST</a></div><div class="ttdeci">@ STMT_LST</div></div>
+<div class="ttc" id="a_design_entity_8h_html_a238404016566c29666c6aacd3d396022a8d6b5cada83510220f59e00ce86d4d92"><div class="ttname"><a href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022a8d6b5cada83510220f59e00ce86d4d92">DesignEntity::CONSTANT</a></div><div class="ttdeci">@ CONSTANT</div></div>
+<div class="ttc" id="a_design_entity_8h_html_a238404016566c29666c6aacd3d396022aca3547acb9162b49fb4a6594ed9b3030"><div class="ttname"><a href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022aca3547acb9162b49fb4a6594ed9b3030">DesignEntity::CALL</a></div><div class="ttdeci">@ CALL</div></div>
+<div class="ttc" id="a_design_entity_8h_html_a238404016566c29666c6aacd3d396022ae61ad9b2553a293b4a3f4d3b4fa5ab31"><div class="ttname"><a href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022ae61ad9b2553a293b4a3f4d3b4fa5ab31">DesignEntity::VARIABLE</a></div><div class="ttdeci">@ VARIABLE</div></div>
+<div class="ttc" id="a_design_entity_8h_html_a238404016566c29666c6aacd3d396022af96eee4e48ee90430f17fb3a8388507b"><div class="ttname"><a href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022af96eee4e48ee90430f17fb3a8388507b">DesignEntity::PRINT</a></div><div class="ttdeci">@ PRINT</div></div>
+<div class="ttc" id="a_design_entity_8h_html_a238404016566c29666c6aacd3d396022affd6976a2b4f6934eb075d0013316ff1"><div class="ttname"><a href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022affd6976a2b4f6934eb075d0013316ff1">DesignEntity::ASSIGN</a></div><div class="ttdeci">@ ASSIGN</div></div>
+<div class="ttc" id="a_design_extractor_8cpp_html_a4cc1c4ec86d7a1d2c7e294d19b36ab6d"><div class="ttname"><a href="_design_extractor_8cpp.html#a4cc1c4ec86d7a1d2c7e294d19b36ab6d">stmtLstExtractor</a></div><div class="ttdeci">StmtLstExtractor stmtLstExtractor</div><div class="ttdef"><b>Definition:</b> DesignExtractor.cpp:36</div></div>
+<div class="ttc" id="a_design_extractor_8cpp_html_a59f55d4f4cc94c0524f8894b9db670d4"><div class="ttname"><a href="_design_extractor_8cpp.html#a59f55d4f4cc94c0524f8894b9db670d4">callExtractor</a></div><div class="ttdeci">CallExtractor callExtractor</div><div class="ttdef"><b>Definition:</b> DesignExtractor.cpp:31</div></div>
+<div class="ttc" id="a_design_extractor_8cpp_html_a723f5d9f52e9aa5a744e59b03ef99dca"><div class="ttname"><a href="_design_extractor_8cpp.html#a723f5d9f52e9aa5a744e59b03ef99dca">procedureExtractor</a></div><div class="ttdeci">ProcedureExtractor procedureExtractor</div><div class="ttdef"><b>Definition:</b> DesignExtractor.cpp:34</div></div>
+<div class="ttc" id="a_design_extractor_8cpp_html_a858311bfb583fe1fd9b1bb963190d48a"><div class="ttname"><a href="_design_extractor_8cpp.html#a858311bfb583fe1fd9b1bb963190d48a">printExtractor</a></div><div class="ttdeci">PrintExtractor printExtractor</div><div class="ttdef"><b>Definition:</b> DesignExtractor.cpp:33</div></div>
+<div class="ttc" id="a_design_extractor_8cpp_html_a88e4f1ee42bd3a308162b392e7fac04b"><div class="ttname"><a href="_design_extractor_8cpp.html#a88e4f1ee42bd3a308162b392e7fac04b">variableExtractor</a></div><div class="ttdeci">VariableExtractor variableExtractor</div><div class="ttdef"><b>Definition:</b> DesignExtractor.cpp:37</div></div>
+<div class="ttc" id="a_design_extractor_8cpp_html_a96cbed726688de4b67c378bd786a4eaa"><div class="ttname"><a href="_design_extractor_8cpp.html#a96cbed726688de4b67c378bd786a4eaa">readExtractor</a></div><div class="ttdeci">ReadExtractor readExtractor</div><div class="ttdef"><b>Definition:</b> DesignExtractor.cpp:35</div></div>
+<div class="ttc" id="a_design_extractor_8cpp_html_abea819b68e3469282baf392ea26a9590"><div class="ttname"><a href="_design_extractor_8cpp.html#abea819b68e3469282baf392ea26a9590">assignExtractor</a></div><div class="ttdeci">AssignExtractor assignExtractor</div><div class="ttdef"><b>Definition:</b> DesignExtractor.cpp:30</div></div>
+<div class="ttc" id="a_design_extractor_8cpp_html_add01dcf1c0bc94f033f7eed0cc91dff3"><div class="ttname"><a href="_design_extractor_8cpp.html#add01dcf1c0bc94f033f7eed0cc91dff3">constantExtractor</a></div><div class="ttdeci">ConstantExtractor constantExtractor</div><div class="ttdef"><b>Definition:</b> DesignExtractor.cpp:32</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a858311bfb583fe1fd9b1bb963190d48a" name="a858311bfb583fe1fd9b1bb963190d48a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a858311bfb583fe1fd9b1bb963190d48a">&#9670;&nbsp;</a></span>printExtractor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_print_extractor.html">PrintExtractor</a> printExtractor = <a class="el" href="class_print_extractor.html">PrintExtractor</a>()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a723f5d9f52e9aa5a744e59b03ef99dca" name="a723f5d9f52e9aa5a744e59b03ef99dca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a723f5d9f52e9aa5a744e59b03ef99dca">&#9670;&nbsp;</a></span>procedureExtractor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_procedure_extractor.html">ProcedureExtractor</a> procedureExtractor = <a class="el" href="class_procedure_extractor.html">ProcedureExtractor</a>()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a96cbed726688de4b67c378bd786a4eaa" name="a96cbed726688de4b67c378bd786a4eaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96cbed726688de4b67c378bd786a4eaa">&#9670;&nbsp;</a></span>readExtractor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_read_extractor.html">ReadExtractor</a> readExtractor = <a class="el" href="class_read_extractor.html">ReadExtractor</a>()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a667200cce09d372efa89c5554c601843" name="a667200cce09d372efa89c5554c601843"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a667200cce09d372efa89c5554c601843">&#9670;&nbsp;</a></span>STMT_ENTITIES</h2>
 
@@ -233,9 +446,39 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= { DesignEntity::READ, DesignEntity::PRINT, DesignEntity::ASSIGN,</div>
-<div class="line">        DesignEntity::CALL, DesignEntity::WHILE, DesignEntity::IF }</div>
+<b>Initial value:</b><div class="fragment"><div class="line">= { <a class="code hl_enumvalue" href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022a3466fab4975481651940ed328aa990e4">DesignEntity::READ</a>, <a class="code hl_enumvalue" href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022af96eee4e48ee90430f17fb3a8388507b">DesignEntity::PRINT</a>, <a class="code hl_enumvalue" href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022affd6976a2b4f6934eb075d0013316ff1">DesignEntity::ASSIGN</a>,</div>
+<div class="line">        <a class="code hl_enumvalue" href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022aca3547acb9162b49fb4a6594ed9b3030">DesignEntity::CALL</a>, <a class="code hl_enumvalue" href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022ac0ca84371abbc18f52fd48e32195cd15">DesignEntity::WHILE</a>, <a class="code hl_enumvalue" href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022ade6ee2b5d856295add4d5e3631fbfb93">DesignEntity::IF</a> }</div>
+<div class="ttc" id="a_design_entity_8h_html_a238404016566c29666c6aacd3d396022ac0ca84371abbc18f52fd48e32195cd15"><div class="ttname"><a href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022ac0ca84371abbc18f52fd48e32195cd15">DesignEntity::WHILE</a></div><div class="ttdeci">@ WHILE</div></div>
+<div class="ttc" id="a_design_entity_8h_html_a238404016566c29666c6aacd3d396022ade6ee2b5d856295add4d5e3631fbfb93"><div class="ttname"><a href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022ade6ee2b5d856295add4d5e3631fbfb93">DesignEntity::IF</a></div><div class="ttdeci">@ IF</div></div>
 </div><!-- fragment -->
+</div>
+</div>
+<a id="a4cc1c4ec86d7a1d2c7e294d19b36ab6d" name="a4cc1c4ec86d7a1d2c7e294d19b36ab6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cc1c4ec86d7a1d2c7e294d19b36ab6d">&#9670;&nbsp;</a></span>stmtLstExtractor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_stmt_lst_extractor.html">StmtLstExtractor</a> stmtLstExtractor = <a class="el" href="class_stmt_lst_extractor.html">StmtLstExtractor</a>()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a88e4f1ee42bd3a308162b392e7fac04b" name="a88e4f1ee42bd3a308162b392e7fac04b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88e4f1ee42bd3a308162b392e7fac04b">&#9670;&nbsp;</a></span>variableExtractor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_variable_extractor.html">VariableExtractor</a> variableExtractor = <a class="el" href="class_variable_extractor.html">VariableExtractor</a>()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
 </div>
 </div>
 </div><!-- contents -->

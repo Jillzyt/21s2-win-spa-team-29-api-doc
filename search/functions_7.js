@@ -1,10 +1,26 @@
 var searchData=
 [
-  ['handleclauseformattingreturnformattedclause_0',['handleClauseFormattingReturnFormattedClause',['../_query_syntax_validator_8cpp.html#a69e497e2aa543777e9902a226efa494f',1,'QuerySyntaxValidator.cpp']]],
-  ['handlequeryfunctions_1',['handleQueryFunctions',['../_query_tokenizer_8cpp.html#ae883b47cef24fd3f71b8b98a33866996',1,'QueryTokenizer.cpp']]],
-  ['handleselectclausereturnresultclause_2',['handleSelectClauseReturnResultClause',['../_query_syntax_validator_8cpp.html#a1be6cc0db0cc141a3f90cbccd697fff3',1,'QuerySyntaxValidator.cpp']]],
-  ['hash_5fcombine_3',['hash_combine',['../namespace_container_hash.html#acbc86b3163e32800af4f3430cf706c85',1,'ContainerHash']]],
-  ['hash_5frange_4',['hash_range',['../namespace_container_hash.html#a170aaad399f7c5262127650b1de30c19',1,'ContainerHash']]],
-  ['hasitem_5',['hasItem',['../namespace_string_addon.html#a05ed350526c11c5564bd4ecec0745b4d',1,'StringAddon::hasItem(std::string mainString, std::string toFind)'],['../namespace_string_addon.html#a478cff3d3ee5e4ab3d620b5d9f7fc9f8',1,'StringAddon::hasItem(int idxGiven)']]],
-  ['hasnochildren_6',['hasNoChildren',['../class_t_node.html#ab7dcce749ee96d10d6a29c7c4fac53a2',1,'TNode']]]
+  ['handleafterequals_0',['handleAfterEquals',['../_query_terms_checker_8cpp.html#ac7b2bc934f6a03d769cc423c8a42e8e4',1,'QueryTermsChecker.cpp']]],
+  ['handlebracketitems_1',['handleBracketItems',['../_query_syntax_validator_8cpp.html#a9cc6f59fcdffa4e965d31a0d7cb3a4b8',1,'QuerySyntaxValidator.cpp']]],
+  ['handlecarrotsnospace_2',['handleCarrotsNoSpace',['../_query_terms_checker_8cpp.html#a4f180df6443395d48da8af8b4d256217',1,'QueryTermsChecker.cpp']]],
+  ['handleclauseformattingreturnformattedclause_3',['handleClauseFormattingReturnFormattedClause',['../_query_syntax_validator_8cpp.html#a69e497e2aa543777e9902a226efa494f',1,'QuerySyntaxValidator.cpp']]],
+  ['handleconnectingand_4',['handleConnectingAnd',['../_query_terms_checker_8cpp.html#adef665196fdc925b0d44d4cf8d24e4ca',1,'QueryTermsChecker.cpp']]],
+  ['handleconnectingandinsuchthatpatternclause_5',['handleConnectingAndInSuchThatPatternClause',['../_query_terms_checker_8cpp.html#a99e97bef76f7547c80988c2660bb42e9',1,'QueryTermsChecker.cpp']]],
+  ['handlefirstclausekeywordpattern_6',['handleFirstClauseKeywordPattern',['../_query_syntax_validator_8cpp.html#a82ee8ddc388e26010fb33916aed71d10',1,'QuerySyntaxValidator.cpp']]],
+  ['handlefirstclausekeywordsuchthat_7',['handleFirstClauseKeywordSuchThat',['../_query_syntax_validator_8cpp.html#abaccac0a06e9a247b7cf4033a7024258',1,'QuerySyntaxValidator.cpp']]],
+  ['handlefirstclausekeywordwithorinvalid_8',['handleFirstClauseKeywordWithOrInvalid',['../_query_syntax_validator_8cpp.html#a1f2445fce2086671765c65dd3a485219',1,'QuerySyntaxValidator.cpp']]],
+  ['handlefirstwithclausedot_9',['handleFirstWithClauseDot',['../_query_terms_checker_8cpp.html#a9a5926776bc885ddfcba16dde0763727',1,'QueryTermsChecker.cpp']]],
+  ['handlefirstwithclausenocomma_10',['handleFirstWithClauseNoComma',['../_query_terms_checker_8cpp.html#af3cfdf06686fb0a7f265ab72b791c9d3',1,'QueryTermsChecker.cpp']]],
+  ['handlefirstwithclauseopencomma_11',['handleFirstWithClauseOpenComma',['../_query_terms_checker_8cpp.html#af02322ff053ca5d84c4b9f6babcc084f',1,'QueryTermsChecker.cpp']]],
+  ['handleformattingofsuchthatpatternclause_12',['handleFormattingOfSuchThatPatternClause',['../_query_terms_checker_8cpp.html#a6ea754a7d110e7ea84b220acf6d7b387',1,'QueryTermsChecker.cpp']]],
+  ['handleopencommas_13',['handleOpenCommas',['../_query_terms_checker_8cpp.html#af6c6b6ba28e1c230d4a194e1a04d7917',1,'QueryTermsChecker.cpp']]],
+  ['handlequeryfunctions_14',['handleQueryFunctions',['../_query_tokenizer_8cpp.html#ae883b47cef24fd3f71b8b98a33866996',1,'QueryTokenizer.cpp']]],
+  ['handleresultclausetuplenospaces_15',['handleResultClauseTupleNoSpaces',['../_query_tokenizer_8cpp.html#aabfcb2eb1a9c5d2f36c56abbe972432b',1,'QueryTokenizer.cpp']]],
+  ['handleresultclausewithspaces_16',['handleResultClauseWithSpaces',['../_query_tokenizer_8cpp.html#a5f373781d3b68f5b4583facaabede0c1',1,'QueryTokenizer.cpp']]],
+  ['handleselectclausereturnresultclause_17',['handleSelectClauseReturnResultClause',['../_query_syntax_validator_8cpp.html#a1be6cc0db0cc141a3f90cbccd697fff3',1,'QuerySyntaxValidator.cpp']]],
+  ['hash_5fcombine_18',['hash_combine',['../namespace_container_hash.html#acbc86b3163e32800af4f3430cf706c85',1,'ContainerHash']]],
+  ['hash_5frange_19',['hash_range',['../namespace_container_hash.html#a170aaad399f7c5262127650b1de30c19',1,'ContainerHash']]],
+  ['hasitem_20',['hasItem',['../namespace_string_addon.html#a05ed350526c11c5564bd4ecec0745b4d',1,'StringAddon::hasItem(std::string mainString, std::string toFind)'],['../namespace_string_addon.html#a478cff3d3ee5e4ab3d620b5d9f7fc9f8',1,'StringAddon::hasItem(int idxGiven)']]],
+  ['hasnochildren_21',['hasNoChildren',['../class_t_node.html#ab7dcce749ee96d10d6a29c7c4fac53a2',1,'TNode']]],
+  ['hasvariables_22',['hasVariables',['../class_t_node.html#a2d574ed9b298d7c7495d962a7f12c2a2',1,'TNode']]]
 ];

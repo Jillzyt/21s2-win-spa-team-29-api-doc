@@ -66,18 +66,25 @@ $(function() {
   <div class="summary">
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="class_cfg_generator-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">CfgGenerator Class Reference</div></div>
+  <div class="headertitle"><div class="title">CfgGenerator Class Reference<div class="ingroups"><a class="el" href="group___program_analyser.html">ProgramAnalyser</a></div></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Contains only functions for the purpose of generating Cfg.  
+ <a href="class_cfg_generator.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_cfg_generator_8h_source.html">CfgGenerator.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a37992674ac239e2013623845e5b7846f"><td class="memItemLeft" align="right" valign="top">static std::unordered_map&lt; int, std::vector&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cfg_generator.html#a37992674ac239e2013623845e5b7846f">generateAllCfg</a> (<a class="el" href="class_t_node.html">TNode</a> *astRoot)</td></tr>
+<tr class="memdesc:a37992674ac239e2013623845e5b7846f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to be called by client.  <a href="class_cfg_generator.html#a37992674ac239e2013623845e5b7846f">More...</a><br /></td></tr>
 <tr class="separator:a37992674ac239e2013623845e5b7846f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Contains only functions for the purpose of generating Cfg. </p>
+<p >Cfg is represented as an adjacency list via unordered map. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a37992674ac239e2013623845e5b7846f" name="a37992674ac239e2013623845e5b7846f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a37992674ac239e2013623845e5b7846f">&#9670;&nbsp;</a></span>generateAllCfg()</h2>
 
@@ -102,11 +109,20 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Function to be called by client. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">astRoot</td><td>Root of ast. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns a mapping of line to next line. </dd></dl>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>ProgramAnalyser/<a class="el" href="_cfg_generator_8h_source.html">CfgGenerator.h</a></li>
-<li>ProgramAnalyser/<a class="el" href="_cfg_generator_8cpp.html">CfgGenerator.cpp</a></li>
+<li>C:/Users/Jody Tang/Desktop/NUS/Y3S2/CS3203/Proj/Team29/Code29/source/ProgramAnalyser/<a class="el" href="_cfg_generator_8h_source.html">CfgGenerator.h</a></li>
+<li>C:/Users/Jody Tang/Desktop/NUS/Y3S2/CS3203/Proj/Team29/Code29/source/ProgramAnalyser/<a class="el" href="_cfg_generator_8cpp.html">CfgGenerator.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

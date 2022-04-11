@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>CS3203 Team 29: Pkb/Pkb.cpp File Reference</title>
+<title>CS3203 Team 29: C:/Users/Jody Tang/Desktop/NUS/Y3S2/CS3203/Proj/Team29/Code29/source/Pkb/Pkb.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_c22396cf53831d33f1d0d439737f1abb.html">Pkb</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_e04ae2849dfa520b4ee2c9f7e9ff15de.html">Desktop</a></li><li class="navelem"><a class="el" href="dir_fc535f21949c11c9ba400d65784ec52f.html">NUS</a></li><li class="navelem"><a class="el" href="dir_03b17459166973645e5999254af2c876.html">Y3S2</a></li><li class="navelem"><a class="el" href="dir_b53863b2dd4e7567b209cc69d498bd8d.html">CS3203</a></li><li class="navelem"><a class="el" href="dir_a685a0b18ca61e77064c945be78f3477.html">Proj</a></li><li class="navelem"><a class="el" href="dir_836c232a576c31fa72627368ec927480.html">Team29</a></li><li class="navelem"><a class="el" href="dir_46d9012ec6ef0c453dd63a39b5923908.html">Code29</a></li><li class="navelem"><a class="el" href="dir_c278d9d90c9f4d2e85ae516d96d8817b.html">source</a></li><li class="navelem"><a class="el" href="dir_5231fba7e6d21b53459a158cde7d7318.html">Pkb</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -80,6 +80,9 @@ $(function() {
 <code>#include &quot;<a class="el" href="_design_entity_8h_source.html">../Enums/DesignEntity.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_rel_ref_8h_source.html">../Enums/RelRef.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_container_helper_8h_source.html">../Utils/ContainerHelper.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_next_t_rel_ref_extractor_8h_source.html">../ProgramAnalyser/NextTRelRefExtractor.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_affects_rel_ref_extractor_8h_source.html">../ProgramAnalyser/AffectsRelRefExtractor.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_affects_t_rel_ref_extractor_8h_source.html">../ProgramAnalyser/AffectsTRelRefExtractor.h</a>&quot;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
@@ -94,6 +97,10 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:a1465a12708d856660a4b074cd5317901"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_rel_ref_8h.html#a716e89e479362975d58357aa4f4e00ba">RelRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_pkb_8cpp.html#a1465a12708d856660a4b074cd5317901">UNSTORED_RELS</a> [] = { <a class="el" href="_rel_ref_8h.html#a716e89e479362975d58357aa4f4e00baab91de2f980bd29a7b9ff48f0ce25ec3f">RelRef::NEXTT</a>, <a class="el" href="_rel_ref_8h.html#a716e89e479362975d58357aa4f4e00baa65d9fa865e1ffc7267b57028a57a8930">RelRef::AFFECTS</a>, <a class="el" href="_rel_ref_8h.html#a716e89e479362975d58357aa4f4e00baa780622124a0bafe9e414dfff8fad0354">RelRef::AFFECTST</a> }</td></tr>
 <tr class="separator:a1465a12708d856660a4b074cd5317901"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab320602ad31f6f41f37340cbf80ff4ff"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_pkb_8cpp.html#ab320602ad31f6f41f37340cbf80ff4ff">numOfStmts</a> = 0</td></tr>
+<tr class="separator:ab320602ad31f6f41f37340cbf80ff4ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3e65acd6e19380f999959dd2be4e201"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_pkb_8cpp.html#ae3e65acd6e19380f999959dd2be4e201">numOfAssigns</a> = 0</td></tr>
+<tr class="separator:ae3e65acd6e19380f999959dd2be4e201"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a9f449fcd8a51357b39bf9be534bd6a19" name="a9f449fcd8a51357b39bf9be534bd6a19"></a>
@@ -115,6 +122,34 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="ae3e65acd6e19380f999959dd2be4e201" name="ae3e65acd6e19380f999959dd2be4e201"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3e65acd6e19380f999959dd2be4e201">&#9670;&nbsp;</a></span>numOfAssigns</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int numOfAssigns = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab320602ad31f6f41f37340cbf80ff4ff" name="ab320602ad31f6f41f37340cbf80ff4ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab320602ad31f6f41f37340cbf80ff4ff">&#9670;&nbsp;</a></span>numOfStmts</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int numOfStmts = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a1465a12708d856660a4b074cd5317901" name="a1465a12708d856660a4b074cd5317901"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1465a12708d856660a4b074cd5317901">&#9670;&nbsp;</a></span>UNSTORED_RELS</h2>
 

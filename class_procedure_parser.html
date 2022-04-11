@@ -77,17 +77,18 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a93984caff967188a9d4087eebd1809cd"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_procedure_parser.html#a93984caff967188a9d4087eebd1809cd">isProcedureValid</a> (<a class="el" href="struct_program_parser_result.html">ProgramParserResult</a> parserResult, int start, int end)</td></tr>
-<tr class="memdesc:a93984caff967188a9d4087eebd1809cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decides if a sequence of tokens within an index form a valid procedure.  <a href="class_procedure_parser.html#a93984caff967188a9d4087eebd1809cd">More...</a><br /></td></tr>
-<tr class="separator:a93984caff967188a9d4087eebd1809cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1cca4913c979e347a8d53e240e8ba1c6"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_procedure_parser.html#a1cca4913c979e347a8d53e240e8ba1c6">getNextIndex</a> (<a class="el" href="struct_program_parser_result.html">ProgramParserResult</a> parserResult, int start)</td></tr>
-<tr class="separator:a1cca4913c979e347a8d53e240e8ba1c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c9677d56c1c09d6215db48a4e3a93a3"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_procedure_parser.html#a5c9677d56c1c09d6215db48a4e3a93a3">isProcedureValid</a> (<a class="el" href="struct_program_parser_result.html">ProgramParserResult</a> &amp;parserResult, int start, int end)</td></tr>
+<tr class="memdesc:a5c9677d56c1c09d6215db48a4e3a93a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decides if a sequence of tokens within an index form a valid procedure.  <a href="class_procedure_parser.html#a5c9677d56c1c09d6215db48a4e3a93a3">More...</a><br /></td></tr>
+<tr class="separator:a5c9677d56c1c09d6215db48a4e3a93a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af536320782bee2929ac9bce57574ed48"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_procedure_parser.html#af536320782bee2929ac9bce57574ed48">getNextIndex</a> (<a class="el" href="struct_program_parser_result.html">ProgramParserResult</a> &amp;parserResult, int start)</td></tr>
+<tr class="memdesc:af536320782bee2929ac9bce57574ed48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to get the next index from a parser result.  <a href="class_procedure_parser.html#af536320782bee2929ac9bce57574ed48">More...</a><br /></td></tr>
+<tr class="separator:af536320782bee2929ac9bce57574ed48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Contains methods to determine if the tokens in a sequence form a valid procedure. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a1cca4913c979e347a8d53e240e8ba1c6" name="a1cca4913c979e347a8d53e240e8ba1c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1cca4913c979e347a8d53e240e8ba1c6">&#9670;&nbsp;</a></span>getNextIndex()</h2>
+<a id="af536320782bee2929ac9bce57574ed48" name="af536320782bee2929ac9bce57574ed48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af536320782bee2929ac9bce57574ed48">&#9670;&nbsp;</a></span>getNextIndex()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -98,7 +99,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">int ProcedureParser::getNextIndex </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_program_parser_result.html">ProgramParserResult</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_program_parser_result.html">ProgramParserResult</a> &amp;&#160;</td>
           <td class="paramname"><em>parserResult</em>, </td>
         </tr>
         <tr>
@@ -120,10 +121,20 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Function to get the next index from a parser result. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parserResult</td><td><a class="el" href="struct_program_parser_result.html" title="Stores relationships between line numbers and string tokens from the SIMPLE source.">ProgramParserResult</a> to retrieve tokens from. </td></tr>
+    <tr><td class="paramname">start</td><td>Index of first token to examine. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>index of the next token </dd></dl>
+
 </div>
 </div>
-<a id="a93984caff967188a9d4087eebd1809cd" name="a93984caff967188a9d4087eebd1809cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93984caff967188a9d4087eebd1809cd">&#9670;&nbsp;</a></span>isProcedureValid()</h2>
+<a id="a5c9677d56c1c09d6215db48a4e3a93a3" name="a5c9677d56c1c09d6215db48a4e3a93a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c9677d56c1c09d6215db48a4e3a93a3">&#9670;&nbsp;</a></span>isProcedureValid()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -134,7 +145,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">bool ProcedureParser::isProcedureValid </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_program_parser_result.html">ProgramParserResult</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_program_parser_result.html">ProgramParserResult</a> &amp;&#160;</td>
           <td class="paramname"><em>parserResult</em>, </td>
         </tr>
         <tr>
@@ -176,8 +187,8 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>Parser/<a class="el" href="_procedure_parser_8h_source.html">ProcedureParser.h</a></li>
-<li>Parser/<a class="el" href="_procedure_parser_8cpp.html">ProcedureParser.cpp</a></li>
+<li>C:/Users/Jody Tang/Desktop/NUS/Y3S2/CS3203/Proj/Team29/Code29/source/Parser/<a class="el" href="_procedure_parser_8h_source.html">ProcedureParser.h</a></li>
+<li>C:/Users/Jody Tang/Desktop/NUS/Y3S2/CS3203/Proj/Team29/Code29/source/Parser/<a class="el" href="_procedure_parser_8cpp.html">ProcedureParser.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

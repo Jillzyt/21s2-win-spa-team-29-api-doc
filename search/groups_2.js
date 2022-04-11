@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['parser_0',['Parser',['../group___parser.html',1,'']]],
-  ['patternpkg_1',['PatternPkg',['../group___pattern_pkg.html',1,'']]],
-  ['pkb_2',['Pkb',['../group___pkb.html',1,'']]]
+  ['qe_0',['QE',['../group___q_e.html',1,'']]],
+  ['qpp_1',['QPP',['../group___q_p_p.html',1,'']]]
 ];

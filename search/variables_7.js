@@ -1,5 +1,28 @@
 var searchData=
 [
-  ['name_0',['name',['../struct_pql_1_1_param.html#a05d3121c3a99bb1bbec185536c0ba26c',1,'Pql::Param']]],
-  ['num_5fof_5fdeclarations_1',['NUM_OF_DECLARATIONS',['../_query_terms_checker_8cpp.html#abef8aa53b5f1d1afe773a807881137da',1,'QueryTermsChecker.cpp']]]
+  ['invalid_5fafter_5fclose_5fbracket_0',['INVALID_AFTER_CLOSE_BRACKET',['../class_qpp_errors.html#ac7cc58e78a26b8734f61fda8c7152aaa',1,'QppErrors']]],
+  ['invalid_5fand_5finput_1',['INVALID_AND_INPUT',['../class_qpp_errors.html#a468b5a1307f6cc174169e9ab637c621f',1,'QppErrors']]],
+  ['invalid_5fattrref_5fde_2',['INVALID_ATTRREF_DE',['../class_semantic_error.html#af333abf983ba988edf3e00973e5c1bda',1,'SemanticError']]],
+  ['invalid_5fbracket_5fbalancing_3',['INVALID_BRACKET_BALANCING',['../class_qpp_errors.html#a5c8b539018e01b9c1c969d4786f80cf1',1,'QppErrors']]],
+  ['invalid_5fclause_4',['INVALID_CLAUSE',['../class_qpp_errors.html#aa10bac610a605a13bda445bbf8ab0884',1,'QppErrors']]],
+  ['invalid_5fclause_5fsyntax_5',['INVALID_CLAUSE_SYNTAX',['../class_qpp_errors.html#ac0084ee6dd59dd0f4b44176d61c8a6bd',1,'QppErrors']]],
+  ['invalid_5fclausetype_5fparam_6',['INVALID_CLAUSETYPE_PARAM',['../class_qpp_errors.html#a0ab0872d8727fae55b5962aa8d2deeed',1,'QppErrors']]],
+  ['invalid_5fdeclaration_7',['INVALID_DECLARATION',['../class_qpp_errors.html#adf69002bd443dc2e13f1738769c76140',1,'QppErrors']]],
+  ['invalid_5fdeclaration_5fsynonym_8',['INVALID_DECLARATION_SYNONYM',['../class_qpp_errors.html#a49c14e1a72bbc99320d6019f00192942',1,'QppErrors']]],
+  ['invalid_5fdeclaration_5ftype_9',['INVALID_DECLARATION_TYPE',['../class_qpp_errors.html#af7a3e8ef13998d85c054d12ef91be406',1,'QppErrors']]],
+  ['invalid_5fexpr_5fspec_10',['INVALID_EXPR_SPEC',['../class_invalid_pattern_error.html#aa52e940732c4f26b2b0967558a8f0cfc',1,'InvalidPatternError']]],
+  ['invalid_5finput_11',['INVALID_INPUT',['../_rel_ref_checker_8cpp.html#ad5f4ba0050108232af689068efded5dc',1,'RelRefChecker.cpp']]],
+  ['invalid_5finvertedcomma_5fbalancing_12',['INVALID_INVERTEDCOMMA_BALANCING',['../class_qpp_errors.html#a36d6895ca001e8e785fad9f596f3e499',1,'QppErrors']]],
+  ['invalid_5fisvalidparams_5finput_13',['INVALID_ISVALIDPARAMS_INPUT',['../class_qpp_errors.html#abe2bf4a75957b33728a829d36f199d5c',1,'QppErrors']]],
+  ['invalid_5fpattern_5fclause_14',['INVALID_PATTERN_CLAUSE',['../class_qpp_errors.html#afdd500186783ad8b2671c6b459c3b163',1,'QppErrors']]],
+  ['invalid_5fpattern_5fsyn_15',['INVALID_PATTERN_SYN',['../class_qe_error.html#a6ce6d3915eb3ab0e25926637e1173214',1,'QeError::INVALID_PATTERN_SYN()'],['../class_semantic_error.html#a6cfbaaa8103d8eeccb073823f91df523',1,'SemanticError::INVALID_PATTERN_SYN()']]],
+  ['invalid_5fprogram_16',['INVALID_PROGRAM',['../class_validation_exception.html#a604f19e44eef1a44d4b16fb556f016c1',1,'ValidationException']]],
+  ['invalid_5fresult_5fclause_17',['INVALID_RESULT_CLAUSE',['../class_qpp_errors.html#a79b53d1e37b13a31a86edefef3c6fbf0',1,'QppErrors']]],
+  ['invalid_5fselect_18',['INVALID_SELECT',['../class_qpp_errors.html#a8f16fd039ad68ebb23504cc84b3fbb3b',1,'QppErrors']]],
+  ['invalid_5fselection_5felem_19',['INVALID_SELECTION_ELEM',['../class_qe_error.html#a176e2a118c38f719c31b860829ef4c32',1,'QeError']]],
+  ['invalid_5fsuch_5fthat_5fclause_20',['INVALID_SUCH_THAT_CLAUSE',['../class_qpp_errors.html#a5c4c4cc873683f83f3e2dbd4d7b7d4f4',1,'QppErrors']]],
+  ['invalid_5fwith_5fclause_21',['INVALID_WITH_CLAUSE',['../class_qpp_errors.html#a0f8117f337ed0d823782c086c36b19a4',1,'QppErrors']]],
+  ['invalid_5fwith_5fparam_5ftype_22',['INVALID_WITH_PARAM_TYPE',['../class_semantic_error.html#a60d7a5fcc8507c807d505035e33096f3',1,'SemanticError']]],
+  ['invalid_5fwith_5fparamtype_23',['INVALID_WITH_PARAMTYPE',['../class_qe_error.html#a2601ea22f11435408cb1acdbe2a37850',1,'QeError']]],
+  ['isbooleanquery_24',['isBooleanQuery',['../struct_pql_1_1_query.html#a710e853d11de3139217abf3b528a96e5',1,'Pql::Query']]]
 ];

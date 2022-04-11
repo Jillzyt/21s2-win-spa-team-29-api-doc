@@ -95,6 +95,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad3e609b67b04b97766ce2c6e0c7ec8f7"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pkb_interface.html#ad3e609b67b04b97766ce2c6e0c7ec8f7">isRelated</a> (<a class="el" href="_rel_ref_8h.html#a716e89e479362975d58357aa4f4e00ba">RelRef</a> relationship, std::string former, std::string latter)=0</td></tr>
 <tr class="memdesc:ad3e609b67b04b97766ce2c6e0c7ec8f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a relationship is true.  <a href="class_pkb_interface.html#ad3e609b67b04b97766ce2c6e0c7ec8f7">More...</a><br /></td></tr>
 <tr class="separator:ad3e609b67b04b97766ce2c6e0c7ec8f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59a38876d4a541c8442eca2822addb90"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pkb_interface.html#a59a38876d4a541c8442eca2822addb90">addRelationship</a> (<a class="el" href="_rel_ref_8h.html#a716e89e479362975d58357aa4f4e00ba">RelRef</a> relationship, std::string former, std::string latter)=0</td></tr>
+<tr class="memdesc:a59a38876d4a541c8442eca2822addb90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store a relationship.  <a href="class_pkb_interface.html#a59a38876d4a541c8442eca2822addb90">More...</a><br /></td></tr>
+<tr class="separator:a59a38876d4a541c8442eca2822addb90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa48782c527c46c6292a776e1851b8486"><td class="memItemLeft" align="right" valign="top">virtual std::unordered_map&lt; <a class="el" href="_rel_ref_8h.html#a716e89e479362975d58357aa4f4e00ba">RelRef</a>, <a class="el" href="class_bi_graph.html">BiGraph</a>&lt; std::string, std::string &gt; &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pkb_interface.html#aa48782c527c46c6292a776e1851b8486">getRelGraph</a> ()=0</td></tr>
+<tr class="memdesc:aa48782c527c46c6292a776e1851b8486"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get relGraph.  <a href="class_pkb_interface.html#aa48782c527c46c6292a776e1851b8486">More...</a><br /></td></tr>
+<tr class="separator:aa48782c527c46c6292a776e1851b8486"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab506109c849312e3077fb141e4ee046d"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pkb_interface.html#ab506109c849312e3077fb141e4ee046d">getLatterFromFormer</a> (<a class="el" href="_rel_ref_8h.html#a716e89e479362975d58357aa4f4e00ba">RelRef</a> relationship, std::string former)=0</td></tr>
 <tr class="memdesc:ab506109c849312e3077fb141e4ee046d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all latter entities.  <a href="class_pkb_interface.html#ab506109c849312e3077fb141e4ee046d">More...</a><br /></td></tr>
 <tr class="separator:ab506109c849312e3077fb141e4ee046d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -111,6 +117,59 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p ><a class="el" href="class_pkb.html" title="Program Knowledge Base (Pkb) class stores information about the SIMPLE source code.">Pkb</a> interface helps to declare the methods that will be used by <a class="el" href="class_pkb.html" title="Program Knowledge Base (Pkb) class stores information about the SIMPLE source code.">Pkb</a>. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a59a38876d4a541c8442eca2822addb90" name="a59a38876d4a541c8442eca2822addb90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59a38876d4a541c8442eca2822addb90">&#9670;&nbsp;</a></span>addRelationship()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool PkbInterface::addRelationship </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_rel_ref_8h.html#a716e89e479362975d58357aa4f4e00ba">RelRef</a>&#160;</td>
+          <td class="paramname"><em>relationship</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>former</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>latter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Store a relationship. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">relationship</td><td>The relationship type </td></tr>
+    <tr><td class="paramname">former</td><td>The former entity of the relationship </td></tr>
+    <tr><td class="paramname">latter</td><td>The latter entity of the relationship </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if successful storing, false otherwise </dd></dl>
+
+</div>
+</div>
 <a id="a9b23e0938fbc2d13b79dd92955bd4566" name="a9b23e0938fbc2d13b79dd92955bd4566"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9b23e0938fbc2d13b79dd92955bd4566">&#9670;&nbsp;</a></span>getAllFormer()</h2>
 
@@ -356,6 +415,36 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aa48782c527c46c6292a776e1851b8486" name="aa48782c527c46c6292a776e1851b8486"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa48782c527c46c6292a776e1851b8486">&#9670;&nbsp;</a></span>getRelGraph()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::unordered_map&lt; <a class="el" href="_rel_ref_8h.html#a716e89e479362975d58357aa4f4e00ba">RelRef</a>, <a class="el" href="class_bi_graph.html">BiGraph</a>&lt; std::string, std::string &gt; &gt; * PkbInterface::getRelGraph </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get relGraph. </p>
+<dl class="section return"><dt>Returns</dt><dd>return the relationship graph </dd></dl>
+
+<p>Implemented in <a class="el" href="class_pkb.html#abdf6644465e1a007ec697610dfd72e4f">Pkb</a>.</p>
+
+</div>
+</div>
 <a id="ad3e609b67b04b97766ce2c6e0c7ec8f7" name="ad3e609b67b04b97766ce2c6e0c7ec8f7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad3e609b67b04b97766ce2c6e0c7ec8f7">&#9670;&nbsp;</a></span>isRelated()</h2>
 
@@ -412,7 +501,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Pkb/<a class="el" href="_pkb_interface_8h_source.html">PkbInterface.h</a></li>
+<li>C:/Users/Jody Tang/Desktop/NUS/Y3S2/CS3203/Proj/Team29/Code29/source/Pkb/<a class="el" href="_pkb_interface_8h_source.html">PkbInterface.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

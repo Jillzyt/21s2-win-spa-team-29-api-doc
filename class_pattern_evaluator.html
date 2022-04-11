@@ -101,6 +101,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa437de9ccadcc021da6d9afb21834771"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pattern_evaluator.html#aa437de9ccadcc021da6d9afb21834771">setDesignEntity</a> (<a class="el" href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022">DesignEntity</a> designEntity)</td></tr>
 <tr class="memdesc:aa437de9ccadcc021da6d9afb21834771"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the subtree node which represents the pattern.  <a href="class_pattern_evaluator.html#aa437de9ccadcc021da6d9afb21834771">More...</a><br /></td></tr>
 <tr class="separator:aa437de9ccadcc021da6d9afb21834771"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a895036abd4de0a29ca4136787c953dea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pattern_evaluator.html#a895036abd4de0a29ca4136787c953dea">setPatternExpr</a> (std::string patternExpr)</td></tr>
+<tr class="memdesc:a895036abd4de0a29ca4136787c953dea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set pattern expr.  <a href="class_pattern_evaluator.html#a895036abd4de0a29ca4136787c953dea">More...</a><br /></td></tr>
+<tr class="separator:a895036abd4de0a29ca4136787c953dea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2792b0485a5c8023316431e0c1b2615"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_t_node.html">TNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pattern_evaluator.html#ab2792b0485a5c8023316431e0c1b2615">getPatternSubtree</a> ()</td></tr>
 <tr class="memdesc:ab2792b0485a5c8023316431e0c1b2615"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the subtree node which represents the pattern.  <a href="class_pattern_evaluator.html#ab2792b0485a5c8023316431e0c1b2615">More...</a><br /></td></tr>
 <tr class="separator:ab2792b0485a5c8023316431e0c1b2615"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -113,18 +116,33 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a27897952e47156e998d56a017a58d140"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pattern_evaluator.html#a27897952e47156e998d56a017a58d140">evaluateVars</a> (std::string stmtNo)</td></tr>
 <tr class="memdesc:a27897952e47156e998d56a017a58d140"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate the stmtNo and return the related variables.  <a href="class_pattern_evaluator.html#a27897952e47156e998d56a017a58d140">More...</a><br /></td></tr>
 <tr class="separator:a27897952e47156e998d56a017a58d140"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ee40bdb729f63a2e12986030a2c4280"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pattern_evaluator.html#a2ee40bdb729f63a2e12986030a2c4280">getStmtsOfType</a> (<a class="el" href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022">DesignEntity</a> designEntity)</td></tr>
+<tr class="memdesc:a2ee40bdb729f63a2e12986030a2c4280"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all statements of type.  <a href="class_pattern_evaluator.html#a2ee40bdb729f63a2e12986030a2c4280">More...</a><br /></td></tr>
+<tr class="separator:a2ee40bdb729f63a2e12986030a2c4280"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab42ef6836f1ba11c6b1c2a8dd9a7775c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pattern_evaluator.html#ab42ef6836f1ba11c6b1c2a8dd9a7775c">getStmtsWithVar</a> (<a class="el" href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022">DesignEntity</a> designEntity)</td></tr>
+<tr class="memdesc:ab42ef6836f1ba11c6b1c2a8dd9a7775c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all statements of type that at least have variable.  <a href="class_pattern_evaluator.html#ab42ef6836f1ba11c6b1c2a8dd9a7775c">More...</a><br /></td></tr>
+<tr class="separator:ab42ef6836f1ba11c6b1c2a8dd9a7775c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbe2079bd2a0bd565e8f5fb783084331"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pattern_evaluator_interface.html#abbe2079bd2a0bd565e8f5fb783084331">setPatternSubtree</a> (<a class="el" href="class_t_node.html">TNode</a> *subTree)=0</td></tr>
 <tr class="memdesc:abbe2079bd2a0bd565e8f5fb783084331"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the subtree node which represents the pattern.  <a href="class_pattern_evaluator_interface.html#abbe2079bd2a0bd565e8f5fb783084331">More...</a><br /></td></tr>
 <tr class="separator:abbe2079bd2a0bd565e8f5fb783084331"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6070c484243d4b6c4cd1373e612108e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pattern_evaluator_interface.html#aa6070c484243d4b6c4cd1373e612108e">setDesignEntity</a> (<a class="el" href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022">DesignEntity</a> designEntity)=0</td></tr>
 <tr class="memdesc:aa6070c484243d4b6c4cd1373e612108e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the subtree node which represents the pattern.  <a href="class_pattern_evaluator_interface.html#aa6070c484243d4b6c4cd1373e612108e">More...</a><br /></td></tr>
 <tr class="separator:aa6070c484243d4b6c4cd1373e612108e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0ee23c9626e77ffaf91938937b5a07a"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pattern_evaluator_interface.html#af0ee23c9626e77ffaf91938937b5a07a">setPatternExpr</a> (std::string <a class="el" href="_pattern_evaluator_8cpp.html#ad74bb2c5ebb0f295a60421da0891e19a">patternExpr</a>)=0</td></tr>
+<tr class="memdesc:af0ee23c9626e77ffaf91938937b5a07a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set pattern expr.  <a href="class_pattern_evaluator_interface.html#af0ee23c9626e77ffaf91938937b5a07a">More...</a><br /></td></tr>
+<tr class="separator:af0ee23c9626e77ffaf91938937b5a07a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8eae3e8b6f053879a1b87b5aee7b0459"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pattern_evaluator_interface.html#a8eae3e8b6f053879a1b87b5aee7b0459">evaluateStmts</a> (bool isExact)=0</td></tr>
 <tr class="memdesc:a8eae3e8b6f053879a1b87b5aee7b0459"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate all the ASSIGN statements.  <a href="class_pattern_evaluator_interface.html#a8eae3e8b6f053879a1b87b5aee7b0459">More...</a><br /></td></tr>
 <tr class="separator:a8eae3e8b6f053879a1b87b5aee7b0459"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73f1da45b4ae066fab4fa0cb75be4550"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pattern_evaluator_interface.html#a73f1da45b4ae066fab4fa0cb75be4550">evaluateVars</a> (std::string stmtNo)=0</td></tr>
 <tr class="memdesc:a73f1da45b4ae066fab4fa0cb75be4550"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate the stmtNo and return the related variables.  <a href="class_pattern_evaluator_interface.html#a73f1da45b4ae066fab4fa0cb75be4550">More...</a><br /></td></tr>
 <tr class="separator:a73f1da45b4ae066fab4fa0cb75be4550"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd6791272e1169eb6ce9c39b3ca24b69"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pattern_evaluator_interface.html#acd6791272e1169eb6ce9c39b3ca24b69">getStmtsOfType</a> (<a class="el" href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022">DesignEntity</a> designEntity)=0</td></tr>
+<tr class="memdesc:acd6791272e1169eb6ce9c39b3ca24b69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all statements of type.  <a href="class_pattern_evaluator_interface.html#acd6791272e1169eb6ce9c39b3ca24b69">More...</a><br /></td></tr>
+<tr class="separator:acd6791272e1169eb6ce9c39b3ca24b69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45083ff782bac7f568c16b4a846a2105"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pattern_evaluator_interface.html#a45083ff782bac7f568c16b4a846a2105">getStmtsWithVar</a> (<a class="el" href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022">DesignEntity</a> designEntity)=0</td></tr>
+<tr class="memdesc:a45083ff782bac7f568c16b4a846a2105"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all statements of type that at least have variable.  <a href="class_pattern_evaluator_interface.html#a45083ff782bac7f568c16b4a846a2105">More...</a><br /></td></tr>
+<tr class="separator:a45083ff782bac7f568c16b4a846a2105"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p ><a class="el" href="class_pattern_evaluator.html" title="PatternEvaluator helps to evaluate the patterns that are passed from QueryEvaluator(QE) and returns r...">PatternEvaluator</a> helps to evaluate the patterns that are passed from <a class="el" href="class_query_evaluator.html" title="This class evaluates a given query and is responsible for optimizing evaluation.">QueryEvaluator(QE)</a> and returns result to QE. </p>
@@ -277,6 +295,43 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a2ee40bdb729f63a2e12986030a2c4280" name="a2ee40bdb729f63a2e12986030a2c4280"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ee40bdb729f63a2e12986030a2c4280">&#9670;&nbsp;</a></span>getStmtsOfType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt; string &gt; PatternEvaluator::getStmtsOfType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022">DesignEntity</a>&#160;</td>
+          <td class="paramname"><em>designEntity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get all statements of type. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">designEntity</td><td>designEntity to be evaluated </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a vector of stmts of the designEntity </dd></dl>
+
+<p>Implements <a class="el" href="class_pattern_evaluator_interface.html#acd6791272e1169eb6ce9c39b3ca24b69">PatternEvaluatorInterface</a>.</p>
+
+</div>
+</div>
 <a id="a721c1102b0e30dcac34a4a03fd113fc1" name="a721c1102b0e30dcac34a4a03fd113fc1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a721c1102b0e30dcac34a4a03fd113fc1">&#9670;&nbsp;</a></span>getStmtsToEvaluate()</h2>
 
@@ -294,6 +349,43 @@ Public Member Functions</h2></td></tr>
 
 <p>Get all the stmts to be evaluated. </p>
 <p >This is set as public as will be used for testing purposes </p><dl class="section return"><dt>Returns</dt><dd>a vector of TNodes that represents each stmt to be evaluated </dd></dl>
+
+</div>
+</div>
+<a id="ab42ef6836f1ba11c6b1c2a8dd9a7775c" name="ab42ef6836f1ba11c6b1c2a8dd9a7775c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab42ef6836f1ba11c6b1c2a8dd9a7775c">&#9670;&nbsp;</a></span>getStmtsWithVar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt; string &gt; PatternEvaluator::getStmtsWithVar </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022">DesignEntity</a>&#160;</td>
+          <td class="paramname"><em>designEntity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get all statements of type that at least have variable. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">designEntity</td><td>designEntity to be evaluated </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a vector of stmts of the designEntity </dd></dl>
+
+<p>Implements <a class="el" href="class_pattern_evaluator_interface.html#a45083ff782bac7f568c16b4a846a2105">PatternEvaluatorInterface</a>.</p>
 
 </div>
 </div>
@@ -362,13 +454,50 @@ Public Member Functions</h2></td></tr>
 <p>Set the subtree node which represents the pattern. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">designEntity</td><td><a class="el" href="namespace_design_entity.html" title="Constructor of the class QueryFunction.">DesignEntity</a> that is to be evaluated </td></tr>
+    <tr><td class="paramname">designEntity</td><td>DesignEntity that is to be evaluated </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true when successfully set </dd></dl>
 
 <p>Implements <a class="el" href="class_pattern_evaluator_interface.html#aa6070c484243d4b6c4cd1373e612108e">PatternEvaluatorInterface</a>.</p>
+
+</div>
+</div>
+<a id="a895036abd4de0a29ca4136787c953dea" name="a895036abd4de0a29ca4136787c953dea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a895036abd4de0a29ca4136787c953dea">&#9670;&nbsp;</a></span>setPatternExpr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PatternEvaluator::setPatternExpr </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>patternExpr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set pattern expr. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">patternExpr</td><td>Pattern Expression that is to be evaluated </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true when successfully set </dd></dl>
+
+<p>Implements <a class="el" href="class_pattern_evaluator_interface.html#af0ee23c9626e77ffaf91938937b5a07a">PatternEvaluatorInterface</a>.</p>
 
 </div>
 </div>
@@ -410,8 +539,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>PatternPkg/<a class="el" href="_pattern_evaluator_8h_source.html">PatternEvaluator.h</a></li>
-<li>PatternPkg/<a class="el" href="_pattern_evaluator_8cpp.html">PatternEvaluator.cpp</a></li>
+<li>C:/Users/Jody Tang/Desktop/NUS/Y3S2/CS3203/Proj/Team29/Code29/source/PatternPkg/<a class="el" href="_pattern_evaluator_8h_source.html">PatternEvaluator.h</a></li>
+<li>C:/Users/Jody Tang/Desktop/NUS/Y3S2/CS3203/Proj/Team29/Code29/source/PatternPkg/<a class="el" href="_pattern_evaluator_8cpp.html">PatternEvaluator.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

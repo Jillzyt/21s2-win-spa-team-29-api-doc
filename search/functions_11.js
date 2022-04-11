@@ -1,12 +1,23 @@
 var searchData=
 [
-  ['table_0',['Table',['../class_table.html#addc4cc0dc97aba8a3bfcd1b0c927fb7c',1,'Table']]],
-  ['tabstowhitespace_1',['tabsToWhitespace',['../namespace_string_addon.html#aa40356362444a434939d2ee0c85d5b38',1,'StringAddon']]],
-  ['tnode_2',['TNode',['../class_t_node.html#a5d7ab5171cd0dfb220b01778e2804225',1,'TNode::TNode()'],['../class_t_node.html#a90c230d1895e56dcc56cb262b0685ac5',1,'TNode::TNode(int lineNo, std::string token, DesignEntity type)'],['../class_t_node.html#af561fe3989d62876a1e51fa29796de3d',1,'TNode::TNode(int lineNo, std::string token, DesignEntity type, TNode *parent)']]],
-  ['tokenclass_3',['TokenClass',['../struct_token_class.html#adecc4dee249927f59f00c5058bf14880',1,'TokenClass']]],
-  ['tokenizedeclarationsreturnselectclause_4',['tokenizeDeclarationsReturnSelectClause',['../_query_tokenizer_8cpp.html#a94e57501adbe548ece384f7546b8b5b4',1,'QueryTokenizer.cpp']]],
-  ['tostring_5',['toString',['../class_t_node.html#af509c1124e1e5135cf498f998700fdfb',1,'TNode']]],
-  ['traverseast_6',['traverseAst',['../_design_extractor_8cpp.html#ae3a6eee5c62679dc0e6a563ba7bb3872',1,'DesignExtractor.cpp']]],
-  ['traverseproceduremap_7',['traverseProcedureMap',['../_design_extractor_8cpp.html#a38cec59b7254d97c3e7ef6853cc661a0',1,'DesignExtractor.cpp']]],
-  ['trim_8',['trim',['../_program_parser_8cpp.html#a9de43e600ebc3a0f919582b007c25322',1,'ProgramParser.cpp']]]
+  ['selectcolumns_0',['selectColumns',['../class_table.html#a1e7f3c8fd359313a0f4592a24dfbf1bb',1,'Table']]],
+  ['selectcolumnsopt_1',['selectColumnsOpt',['../class_table.html#a91d42ab347bb8b96689292e6ed924276',1,'Table']]],
+  ['semanticerror_2',['SemanticError',['../class_semantic_error.html#afbb4b99a72334c4ef421229115725c4f',1,'SemanticError']]],
+  ['setast_3',['setAst',['../class_pkb.html#a83e1bd4477d01427798cb7561488215f',1,'Pkb']]],
+  ['setchild_4',['setChild',['../class_t_node.html#a18c45201ab1c28514ca4eeeb3e567155',1,'TNode']]],
+  ['setdesignentity_5',['setDesignEntity',['../class_pattern_evaluator.html#aa437de9ccadcc021da6d9afb21834771',1,'PatternEvaluator::setDesignEntity()'],['../class_pattern_evaluator_interface.html#aa6070c484243d4b6c4cd1373e612108e',1,'PatternEvaluatorInterface::setDesignEntity()']]],
+  ['setiswithincarrots_6',['setIsWithinCarrots',['../class_query_token.html#a11d4406d9c767044166a0ba027d3c704',1,'QueryToken']]],
+  ['setparent_7',['setParent',['../class_t_node.html#a268a84ac70bea458a3fb9cc4d3e2c27e',1,'TNode']]],
+  ['setpatternexpr_8',['setPatternExpr',['../class_pattern_evaluator.html#a895036abd4de0a29ca4136787c953dea',1,'PatternEvaluator::setPatternExpr()'],['../class_pattern_evaluator_interface.html#af0ee23c9626e77ffaf91938937b5a07a',1,'PatternEvaluatorInterface::setPatternExpr()']]],
+  ['setpatternsubtree_9',['setPatternSubtree',['../class_pattern_evaluator.html#a1e043ed694f0a3f691b450ab00d59ca2',1,'PatternEvaluator::setPatternSubtree()'],['../class_pattern_evaluator_interface.html#abbe2079bd2a0bd565e8f5fb783084331',1,'PatternEvaluatorInterface::setPatternSubtree()']]],
+  ['setquerydeclaration_10',['setQueryDeclaration',['../class_query_token.html#a56d1ed9b0f93ba05382e4b3ca9eeeedb',1,'QueryToken']]],
+  ['setqueryfunction_11',['setQueryFunction',['../class_query_token.html#a2619524418b2c44925acc93d148c2efc',1,'QueryToken']]],
+  ['setresultclause_12',['setResultClause',['../class_query_token.html#ab39f0b0cd5c7001c96f4f45da6059dba',1,'QueryToken']]],
+  ['setstmts_13',['setStmts',['../class_affects_rel_ref_extractor.html#af312c0b1db30bfb646422ff6e4ea49bd',1,'AffectsRelRefExtractor']]],
+  ['skipnextexplore_14',['skipNextExplore',['../class_dfs_iterator.html#afd4ec8d846ac0f3520b034875aa943bd',1,'DfsIterator']]],
+  ['split_15',['split',['../namespace_string_addon.html#a6784baae4d448c45b8fc37a329042d68',1,'StringAddon']]],
+  ['splitbychar_16',['splitByChar',['../_string_tokenizer_8cpp.html#a568ff31f0962eb47de8b55eb2d7b535e',1,'StringTokenizer.cpp']]],
+  ['stringtodeenum_17',['stringToDeEnum',['../namespace_string_addon.html#a6211d3305b5ac181cb3181ef11a7e835',1,'StringAddon']]],
+  ['stringtorelrefenum_18',['stringToRelRefEnum',['../namespace_string_addon.html#ab52f94adf5547a87d748f93445cdf5fd',1,'StringAddon']]],
+  ['symmeval_19',['SymmEval',['../class_symm_eval.html#adadae26fef0bc652f43e80cd2b0b8e38',1,'SymmEval']]]
 ];

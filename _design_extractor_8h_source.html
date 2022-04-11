@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>CS3203 Team 29: ProgramAnalyser/DesignExtractor.h Source File</title>
+<title>CS3203 Team 29: C:/Users/Jody Tang/Desktop/NUS/Y3S2/CS3203/Proj/Team29/Code29/source/ProgramAnalyser/DesignExtractor.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,38 +63,37 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_4f6af3abbba83dad4673c00568db21c7.html">ProgramAnalyser</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_e04ae2849dfa520b4ee2c9f7e9ff15de.html">Desktop</a></li><li class="navelem"><a class="el" href="dir_fc535f21949c11c9ba400d65784ec52f.html">NUS</a></li><li class="navelem"><a class="el" href="dir_03b17459166973645e5999254af2c876.html">Y3S2</a></li><li class="navelem"><a class="el" href="dir_b53863b2dd4e7567b209cc69d498bd8d.html">CS3203</a></li><li class="navelem"><a class="el" href="dir_a685a0b18ca61e77064c945be78f3477.html">Proj</a></li><li class="navelem"><a class="el" href="dir_836c232a576c31fa72627368ec927480.html">Team29</a></li><li class="navelem"><a class="el" href="dir_46d9012ec6ef0c453dd63a39b5923908.html">Code29</a></li><li class="navelem"><a class="el" href="dir_c278d9d90c9f4d2e85ae516d96d8817b.html">source</a></li><li class="navelem"><a class="el" href="dir_1f9853a2fdd3b52985fe72db3371b440.html">ProgramAnalyser</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle"><div class="title">DesignExtractor.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="_design_extractor_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;../Pkb/Pkb.h&quot;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;../DataStructures/TNode.h&quot;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_design_extractor.html">   26</a></span><span class="keyword">class </span><a class="code hl_class" href="class_design_extractor.html">DesignExtractor</a> {</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_design_extractor.html#a76437d7d6e2d5f4557ac8c42881743fa">processProcedureMap</a>(std::unordered_map&lt;std::string, std::vector&lt;std::string&gt;&gt; procedureMap, <a class="code hl_class" href="class_pkb.html">Pkb</a>&amp; pkb);</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_design_extractor.html#a0a987700a1fd0424b6d0a293050accda">processAst</a>(<a class="code hl_class" href="class_t_node.html">TNode</a>* node, <a class="code hl_class" href="class_pkb.html">Pkb</a>&amp; pkb);</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_design_extractor.html#ae120348dd7b95e82e5c85856dfed63a1">processCfg</a>(std::unordered_map&lt;<span class="keywordtype">int</span>, std::vector&lt;int&gt;&gt; cfg, <a class="code hl_class" href="class_pkb.html">Pkb</a>&amp; pkb);</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>};</div>
-<div class="ttc" id="aclass_design_extractor_html"><div class="ttname"><a href="class_design_extractor.html">DesignExtractor</a></div><div class="ttdoc">This class takes in and processes the Ast to populate the Pkb.</div><div class="ttdef"><b>Definition:</b> DesignExtractor.h:26</div></div>
-<div class="ttc" id="aclass_design_extractor_html_a0a987700a1fd0424b6d0a293050accda"><div class="ttname"><a href="class_design_extractor.html#a0a987700a1fd0424b6d0a293050accda">DesignExtractor::processAst</a></div><div class="ttdeci">static bool processAst(TNode *node, Pkb &amp;pkb)</div><div class="ttdoc">Processes the AST and populates the PKB.</div><div class="ttdef"><b>Definition:</b> DesignExtractor.cpp:52</div></div>
-<div class="ttc" id="aclass_design_extractor_html_a76437d7d6e2d5f4557ac8c42881743fa"><div class="ttname"><a href="class_design_extractor.html#a76437d7d6e2d5f4557ac8c42881743fa">DesignExtractor::processProcedureMap</a></div><div class="ttdeci">static bool processProcedureMap(std::unordered_map&lt; std::string, std::vector&lt; std::string &gt; &gt; procedureMap, Pkb &amp;pkb)</div><div class="ttdoc">Processes the procedure map and populates the PKB.</div><div class="ttdef"><b>Definition:</b> DesignExtractor.cpp:30</div></div>
-<div class="ttc" id="aclass_design_extractor_html_ae120348dd7b95e82e5c85856dfed63a1"><div class="ttname"><a href="class_design_extractor.html#ae120348dd7b95e82e5c85856dfed63a1">DesignExtractor::processCfg</a></div><div class="ttdeci">static bool processCfg(std::unordered_map&lt; int, std::vector&lt; int &gt; &gt; cfg, Pkb &amp;pkb)</div><div class="ttdoc">Processes a CFG and populates the PKB.</div><div class="ttdef"><b>Definition:</b> DesignExtractor.cpp:209</div></div>
+<a href="_design_extractor_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;../Pkb/Pkb.h&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;../DataStructures/TNode.h&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_design_extractor.html">   20</a></span><span class="keyword">class </span><a class="code hl_class" href="class_design_extractor.html">DesignExtractor</a> {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_design_extractor.html#a76437d7d6e2d5f4557ac8c42881743fa">processProcedureMap</a>(std::unordered_map&lt;std::string, std::vector&lt;std::string&gt;&gt; procedureMap, <a class="code hl_class" href="class_pkb.html">Pkb</a>&amp; pkb);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_design_extractor.html#a0a987700a1fd0424b6d0a293050accda">processAst</a>(<a class="code hl_class" href="class_t_node.html">TNode</a>* node, <a class="code hl_class" href="class_pkb.html">Pkb</a>&amp; pkb);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_design_extractor.html#ae120348dd7b95e82e5c85856dfed63a1">processCfg</a>(std::unordered_map&lt;<span class="keywordtype">int</span>, std::vector&lt;int&gt;&gt; cfg, <a class="code hl_class" href="class_pkb.html">Pkb</a>&amp; pkb);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>};</div>
+<div class="ttc" id="aclass_design_extractor_html"><div class="ttname"><a href="class_design_extractor.html">DesignExtractor</a></div><div class="ttdoc">The DE populates the Pkb by processing the Ast, identifying DesignEntities and the Relationships betw...</div><div class="ttdef"><b>Definition:</b> DesignExtractor.h:20</div></div>
+<div class="ttc" id="aclass_design_extractor_html_a0a987700a1fd0424b6d0a293050accda"><div class="ttname"><a href="class_design_extractor.html#a0a987700a1fd0424b6d0a293050accda">DesignExtractor::processAst</a></div><div class="ttdeci">static bool processAst(TNode *node, Pkb &amp;pkb)</div><div class="ttdoc">Processes the AST and populates the PKB.</div><div class="ttdef"><b>Definition:</b> DesignExtractor.cpp:83</div></div>
+<div class="ttc" id="aclass_design_extractor_html_a76437d7d6e2d5f4557ac8c42881743fa"><div class="ttname"><a href="class_design_extractor.html#a76437d7d6e2d5f4557ac8c42881743fa">DesignExtractor::processProcedureMap</a></div><div class="ttdeci">static bool processProcedureMap(std::unordered_map&lt; std::string, std::vector&lt; std::string &gt; &gt; procedureMap, Pkb &amp;pkb)</div><div class="ttdoc">Processes the procedure map and populates the PKB.</div><div class="ttdef"><b>Definition:</b> DesignExtractor.cpp:61</div></div>
+<div class="ttc" id="aclass_design_extractor_html_ae120348dd7b95e82e5c85856dfed63a1"><div class="ttname"><a href="class_design_extractor.html#ae120348dd7b95e82e5c85856dfed63a1">DesignExtractor::processCfg</a></div><div class="ttdeci">static bool processCfg(std::unordered_map&lt; int, std::vector&lt; int &gt; &gt; cfg, Pkb &amp;pkb)</div><div class="ttdoc">Processes a CFG and populates the PKB.</div><div class="ttdef"><b>Definition:</b> DesignExtractor.cpp:182</div></div>
 <div class="ttc" id="aclass_pkb_html"><div class="ttname"><a href="class_pkb.html">Pkb</a></div><div class="ttdoc">Program Knowledge Base (Pkb) class stores information about the SIMPLE source code.</div><div class="ttdef"><b>Definition:</b> Pkb.h:29</div></div>
-<div class="ttc" id="aclass_t_node_html"><div class="ttname"><a href="class_t_node.html">TNode</a></div><div class="ttdoc">Makes up the tree nodes of the Ast.</div><div class="ttdef"><b>Definition:</b> TNode.h:29</div></div>
+<div class="ttc" id="aclass_t_node_html"><div class="ttname"><a href="class_t_node.html">TNode</a></div><div class="ttdoc">Makes up the tree nodes of the Ast.</div><div class="ttdef"><b>Definition:</b> TNode.h:19</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

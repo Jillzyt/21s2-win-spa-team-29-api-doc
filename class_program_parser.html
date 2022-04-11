@@ -77,36 +77,22 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a76b37897e142dbceab147c3ee2006f81"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_parser.html#a76b37897e142dbceab147c3ee2006f81">parseStringToTokens</a> (std::string sourceCode)</td></tr>
-<tr class="memdesc:a76b37897e142dbceab147c3ee2006f81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a list of tokens from the given source code.  <a href="class_program_parser.html#a76b37897e142dbceab147c3ee2006f81">More...</a><br /></td></tr>
-<tr class="separator:a76b37897e142dbceab147c3ee2006f81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4cf5506a00bcae90f81d116d9b925586"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_program_parser_result.html">ProgramParserResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_parser.html#a4cf5506a00bcae90f81d116d9b925586">getParseResults</a> (std::vector&lt; std::string &gt; tokens, int tokenStart, int tokenEnd)</td></tr>
-<tr class="memdesc:a4cf5506a00bcae90f81d116d9b925586"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the parsing result from the list of tokens.  <a href="class_program_parser.html#a4cf5506a00bcae90f81d116d9b925586">More...</a><br /></td></tr>
-<tr class="separator:a4cf5506a00bcae90f81d116d9b925586"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a613941bb3aee750d190c4d7430c80172"><td class="memItemLeft" align="right" valign="top">static std::unordered_map&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_parser.html#a613941bb3aee750d190c4d7430c80172">getTokenToLineMap</a> (std::vector&lt; std::string &gt; tokens)</td></tr>
-<tr class="separator:a613941bb3aee750d190c4d7430c80172"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2556dd717c710b010eb57b3bcf70f955"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_parser.html#a2556dd717c710b010eb57b3bcf70f955">getProcedureNames</a> (std::vector&lt; std::string &gt; tokens)</td></tr>
-<tr class="separator:a2556dd717c710b010eb57b3bcf70f955"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0dadf870580ff68d2d810858963e364"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_parser.html#ac0dadf870580ff68d2d810858963e364">areBracketsBalanced</a> (std::vector&lt; std::string &gt; tokens)</td></tr>
-<tr class="memdesc:ac0dadf870580ff68d2d810858963e364"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the brackets in the given list of tokens are balanced.  <a href="class_program_parser.html#ac0dadf870580ff68d2d810858963e364">More...</a><br /></td></tr>
-<tr class="separator:ac0dadf870580ff68d2d810858963e364"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88762f6c85f4e914903d11a8e8276053"><td class="memItemLeft" align="right" valign="top">static std::unordered_map&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_parser.html#a88762f6c85f4e914903d11a8e8276053">getMatchingBrackets</a> (std::vector&lt; std::string &gt; tokens)</td></tr>
-<tr class="separator:a88762f6c85f4e914903d11a8e8276053"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade9f05b67359e2a658273f9683bd2085"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_parser.html#ade9f05b67359e2a658273f9683bd2085">isProgramValid</a> (<a class="el" href="struct_program_parser_result.html">ProgramParserResult</a> parserResult)</td></tr>
-<tr class="memdesc:ade9f05b67359e2a658273f9683bd2085"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the SIMPLE source program is valid.  <a href="class_program_parser.html#ade9f05b67359e2a658273f9683bd2085">More...</a><br /></td></tr>
-<tr class="separator:ade9f05b67359e2a658273f9683bd2085"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf2be2b8cab87225119462859df62fdc"><td class="memItemLeft" align="right" valign="top">static std::unordered_map&lt; std::string, std::vector&lt; std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_parser.html#adf2be2b8cab87225119462859df62fdc">getProcedureMap</a> (std::unordered_map&lt; int, std::vector&lt; int &gt; &gt; lineToTokensMap, std::unordered_map&lt; int, std::string &gt; lineToProcedure, std::vector&lt; std::string &gt; tokens)</td></tr>
-<tr class="separator:adf2be2b8cab87225119462859df62fdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd41c932178155ba3bdd9d71c4e63050"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_parser.html#abd41c932178155ba3bdd9d71c4e63050">isProcedureMapValid</a> (std::unordered_map&lt; std::string, std::vector&lt; std::string &gt; &gt; procedureMap, std::vector&lt; std::string &gt; listOfProcedureNames)</td></tr>
-<tr class="memdesc:abd41c932178155ba3bdd9d71c4e63050"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the procedureMap is valid.  <a href="class_program_parser.html#abd41c932178155ba3bdd9d71c4e63050">More...</a><br /></td></tr>
-<tr class="separator:abd41c932178155ba3bdd9d71c4e63050"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab70f275d01ef4ed4871647477414f205"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_program_parser_result.html">ProgramParserResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_parser.html#ab70f275d01ef4ed4871647477414f205">getParseResults</a> (std::vector&lt; std::string &gt; &amp;tokens, int tokenStart, int tokenEnd)</td></tr>
+<tr class="memdesc:ab70f275d01ef4ed4871647477414f205"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the parsing result from the list of tokens.  <a href="class_program_parser.html#ab70f275d01ef4ed4871647477414f205">More...</a><br /></td></tr>
+<tr class="separator:ab70f275d01ef4ed4871647477414f205"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accefb59b3f716a76c9862d415b2d7be2"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_parser.html#accefb59b3f716a76c9862d415b2d7be2">areBracketsBalanced</a> (std::vector&lt; std::string &gt; &amp;tokens)</td></tr>
+<tr class="memdesc:accefb59b3f716a76c9862d415b2d7be2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the brackets in the given list of tokens are balanced.  <a href="class_program_parser.html#accefb59b3f716a76c9862d415b2d7be2">More...</a><br /></td></tr>
+<tr class="separator:accefb59b3f716a76c9862d415b2d7be2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8afa2ae7358b941b552887b63c0c0015"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_parser.html#a8afa2ae7358b941b552887b63c0c0015">isProgramValid</a> (<a class="el" href="struct_program_parser_result.html">ProgramParserResult</a> &amp;parserResult)</td></tr>
+<tr class="memdesc:a8afa2ae7358b941b552887b63c0c0015"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the SIMPLE source program is valid.  <a href="class_program_parser.html#a8afa2ae7358b941b552887b63c0c0015">More...</a><br /></td></tr>
+<tr class="separator:a8afa2ae7358b941b552887b63c0c0015"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p ><a class="el" href="class_program_parser.html" title="ProgramParser contains the methods for parsing and validating the SIMPLE source program.">ProgramParser</a> contains the methods for parsing and validating the SIMPLE source program. </p>
 <p ><a class="el" href="class_program_parser.html" title="ProgramParser contains the methods for parsing and validating the SIMPLE source program.">ProgramParser</a> only contains utility methods and do not have any internal storage on its own. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac0dadf870580ff68d2d810858963e364" name="ac0dadf870580ff68d2d810858963e364"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0dadf870580ff68d2d810858963e364">&#9670;&nbsp;</a></span>areBracketsBalanced()</h2>
+<a id="accefb59b3f716a76c9862d415b2d7be2" name="accefb59b3f716a76c9862d415b2d7be2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accefb59b3f716a76c9862d415b2d7be2">&#9670;&nbsp;</a></span>areBracketsBalanced()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -117,7 +103,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">bool ProgramParser::areBracketsBalanced </td>
           <td>(</td>
-          <td class="paramtype">std::vector&lt; std::string &gt;&#160;</td>
+          <td class="paramtype">std::vector&lt; std::string &gt; &amp;&#160;</td>
           <td class="paramname"><em>tokens</em></td><td>)</td>
           <td></td>
         </tr>
@@ -140,34 +126,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a88762f6c85f4e914903d11a8e8276053" name="a88762f6c85f4e914903d11a8e8276053"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88762f6c85f4e914903d11a8e8276053">&#9670;&nbsp;</a></span>getMatchingBrackets()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unordered_map&lt; int, int &gt; ProgramParser::getMatchingBrackets </td>
-          <td>(</td>
-          <td class="paramtype">std::vector&lt; std::string &gt;&#160;</td>
-          <td class="paramname"><em>tokens</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4cf5506a00bcae90f81d116d9b925586" name="a4cf5506a00bcae90f81d116d9b925586"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4cf5506a00bcae90f81d116d9b925586">&#9670;&nbsp;</a></span>getParseResults()</h2>
+<a id="ab70f275d01ef4ed4871647477414f205" name="ab70f275d01ef4ed4871647477414f205"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab70f275d01ef4ed4871647477414f205">&#9670;&nbsp;</a></span>getParseResults()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -178,7 +138,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="struct_program_parser_result.html">ProgramParserResult</a> ProgramParser::getParseResults </td>
           <td>(</td>
-          <td class="paramtype">std::vector&lt; std::string &gt;&#160;</td>
+          <td class="paramtype">std::vector&lt; std::string &gt; &amp;&#160;</td>
           <td class="paramname"><em>tokens</em>, </td>
         </tr>
         <tr>
@@ -219,141 +179,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="adf2be2b8cab87225119462859df62fdc" name="adf2be2b8cab87225119462859df62fdc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf2be2b8cab87225119462859df62fdc">&#9670;&nbsp;</a></span>getProcedureMap()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unordered_map&lt; std::string, std::vector&lt; std::string &gt; &gt; ProgramParser::getProcedureMap </td>
-          <td>(</td>
-          <td class="paramtype">std::unordered_map&lt; int, std::vector&lt; int &gt; &gt;&#160;</td>
-          <td class="paramname"><em>lineToTokensMap</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::unordered_map&lt; int, std::string &gt;&#160;</td>
-          <td class="paramname"><em>lineToProcedure</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::vector&lt; std::string &gt;&#160;</td>
-          <td class="paramname"><em>tokens</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2556dd717c710b010eb57b3bcf70f955" name="a2556dd717c710b010eb57b3bcf70f955"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2556dd717c710b010eb57b3bcf70f955">&#9670;&nbsp;</a></span>getProcedureNames()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static std::vector&lt; std::string &gt; ProgramParser::getProcedureNames </td>
-          <td>(</td>
-          <td class="paramtype">std::vector&lt; std::string &gt;&#160;</td>
-          <td class="paramname"><em>tokens</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a613941bb3aee750d190c4d7430c80172" name="a613941bb3aee750d190c4d7430c80172"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a613941bb3aee750d190c4d7430c80172">&#9670;&nbsp;</a></span>getTokenToLineMap()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static std::unordered_map&lt; int, int &gt; ProgramParser::getTokenToLineMap </td>
-          <td>(</td>
-          <td class="paramtype">std::vector&lt; std::string &gt;&#160;</td>
-          <td class="paramname"><em>tokens</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abd41c932178155ba3bdd9d71c4e63050" name="abd41c932178155ba3bdd9d71c4e63050"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd41c932178155ba3bdd9d71c4e63050">&#9670;&nbsp;</a></span>isProcedureMapValid()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool ProgramParser::isProcedureMapValid </td>
-          <td>(</td>
-          <td class="paramtype">std::unordered_map&lt; std::string, std::vector&lt; std::string &gt; &gt;&#160;</td>
-          <td class="paramname"><em>procedureMap</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::vector&lt; std::string &gt;&#160;</td>
-          <td class="paramname"><em>listOfProcedureNames</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns true if the procedureMap is valid. </p>
-<p >The procedure map is valid if the program does not have two procedures with the same name, a procedure does not call a non-existing procedure, and there are no recursive or cyclic calls </p>
-
-</div>
-</div>
-<a id="ade9f05b67359e2a658273f9683bd2085" name="ade9f05b67359e2a658273f9683bd2085"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade9f05b67359e2a658273f9683bd2085">&#9670;&nbsp;</a></span>isProgramValid()</h2>
+<a id="a8afa2ae7358b941b552887b63c0c0015" name="a8afa2ae7358b941b552887b63c0c0015"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8afa2ae7358b941b552887b63c0c0015">&#9670;&nbsp;</a></span>isProgramValid()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -364,7 +191,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">bool ProgramParser::isProgramValid </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_program_parser_result.html">ProgramParserResult</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_program_parser_result.html">ProgramParserResult</a> &amp;&#160;</td>
           <td class="paramname"><em>parserResult</em></td><td>)</td>
           <td></td>
         </tr>
@@ -387,44 +214,9 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a76b37897e142dbceab147c3ee2006f81" name="a76b37897e142dbceab147c3ee2006f81"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a76b37897e142dbceab147c3ee2006f81">&#9670;&nbsp;</a></span>parseStringToTokens()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt; std::string &gt; ProgramParser::parseStringToTokens </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>sourceCode</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns a list of tokens from the given source code. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">sourceCode</td><td>The source code in string format </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A list of tokens </dd></dl>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>Parser/<a class="el" href="_program_parser_8h_source.html">ProgramParser.h</a></li>
-<li>Parser/<a class="el" href="_program_parser_8cpp.html">ProgramParser.cpp</a></li>
+<li>C:/Users/Jody Tang/Desktop/NUS/Y3S2/CS3203/Proj/Team29/Code29/source/Parser/<a class="el" href="_program_parser_8h_source.html">ProgramParser.h</a></li>
+<li>C:/Users/Jody Tang/Desktop/NUS/Y3S2/CS3203/Proj/Team29/Code29/source/Parser/<a class="el" href="_program_parser_8cpp.html">ProgramParser.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -82,17 +82,17 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad55398ab07d5a11cc509a8dfebc399f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022">DesignEntity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_pql_1_1_query.html#ad55398ab07d5a11cc509a8dfebc399f5">getDeType</a> (std::string synonym)</td></tr>
-<tr class="memdesc:ad55398ab07d5a11cc509a8dfebc399f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that returns the declared <a class="el" href="namespace_design_entity.html" title="Constructor of the class QueryFunction.">DesignEntity</a> of the given synonym if the declaration exists.  <a href="struct_pql_1_1_query.html#ad55398ab07d5a11cc509a8dfebc399f5">More...</a><br /></td></tr>
-<tr class="separator:ad55398ab07d5a11cc509a8dfebc399f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a710d944ba6a877bf9f7eacae6d255199"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022">DesignEntity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_pql_1_1_query.html#a710d944ba6a877bf9f7eacae6d255199">getSynDe</a> (const std::string &amp;synonym) const</td></tr>
+<tr class="memdesc:a710d944ba6a877bf9f7eacae6d255199"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that returns the declared DesignEntity of the given synonym if the declaration exists.  <a href="struct_pql_1_1_query.html#a710d944ba6a877bf9f7eacae6d255199">More...</a><br /></td></tr>
+<tr class="separator:a710d944ba6a877bf9f7eacae6d255199"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a710e853d11de3139217abf3b528a96e5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_pql_1_1_query.html#a710e853d11de3139217abf3b528a96e5">isBooleanQuery</a></td></tr>
 <tr class="separator:a710e853d11de3139217abf3b528a96e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f0fbfce9eec323db9cfa120f82fa2cb"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="struct_pql_1_1_declaration.html">Declaration</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_pql_1_1_query.html#a1f0fbfce9eec323db9cfa120f82fa2cb">declarations</a></td></tr>
-<tr class="memdesc:a1f0fbfce9eec323db9cfa120f82fa2cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector of Declarations of the query.  <a href="struct_pql_1_1_query.html#a1f0fbfce9eec323db9cfa120f82fa2cb">More...</a><br /></td></tr>
-<tr class="separator:a1f0fbfce9eec323db9cfa120f82fa2cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f78f0061e3cf73a0d82aa6ec2fb493f"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; std::string, <a class="el" href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022">DesignEntity</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_pql_1_1_query.html#a2f78f0061e3cf73a0d82aa6ec2fb493f">declarations</a></td></tr>
+<tr class="memdesc:a2f78f0061e3cf73a0d82aa6ec2fb493f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map of syn declarations.  <a href="struct_pql_1_1_query.html#a2f78f0061e3cf73a0d82aa6ec2fb493f">More...</a><br /></td></tr>
+<tr class="separator:a2f78f0061e3cf73a0d82aa6ec2fb493f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9096f3b3ea8f5bbae97f89f867db2445"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_pql_1_1_query.html#a9096f3b3ea8f5bbae97f89f867db2445">selected</a></td></tr>
 <tr class="memdesc:a9096f3b3ea8f5bbae97f89f867db2445"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selected string to be returned of the query.  <a href="struct_pql_1_1_query.html#a9096f3b3ea8f5bbae97f89f867db2445">More...</a><br /></td></tr>
 <tr class="separator:a9096f3b3ea8f5bbae97f89f867db2445"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -104,31 +104,31 @@ Public Attributes</h2></td></tr>
 <div class="textblock"><p >This struct contains the details needed for a given query's evaluation. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="struct_pql_1_1_declaration.html" title="This struct contains the details needed for a given declaration.">Declaration</a> <a class="el" href="struct_pql_1_1_clause.html" title="This struct contains the details needed for a given clause.">Clause</a> </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad55398ab07d5a11cc509a8dfebc399f5" name="ad55398ab07d5a11cc509a8dfebc399f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad55398ab07d5a11cc509a8dfebc399f5">&#9670;&nbsp;</a></span>getDeType()</h2>
+<a id="a710d944ba6a877bf9f7eacae6d255199" name="a710d944ba6a877bf9f7eacae6d255199"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a710d944ba6a877bf9f7eacae6d255199">&#9670;&nbsp;</a></span>getSynDe()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022">DesignEntity</a> Query::getDeType </td>
+          <td class="memname"><a class="el" href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022">DesignEntity</a> Pql::Query::getSynDe </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>synonym</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Function that returns the declared <a class="el" href="namespace_design_entity.html" title="Constructor of the class QueryFunction.">DesignEntity</a> of the given synonym if the declaration exists. </p>
+<p>Function that returns the declared DesignEntity of the given synonym if the declaration exists. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">synonym</td><td>String representation of the synonym </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns the declared <a class="el" href="namespace_design_entity.html" title="Constructor of the class QueryFunction.">DesignEntity</a> if it exists, otherwise returns DesignEntity::UNDEFINED </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespace_design_entity.html" title="Constructor of the class QueryFunction.">DesignEntity</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns the declared DesignEntity if it exists, otherwise returns <a class="el" href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022a0db45d2a4141101bdfe48e3314cfbca3">DesignEntity::UNDEFINED</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022">DesignEntity</a> </dd></dl>
 
 </div>
 </div>
@@ -149,19 +149,19 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a1f0fbfce9eec323db9cfa120f82fa2cb" name="a1f0fbfce9eec323db9cfa120f82fa2cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f0fbfce9eec323db9cfa120f82fa2cb">&#9670;&nbsp;</a></span>declarations</h2>
+<a id="a2f78f0061e3cf73a0d82aa6ec2fb493f" name="a2f78f0061e3cf73a0d82aa6ec2fb493f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f78f0061e3cf73a0d82aa6ec2fb493f">&#9670;&nbsp;</a></span>declarations</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="struct_pql_1_1_declaration.html">Declaration</a>&gt; Pql::Query::declarations</td>
+          <td class="memname">std::unordered_map&lt;std::string, <a class="el" href="_design_entity_8h.html#a238404016566c29666c6aacd3d396022">DesignEntity</a>&gt; Pql::Query::declarations</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Vector of Declarations of the query. </p>
+<p>Map of syn declarations. </p>
 
 </div>
 </div>
@@ -196,8 +196,8 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
-<li>QPP/<a class="el" href="_query_8h_source.html">Query.h</a></li>
-<li>QPP/<a class="el" href="_query_8cpp.html">Query.cpp</a></li>
+<li>C:/Users/Jody Tang/Desktop/NUS/Y3S2/CS3203/Proj/Team29/Code29/source/QPP/<a class="el" href="_query_8h_source.html">Query.h</a></li>
+<li>C:/Users/Jody Tang/Desktop/NUS/Y3S2/CS3203/Proj/Team29/Code29/source/QPP/<a class="el" href="_query_8cpp.html">Query.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

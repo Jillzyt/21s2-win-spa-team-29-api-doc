@@ -77,11 +77,13 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a94dc6c5953e9b990dcb613cb9d4d72ec"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_container_helper.html#a94dc6c5953e9b990dcb613cb9d4d72ec">UnorderedSetToVector</a> (std::unordered_set&lt; T &gt; set)</td></tr>
-<tr class="memdesc:a94dc6c5953e9b990dcb613cb9d4d72ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a vector containing all the elements of an unordered_set.  <a href="class_container_helper.html#a94dc6c5953e9b990dcb613cb9d4d72ec">More...</a><br /></td></tr>
-<tr class="separator:a94dc6c5953e9b990dcb613cb9d4d72ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf25b31ac55fd837f12f645893d0363b"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_container_helper.html#acf25b31ac55fd837f12f645893d0363b">unorderedSetToVector</a> (std::unordered_set&lt; T &gt; set)</td></tr>
+<tr class="memdesc:acf25b31ac55fd837f12f645893d0363b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a vector containing all the elements of an unordered_set.  <a href="class_container_helper.html#acf25b31ac55fd837f12f645893d0363b">More...</a><br /></td></tr>
+<tr class="separator:acf25b31ac55fd837f12f645893d0363b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a209adc8d6ae76d84763f33b4ffad4440"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_container_helper.html#a209adc8d6ae76d84763f33b4ffad4440">vectorContains</a> (std::vector&lt; T &gt; v, T element)</td></tr>
 <tr class="separator:a209adc8d6ae76d84763f33b4ffad4440"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33d11ea44031c0f945d7cfa5516ff80e"><td class="memItemLeft" align="right" valign="top">static std::unordered_set&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_container_helper.html#a33d11ea44031c0f945d7cfa5516ff80e">mergeUnorderedSets</a> (std::unordered_set&lt; T &gt; set1, std::unordered_set&lt; T &gt; set2)</td></tr>
+<tr class="separator:a33d11ea44031c0f945d7cfa5516ff80e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename T&gt;<br />
@@ -93,8 +95,8 @@ class ContainerHelper&lt; T &gt;</div><p >This class provides helper functions f
   </dd>
 </dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a94dc6c5953e9b990dcb613cb9d4d72ec" name="a94dc6c5953e9b990dcb613cb9d4d72ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a94dc6c5953e9b990dcb613cb9d4d72ec">&#9670;&nbsp;</a></span>UnorderedSetToVector()</h2>
+<a id="a33d11ea44031c0f945d7cfa5516ff80e" name="a33d11ea44031c0f945d7cfa5516ff80e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33d11ea44031c0f945d7cfa5516ff80e">&#9670;&nbsp;</a></span>mergeUnorderedSets()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -105,7 +107,53 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">vector&lt; T &gt; <a class="el" href="class_container_helper.html">ContainerHelper</a>&lt; T &gt;::UnorderedSetToVector </td>
+          <td class="memname">unordered_set&lt; T &gt; <a class="el" href="class_container_helper.html">ContainerHelper</a>&lt; T &gt;::mergeUnorderedSets </td>
+          <td>(</td>
+          <td class="paramtype">std::unordered_set&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>set1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::unordered_set&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>set2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">set1</td><td>The first set to merge </td></tr>
+    <tr><td class="paramname">set2</td><td>The second set to merge </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns the union of the 2 sets </dd></dl>
+
+</div>
+</div>
+<a id="acf25b31ac55fd837f12f645893d0363b" name="acf25b31ac55fd837f12f645893d0363b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf25b31ac55fd837f12f645893d0363b">&#9670;&nbsp;</a></span>unorderedSetToVector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt; T &gt; <a class="el" href="class_container_helper.html">ContainerHelper</a>&lt; T &gt;::unorderedSetToVector </td>
           <td>(</td>
           <td class="paramtype">std::unordered_set&lt; T &gt;&#160;</td>
           <td class="paramname"><em>set</em></td><td>)</td>
@@ -176,8 +224,8 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>Utils/<a class="el" href="_container_helper_8hpp_source.html">ContainerHelper.hpp</a></li>
-<li>Utils/<a class="el" href="_container_helper_8cpp.html">ContainerHelper.cpp</a></li>
+<li>C:/Users/Jody Tang/Desktop/NUS/Y3S2/CS3203/Proj/Team29/Code29/source/Utils/<a class="el" href="_container_helper_8hpp_source.html">ContainerHelper.hpp</a></li>
+<li>C:/Users/Jody Tang/Desktop/NUS/Y3S2/CS3203/Proj/Team29/Code29/source/Utils/<a class="el" href="_container_helper_8cpp.html">ContainerHelper.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

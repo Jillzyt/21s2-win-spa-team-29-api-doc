@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['selected_0',['selected',['../struct_pql_1_1_query.html#a9096f3b3ea8f5bbae97f89f867db2445',1,'Pql::Query']]],
-  ['stmt_5fentities_1',['STMT_ENTITIES',['../_design_extractor_8cpp.html#a667200cce09d372efa89c5554c601843',1,'DesignExtractor.cpp']]],
-  ['stmtstoevaluate_2',['stmtsToEvaluate',['../_pattern_evaluator_8cpp.html#a16953f9573ea9cd96c2ac8eb0014f99b',1,'PatternEvaluator.cpp']]],
-  ['success_3',['SUCCESS',['../_query_syntax_validator_8cpp.html#a91def61d780ca0c14654ee8fc1bd4a49',1,'QuerySyntaxValidator.cpp']]],
-  ['synonym_4',['synonym',['../struct_pql_1_1_declaration.html#a18374d0b3a9e6c02fd6caee372f112dc',1,'Pql::Declaration']]]
+  ['open_5fbracket_5fexpr_0',['OPEN_BRACKET_EXPR',['../_constants_8h.html#a8c76957f8c2ff61c47ab4370e699a602',1,'Constants.h']]],
+  ['open_5fbracket_5fstmtlst_1',['OPEN_BRACKET_STMTLST',['../_constants_8h.html#a2362d2fb379931b77766e9e5edf8f5d5',1,'Constants.h']]]
 ];

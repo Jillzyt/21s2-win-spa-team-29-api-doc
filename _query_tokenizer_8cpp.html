@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>CS3203 Team 29: QPP/QueryTokenizer.cpp File Reference</title>
+<title>CS3203 Team 29: C:/Users/Jody Tang/Desktop/NUS/Y3S2/CS3203/Proj/Team29/Code29/source/QPP/QueryTokenizer.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_6547928fef5eab07c3cb95c8d28c90b4.html">QPP</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_e04ae2849dfa520b4ee2c9f7e9ff15de.html">Desktop</a></li><li class="navelem"><a class="el" href="dir_fc535f21949c11c9ba400d65784ec52f.html">NUS</a></li><li class="navelem"><a class="el" href="dir_03b17459166973645e5999254af2c876.html">Y3S2</a></li><li class="navelem"><a class="el" href="dir_b53863b2dd4e7567b209cc69d498bd8d.html">CS3203</a></li><li class="navelem"><a class="el" href="dir_a685a0b18ca61e77064c945be78f3477.html">Proj</a></li><li class="navelem"><a class="el" href="dir_836c232a576c31fa72627368ec927480.html">Team29</a></li><li class="navelem"><a class="el" href="dir_46d9012ec6ef0c453dd63a39b5923908.html">Code29</a></li><li class="navelem"><a class="el" href="dir_c278d9d90c9f4d2e85ae516d96d8817b.html">source</a></li><li class="navelem"><a class="el" href="dir_1c793c10dd6ad0bc1cf5cb5771769fd3.html">QPP</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -83,6 +83,12 @@ $(function() {
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a5992c4305dc4e44be52ff6953479b4fa"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_tokenizer_8cpp.html#a5992c4305dc4e44be52ff6953479b4fa">checkAndHandleNoCarrots</a> (list&lt; string &gt; *currList, string firstItem)</td></tr>
+<tr class="separator:a5992c4305dc4e44be52ff6953479b4fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f373781d3b68f5b4583facaabede0c1"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_tokenizer_8cpp.html#a5f373781d3b68f5b4583facaabede0c1">handleResultClauseWithSpaces</a> (list&lt; string &gt; *currList, string firstItem)</td></tr>
+<tr class="separator:a5f373781d3b68f5b4583facaabede0c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabfcb2eb1a9c5d2f36c56abbe972432b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_tokenizer_8cpp.html#aabfcb2eb1a9c5d2f36c56abbe972432b">handleResultClauseTupleNoSpaces</a> (list&lt; string &gt; *returnLst, string firstItem)</td></tr>
+<tr class="separator:aabfcb2eb1a9c5d2f36c56abbe972432b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6c72be81f6301637d046ee755704f5d"><td class="memItemLeft" align="right" valign="top">list&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_tokenizer_8cpp.html#ab6c72be81f6301637d046ee755704f5d">getResultClauseTuple</a> (list&lt; string &gt; *currList)</td></tr>
 <tr class="separator:ab6c72be81f6301637d046ee755704f5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7796eaf82f0532715f03d2c39ad4cb86"><td class="memItemLeft" align="right" valign="top">list&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_query_tokenizer_8cpp.html#a7796eaf82f0532715f03d2c39ad4cb86">getResultClause</a> (list&lt; string &gt; *currList)</td></tr>
@@ -105,6 +111,34 @@ Functions</h2></td></tr>
 <tr class="separator:ae883b47cef24fd3f71b8b98a33866996"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a5992c4305dc4e44be52ff6953479b4fa" name="a5992c4305dc4e44be52ff6953479b4fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5992c4305dc4e44be52ff6953479b4fa">&#9670;&nbsp;</a></span>checkAndHandleNoCarrots()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string checkAndHandleNoCarrots </td>
+          <td>(</td>
+          <td class="paramtype">list&lt; string &gt; *&#160;</td>
+          <td class="paramname"><em>currList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>firstItem</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a15c42d764bcece68eea43086cad387b7" name="a15c42d764bcece68eea43086cad387b7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a15c42d764bcece68eea43086cad387b7">&#9670;&nbsp;</a></span>generatePatternToken()</h2>
 
@@ -276,6 +310,62 @@ Functions</h2></td></tr>
           <td></td>
           <td class="paramtype"><a class="el" href="class_query_token.html">QueryToken</a> *&#160;</td>
           <td class="paramname"><em>qt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aabfcb2eb1a9c5d2f36c56abbe972432b" name="aabfcb2eb1a9c5d2f36c56abbe972432b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabfcb2eb1a9c5d2f36c56abbe972432b">&#9670;&nbsp;</a></span>handleResultClauseTupleNoSpaces()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void handleResultClauseTupleNoSpaces </td>
+          <td>(</td>
+          <td class="paramtype">list&lt; string &gt; *&#160;</td>
+          <td class="paramname"><em>returnLst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>firstItem</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5f373781d3b68f5b4583facaabede0c1" name="a5f373781d3b68f5b4583facaabede0c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f373781d3b68f5b4583facaabede0c1">&#9670;&nbsp;</a></span>handleResultClauseWithSpaces()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string handleResultClauseWithSpaces </td>
+          <td>(</td>
+          <td class="paramtype">list&lt; string &gt; *&#160;</td>
+          <td class="paramname"><em>currList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>firstItem</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

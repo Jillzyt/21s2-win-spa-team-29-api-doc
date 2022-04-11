@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>CS3203 Team 29: Parser/ProgramParser.cpp File Reference</title>
+<title>CS3203 Team 29: C:/Users/Jody Tang/Desktop/NUS/Y3S2/CS3203/Proj/Team29/Code29/source/Parser/ProgramParser.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,20 +63,22 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_df9c4130e7601915b63fc941466b92f8.html">Parser</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_e04ae2849dfa520b4ee2c9f7e9ff15de.html">Desktop</a></li><li class="navelem"><a class="el" href="dir_fc535f21949c11c9ba400d65784ec52f.html">NUS</a></li><li class="navelem"><a class="el" href="dir_03b17459166973645e5999254af2c876.html">Y3S2</a></li><li class="navelem"><a class="el" href="dir_b53863b2dd4e7567b209cc69d498bd8d.html">CS3203</a></li><li class="navelem"><a class="el" href="dir_a685a0b18ca61e77064c945be78f3477.html">Proj</a></li><li class="navelem"><a class="el" href="dir_836c232a576c31fa72627368ec927480.html">Team29</a></li><li class="navelem"><a class="el" href="dir_46d9012ec6ef0c453dd63a39b5923908.html">Code29</a></li><li class="navelem"><a class="el" href="dir_c278d9d90c9f4d2e85ae516d96d8817b.html">source</a></li><li class="navelem"><a class="el" href="dir_57348522fe55f448565256995f4759ab.html">Parser</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle"><div class="title">ProgramParser.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="_program_parser_8h_source.html">ProgramParser.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_procedure_parser_8h_source.html">ProcedureParser.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_program_parser_result_8h_source.html">ProgramParserResult.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_syntactic_validator_8h_source.html">SyntacticValidator.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_semantic_validator_8h_source.html">SemanticValidator.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_unary_statement_parser_8h_source.html">UnaryStatementParser.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_constants_8h_source.html">../Utils/Constants.h</a>&quot;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;unordered_map&gt;</code><br />
@@ -94,17 +96,6 @@ $(function() {
 Macros</h2></td></tr>
 <tr class="memitem:a3881a8820b66fde7f84f515cb95152e5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_program_parser_8cpp.html#a3881a8820b66fde7f84f515cb95152e5">PROGRAM_LINE_NO</a>&#160;&#160;&#160;-1;</td></tr>
 <tr class="separator:a3881a8820b66fde7f84f515cb95152e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a9de43e600ebc3a0f919582b007c25322"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_program_parser_8cpp.html#a9de43e600ebc3a0f919582b007c25322">trim</a> (std::string s)</td></tr>
-<tr class="separator:a9de43e600ebc3a0f919582b007c25322"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad94c17981120822c0192f2fbca7b816a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_program_parser_8cpp.html#ad94c17981120822c0192f2fbca7b816a">removeWhitespace</a> (std::string string)</td></tr>
-<tr class="separator:ad94c17981120822c0192f2fbca7b816a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a568ff31f0962eb47de8b55eb2d7b535e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_program_parser_8cpp.html#a568ff31f0962eb47de8b55eb2d7b535e">splitByChar</a> (std::string s, char delim)</td></tr>
-<tr class="separator:a568ff31f0962eb47de8b55eb2d7b535e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a4999b3d79abace723ebf0c894c9e26"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_program_parser_8cpp.html#a5a4999b3d79abace723ebf0c894c9e26">getIntegersBetween</a> (int start, int end)</td></tr>
-<tr class="separator:a5a4999b3d79abace723ebf0c894c9e26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a3881a8820b66fde7f84f515cb95152e5" name="a3881a8820b66fde7f84f515cb95152e5"></a>
@@ -115,99 +106,6 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define PROGRAM_LINE_NO&#160;&#160;&#160;-1;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a5a4999b3d79abace723ebf0c894c9e26" name="a5a4999b3d79abace723ebf0c894c9e26"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a4999b3d79abace723ebf0c894c9e26">&#9670;&nbsp;</a></span>getIntegersBetween()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt; int &gt; getIntegersBetween </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>start</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>end</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad94c17981120822c0192f2fbca7b816a" name="ad94c17981120822c0192f2fbca7b816a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad94c17981120822c0192f2fbca7b816a">&#9670;&nbsp;</a></span>removeWhitespace()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string removeWhitespace </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>string</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a568ff31f0962eb47de8b55eb2d7b535e" name="a568ff31f0962eb47de8b55eb2d7b535e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a568ff31f0962eb47de8b55eb2d7b535e">&#9670;&nbsp;</a></span>splitByChar()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt; std::string &gt; splitByChar </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>s</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char&#160;</td>
-          <td class="paramname"><em>delim</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9de43e600ebc3a0f919582b007c25322" name="a9de43e600ebc3a0f919582b007c25322"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9de43e600ebc3a0f919582b007c25322">&#9670;&nbsp;</a></span>trim()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string trim </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>s</em></td><td>)</td>
-          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">

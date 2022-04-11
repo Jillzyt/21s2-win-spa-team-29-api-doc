@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>CS3203 Team 29: ProgramAnalyser/CfgGenerator.h Source File</title>
+<title>CS3203 Team 29: C:/Users/Jody Tang/Desktop/NUS/Y3S2/CS3203/Proj/Team29/Code29/source/ProgramAnalyser/CfgGenerator.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_4f6af3abbba83dad4673c00568db21c7.html">ProgramAnalyser</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_e04ae2849dfa520b4ee2c9f7e9ff15de.html">Desktop</a></li><li class="navelem"><a class="el" href="dir_fc535f21949c11c9ba400d65784ec52f.html">NUS</a></li><li class="navelem"><a class="el" href="dir_03b17459166973645e5999254af2c876.html">Y3S2</a></li><li class="navelem"><a class="el" href="dir_b53863b2dd4e7567b209cc69d498bd8d.html">CS3203</a></li><li class="navelem"><a class="el" href="dir_a685a0b18ca61e77064c945be78f3477.html">Proj</a></li><li class="navelem"><a class="el" href="dir_836c232a576c31fa72627368ec927480.html">Team29</a></li><li class="navelem"><a class="el" href="dir_46d9012ec6ef0c453dd63a39b5923908.html">Code29</a></li><li class="navelem"><a class="el" href="dir_c278d9d90c9f4d2e85ae516d96d8817b.html">source</a></li><li class="navelem"><a class="el" href="dir_1f9853a2fdd3b52985fe72db3371b440.html">ProgramAnalyser</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -77,21 +77,19 @@ $(function() {
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;stack&gt;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_cfg_generator.html">    9</a></span><span class="keyword">class </span><a class="code hl_class" href="class_cfg_generator.html">CfgGenerator</a></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keyword">static</span> std::unordered_map&lt;int, std::vector&lt;int&gt;&gt; <a class="code hl_function" href="class_cfg_generator.html#a37992674ac239e2013623845e5b7846f">generateAllCfg</a>(<a class="code hl_class" href="class_t_node.html">TNode</a>* astRoot);</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> generateMapping(std::vector&lt;TNode*&gt; nodeList, std::unordered_map&lt;<span class="keywordtype">int</span>, std::vector&lt;int&gt;&gt;* map, std::stack&lt;int&gt; stack);</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> generateWhileMapping(<a class="code hl_class" href="class_t_node.html">TNode</a>* whileNode, std::unordered_map&lt;<span class="keywordtype">int</span>, std::vector&lt;int&gt;&gt;* map, std::stack&lt;int&gt; stack);</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> generateIfMapping(<a class="code hl_class" href="class_t_node.html">TNode</a>* ifNode, std::unordered_map&lt;<span class="keywordtype">int</span>, std::vector&lt;int&gt;&gt;* map, std::stack&lt;int&gt; stack);</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>};</div>
-<div class="ttc" id="aclass_cfg_generator_html"><div class="ttname"><a href="class_cfg_generator.html">CfgGenerator</a></div><div class="ttdef"><b>Definition:</b> CfgGenerator.h:10</div></div>
-<div class="ttc" id="aclass_cfg_generator_html_a37992674ac239e2013623845e5b7846f"><div class="ttname"><a href="class_cfg_generator.html#a37992674ac239e2013623845e5b7846f">CfgGenerator::generateAllCfg</a></div><div class="ttdeci">static std::unordered_map&lt; int, std::vector&lt; int &gt; &gt; generateAllCfg(TNode *astRoot)</div><div class="ttdef"><b>Definition:</b> CfgGenerator.cpp:4</div></div>
-<div class="ttc" id="aclass_t_node_html"><div class="ttname"><a href="class_t_node.html">TNode</a></div><div class="ttdoc">Makes up the tree nodes of the Ast.</div><div class="ttdef"><b>Definition:</b> TNode.h:29</div></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_cfg_generator.html">   18</a></span><span class="keyword">class </span><a class="code hl_class" href="class_cfg_generator.html">CfgGenerator</a></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>{</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">static</span> std::unordered_map&lt;int, std::vector&lt;int&gt;&gt; <a class="code hl_function" href="class_cfg_generator.html#a37992674ac239e2013623845e5b7846f">generateAllCfg</a>(<a class="code hl_class" href="class_t_node.html">TNode</a>* astRoot);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> generateMapping(std::vector&lt;TNode*&gt; nodeList, std::unordered_map&lt;<span class="keywordtype">int</span>, std::vector&lt;int&gt;&gt;* map, std::stack&lt;int&gt; stack);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> generateWhileMapping(<a class="code hl_class" href="class_t_node.html">TNode</a>* whileNode, std::unordered_map&lt;<span class="keywordtype">int</span>, std::vector&lt;int&gt;&gt;* map, std::stack&lt;int&gt; stack);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> generateIfMapping(<a class="code hl_class" href="class_t_node.html">TNode</a>* ifNode, std::unordered_map&lt;<span class="keywordtype">int</span>, std::vector&lt;int&gt;&gt;* map, std::stack&lt;int&gt; stack);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>};</div>
+<div class="ttc" id="aclass_cfg_generator_html"><div class="ttname"><a href="class_cfg_generator.html">CfgGenerator</a></div><div class="ttdoc">Contains only functions for the purpose of generating Cfg.</div><div class="ttdef"><b>Definition:</b> CfgGenerator.h:19</div></div>
+<div class="ttc" id="aclass_cfg_generator_html_a37992674ac239e2013623845e5b7846f"><div class="ttname"><a href="class_cfg_generator.html#a37992674ac239e2013623845e5b7846f">CfgGenerator::generateAllCfg</a></div><div class="ttdeci">static std::unordered_map&lt; int, std::vector&lt; int &gt; &gt; generateAllCfg(TNode *astRoot)</div><div class="ttdoc">Function to be called by client.</div><div class="ttdef"><b>Definition:</b> CfgGenerator.cpp:4</div></div>
+<div class="ttc" id="aclass_t_node_html"><div class="ttname"><a href="class_t_node.html">TNode</a></div><div class="ttdoc">Makes up the tree nodes of the Ast.</div><div class="ttdef"><b>Definition:</b> TNode.h:19</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -89,6 +89,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1e7f3c8fd359313a0f4592a24dfbf1bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_table.html">Table</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_table.html#a1e7f3c8fd359313a0f4592a24dfbf1bb">selectColumns</a> (const std::vector&lt; std::string &gt; &amp;columns)</td></tr>
 <tr class="memdesc:a1e7f3c8fd359313a0f4592a24dfbf1bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new table with the same rows but only with the selected columns.  <a href="class_table.html#a1e7f3c8fd359313a0f4592a24dfbf1bb">More...</a><br /></td></tr>
 <tr class="separator:a1e7f3c8fd359313a0f4592a24dfbf1bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91d42ab347bb8b96689292e6ed924276"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_table.html">Table</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_table.html#a91d42ab347bb8b96689292e6ed924276">selectColumnsOpt</a> (const std::vector&lt; std::string &gt; &amp;columns)</td></tr>
+<tr class="memdesc:a91d42ab347bb8b96689292e6ed924276"><td class="mdescLeft">&#160;</td><td class="mdescRight">Similar to selectColumns, but only selects synonyms that are present.  <a href="class_table.html#a91d42ab347bb8b96689292e6ed924276">More...</a><br /></td></tr>
+<tr class="separator:a91d42ab347bb8b96689292e6ed924276"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aace231ce4e657530536728e6fd165930"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_table.html#aace231ce4e657530536728e6fd165930">addRow</a> (const std::vector&lt; T &gt; &amp;row)</td></tr>
 <tr class="memdesc:aace231ce4e657530536728e6fd165930"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the row to the <a class="el" href="class_table.html" title="Stores a table of any generic type that has default equality (==) operator and is STL-hashable.">Table</a> instance.  <a href="class_table.html#aace231ce4e657530536728e6fd165930">More...</a><br /></td></tr>
 <tr class="separator:aace231ce4e657530536728e6fd165930"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -110,6 +113,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a53ae508314f4a4e2d99760d98fccc049"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_table.html">Table</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_table.html#a53ae508314f4a4e2d99760d98fccc049">joinAll</a> (const std::vector&lt; <a class="el" href="class_table.html">Table</a>&lt; T &gt; * &gt; &amp;tablePtrs)</td></tr>
 <tr class="memdesc:a53ae508314f4a4e2d99760d98fccc049"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new table from the equijoin of this table together with all the supplied tables.  <a href="class_table.html#a53ae508314f4a4e2d99760d98fccc049">More...</a><br /></td></tr>
 <tr class="separator:a53ae508314f4a4e2d99760d98fccc049"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1658e4b7317e1a59010ffe8da712509b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_table.html">Table</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_table.html#a1658e4b7317e1a59010ffe8da712509b">joinAllNopt</a> (const std::vector&lt; <a class="el" href="class_table.html">Table</a>&lt; T &gt; * &gt; &amp;tablePtrs)</td></tr>
+<tr class="memdesc:a1658e4b7317e1a59010ffe8da712509b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new table from the equijoin of this table together with all the supplied tables.  <a href="class_table.html#a1658e4b7317e1a59010ffe8da712509b">More...</a><br /></td></tr>
+<tr class="separator:a1658e4b7317e1a59010ffe8da712509b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6b953fe5f672d8709398c9466383c0d"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_table.html#ae6b953fe5f672d8709398c9466383c0d">getSize</a> ()</td></tr>
 <tr class="memdesc:ae6b953fe5f672d8709398c9466383c0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the number of rows in this table.  <a href="class_table.html#ae6b953fe5f672d8709398c9466383c0d">More...</a><br /></td></tr>
 <tr class="separator:ae6b953fe5f672d8709398c9466383c0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -586,6 +592,36 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a1658e4b7317e1a59010ffe8da712509b" name="a1658e4b7317e1a59010ffe8da712509b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1658e4b7317e1a59010ffe8da712509b">&#9670;&nbsp;</a></span>joinAllNopt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_table.html">Table</a>&lt; T &gt; <a class="el" href="class_table.html">Table</a>&lt; T &gt;::joinAllNopt </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="class_table.html">Table</a>&lt; T &gt; * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>tablePtrs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a new table from the equijoin of this table together with all the supplied tables. </p>
+<p >Does not optimize join order.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tablePtrs</td><td>Vector of pointers to other tables to be joined with this table. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The equijoined table. </dd></dl>
+
+</div>
+</div>
 <a id="a1e7f3c8fd359313a0f4592a24dfbf1bb" name="a1e7f3c8fd359313a0f4592a24dfbf1bb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1e7f3c8fd359313a0f4592a24dfbf1bb">&#9670;&nbsp;</a></span>selectColumns()</h2>
 
@@ -622,6 +658,36 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a91d42ab347bb8b96689292e6ed924276" name="a91d42ab347bb8b96689292e6ed924276"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91d42ab347bb8b96689292e6ed924276">&#9670;&nbsp;</a></span>selectColumnsOpt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_table.html">Table</a>&lt; T &gt; <a class="el" href="class_table.html">Table</a>&lt; T &gt;::selectColumnsOpt </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>columns</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Similar to selectColumns, but only selects synonyms that are present. </p>
+<p >Does not throw errors</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">columns</td><td>Vector of strings of the columns to be selected for the table copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns new table with the selected columns and same rows. </dd></dl>
+
+</div>
+</div>
 <a id="a31fc781ddf9f53ae4de8e8c5cd5b57d4" name="a31fc781ddf9f53ae4de8e8c5cd5b57d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a31fc781ddf9f53ae4de8e8c5cd5b57d4">&#9670;&nbsp;</a></span>unique()</h2>
 
@@ -641,8 +707,8 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>DataStructures/<a class="el" href="_table_8hpp_source.html">Table.hpp</a></li>
-<li>DataStructures/<a class="el" href="_table_8cpp.html">Table.cpp</a></li>
+<li>C:/Users/Jody Tang/Desktop/NUS/Y3S2/CS3203/Proj/Team29/Code29/source/DataStructures/<a class="el" href="_table_8hpp_source.html">Table.hpp</a></li>
+<li>C:/Users/Jody Tang/Desktop/NUS/Y3S2/CS3203/Proj/Team29/Code29/source/DataStructures/<a class="el" href="_table_8cpp.html">Table.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
